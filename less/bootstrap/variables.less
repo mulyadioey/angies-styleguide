@@ -7,6 +7,11 @@
 // --------------------------------------------------
 
 
+// Angie's List specific
+// -------------------------
+@al-green:				#29a036;
+
+
 // Grays
 // -------------------------
 @black:                 #000;
@@ -180,17 +185,17 @@
 @navbarCollapseWidth:             979px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
-@navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarHeight:                    60px;
+@navbarBackgroundHighlight:       @al-green;
+@navbarBackground:                @al-green;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #777;
-@navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarLinkColor:                 @white;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @white;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarLinkBackgroundActive:      transparent;
 
 @navbarBrandColor:                @navbarLinkColor;
 
