@@ -1,0 +1,62 @@
+@import "../less/bootstrap/mixins.less";
+
+// Grid system and page structure
+@import "../less/bootstrap/grid.less";
+
+@green: #29a036;
+
+/* General */
+
+.mb-20 { margin-bottom: 20px; }
+
+/* Side Navigator */
+.bs-docs-sidenav {
+	width: 215px;
+}
+
+/* Content */
+a {
+	color: @green;
+	display: inline-block;
+	
+	&:hover {
+		color: @green;
+		text-decoration: none;
+	}
+	
+	&.green-btn {
+		.border-radius(10);
+		padding: 0 25px;
+		border: 1px solid #4db346;
+		background-color: #30a33c;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+} // a
+
+.mini-layout {
+	padding: 20px;
+	height: 230px;
+	
+	&.bg-pattern {
+		background: url(/assets/img/pattern-bg.png) repeat 0 0;
+	}
+	
+	h4 {
+		margin-top: 0px;
+	}
+	
+	.row-fluid .span6 {
+		.clearfix();
+		
+		img {
+			float: right;
+		}
+	}
+} // .mini-layout
+
+
+

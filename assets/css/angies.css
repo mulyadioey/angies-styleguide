@@ -1,0 +1,36 @@
+/* General */
+.mb-20 {
+  margin-bottom: 20px;
+}
+/* Side Navigator */
+.bs-docs-sidenav {
+  width: 215px;
+}
+/* Content */
+a {
+  color: #29a036;
+  display: inline-block;
+}
+a:hover {
+  color: #29a036;
+  text-decoration: none;
+}
+a.green-btn {
+  padding: 0 25px;
+  border: 1px solid #4db346;
+  background-color: #30a33c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.mini-layout {
+  padding: 20px;
+}
+.mini-layout.bg-pattern {
+  background: url(/assets/img/pattern-bg.png) repeat 0 0;
+}
+.mini-layout h4 {
+  margin-top: 0px;
+}

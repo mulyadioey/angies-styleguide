@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.mod.css" rel="stylesheet">
+    <link href="assets/css/angies.css" rel="stylesheet">
     <!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/css/angies.css" rel="stylesheet">
@@ -60,7 +61,7 @@
 <header class="jumbotron subhead" id="overview">
   <div class="container">
     <h1>Getting started</h1>
-    <p class="lead">Overview of the project, its contents, and how to get started with a simple template.</p>
+    <p class="lead">Welcome to the interactive style guide for Angie&rsquo;s List</p>
   </div>
 </header>
 
@@ -107,6 +108,19 @@
           <div class="page-header">
             <h1>2. Prototype</h1>
           </div>
+		  <div class="mini-layout bg-pattern">
+			<div class="row-fluid">
+				<div class="span6">
+					<h4>See the style guide in action with the prototype!</h4>
+					<p>The foundation of the style guide is based on a responsive prototype that displays how elements can be combined to create the Angie&rsquo;s List digital experience.  </p>
+					<a href="#" class="mb-20">View code on GitHub</a>
+					<a class="green-btn" href="">Launch Prototype</a>
+				</div>
+				<div class="span6">
+					<img src="./assets/img/screenshot.png" alt="screenshot" />
+				</div>
+			</div>
+		  </div>
           <p>Browsers supported for the prototype include: Last release of Firefox, Chrome, Safari and IE8.</p>
           
         </section>
@@ -117,174 +131,82 @@
         ================================================== -->
         <section id="contents">
           <div class="page-header">
-            <h1>3. What's included</h1>
+            <h1>3. Source Files</h1>
           </div>
-          <p class="lead">Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the <a href="http://getbootstrap.com">Bootstrap documentation</a>.</p>
 
-          <h2>Docs sections</h2>
-          <h4><a href="http://twitter.github.com/bootstrap/scaffolding.html">Scaffolding</a></h4>
-          <p>Global styles for the body to reset type and background, link styles, grid system, and two simple layouts.</p>
-          <h4><a href="http://twitter.github.com/bootstrap/base-css.html">Base CSS</a></h4>
-          <p>Styles for common HTML elements like typography, code, tables, forms, and buttons. Also includes <a href="http://glyphicons.com">Glyphicons</a>, a great little icon set.</p>
-          <h4><a href="http://twitter.github.com/bootstrap/components.html">Components</a></h4>
-          <p>Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.</p>
-          <h4><a href="http://twitter.github.com/bootstrap/javascript.html">JavaScript plugins</a></h4>
-          <p>Similar to Components, these JavaScript plugins are interactive components for things like tooltips, popovers, modals, and more.</p>
-
-          <h2>List of components</h2>
-          <p>Together, the <strong>Components</strong> and <strong>JavaScript plugins</strong> sections provide the following interface elements:</p>
-          <ul>
-            <li>Button groups</li>
-            <li>Button dropdowns</li>
-            <li>Navigational tabs, pills, and lists</li>
-            <li>Navbar</li>
-            <li>Labels</li>
-            <li>Badges</li>
-            <li>Page headers and hero unit</li>
-            <li>Thumbnails</li>
-            <li>Alerts</li>
-            <li>Progress bars</li>
-            <li>Modals</li>
-            <li>Dropdowns</li>
-            <li>Tooltips</li>
-            <li>Popovers</li>
-            <li>Accordion</li>
-            <li>Carousel</li>
-            <li>Typeahead</li>
-          </ul>
-          <p>In future guides, we may walk through these components individually in more detail. Until then, look for each of these in the documentation for information on how to utilize and customize them.</p>
+          <p>Also available for download are the sources files and assets.</p>
+		  
+		  <div class="row">
+			<div class="span4">
+				<p>test</p>
+			</div>
+			<div class="span4">
+				<p>test</p>
+			</div>
+		  </div>
         </section>
 
 
-
-        <!-- HTML template
+		<!-- Grids
         ================================================== -->
-        <section id="html-template">
+        <section id="gridSystem">
           <div class="page-header">
-            <h1>4. Basic HTML template</h1>
+            <h1>4. Grids</h1>
           </div>
-          <p class="lead">With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the <a href="./getting-started.html#file-structure">File structure</a>.</p>
-          <p>Now, here's a look at a <strong>typical HTML file</strong>:</p>
+		  <h2>Live fluid grid example</h2>
+		  <p>The fluid grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screens resolutions and devices</p>
+		  <div class="bs-docs-grid">
+            <div class="row show-grid">
+              <div class="span1">1</div>
+              <div class="span1" data-original-title="" title="">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+            </div>
+            <div class="row show-grid">
+              <div class="span2" data-original-title="" title="">2</div>
+              <div class="span3" data-original-title="" title="">3</div>
+              <div class="span4">4</div>
+            </div>
+            <div class="row show-grid">
+              <div class="span4" data-original-title="" title="">4</div>
+              <div class="span5">5</div>
+            </div>
+            <div class="row show-grid">
+              <div class="span9">9</div>
+            </div>
+          </div>
+		  
+		  <h3>Basic fluid grid HTML</h3>
+		  <p>Make any row "fluid" by changing <code>.row</code> to <code>.row-fluid</code>. The column classes stay the exact same, making it easy to flip between fixed and fluid grids.</p>
 <pre class="prettyprint linenums">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;script src="http://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span>
+<span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span>
+<span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
 </pre>
-          <p>To make this <strong>a Bootstrapped template</strong>, just include the appropriate CSS and JS files:</p>
+		   
+		   <h3>Fluid Offsetting</h3>
+		   <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns</p>
 <pre class="prettyprint linenums">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;!-- Bootstrap --&gt;
-    &lt;link href="css/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;script src="http://code.jquery.com/jquery.js"&gt;&lt;/script&gt;
-    &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span>
+<span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span>
+<span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4 offset2"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
 </pre>
-          <p><strong>And you're set!</strong> With those two files added, you can begin to develop any site or application with Bootstrap.</p>
         </section>
+	
 
-
-
-        <!-- Examples
-        ================================================== -->
-        <section id="examples">
-          <div class="page-header">
-            <h1>5. Examples</h1>
-          </div>
-          <p class="lead">Move beyond the base template with a few example layouts. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
-          <ul class="thumbnails bootstrap-examples">
-            <li class="span3">
-              <a class="thumbnail" href="examples/starter-template.html">
-                <img src="assets/img/examples/bootstrap-example-starter.png" alt="">
-              </a>
-              <h4>Starter template</h4>
-              <p>A barebones HTML document with all the Bootstrap CSS and JavaScript included.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/hero.html">
-                <img src="assets/img/examples/bootstrap-example-marketing.png" alt="">
-              </a>
-              <h4>Basic marketing site</h4>
-              <p>Featuring a hero unit for a primary message and three supporting elements.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/fluid.html">
-                <img src="assets/img/examples/bootstrap-example-fluid.png" alt="">
-              </a>
-              <h4>Fluid layout</h4>
-              <p>Uses our new responsive, fluid grid system to create a seamless liquid layout.</p>
-            </li>
-
-            <li class="span3">
-              <a class="thumbnail" href="examples/marketing-narrow.html">
-                <img src="assets/img/examples/bootstrap-example-marketing-narrow.png" alt="">
-              </a>
-              <h4>Narrow marketing</h4>
-              <p>Slim, lightweight marketing template for small projects or teams.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/justified-nav.html">
-                <img src="assets/img/examples/bootstrap-example-justified-nav.png" alt="">
-              </a>
-              <h4>Justified nav</h4>
-              <p>Marketing page with equal-width navigation links in a modified navbar.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/signin.html">
-                <img src="assets/img/examples/bootstrap-example-signin.png" alt="">
-              </a>
-              <h4>Sign in</h4>
-              <p>Barebones sign in form with custom, larger form controls and a flexible layout.</p>
-            </li>
-
-            <li class="span3">
-              <a class="thumbnail" href="examples/sticky-footer.html">
-                <img src="assets/img/examples/bootstrap-example-sticky-footer.png" alt="">
-              </a>
-              <h4>Sticky footer</h4>
-              <p>Pin a fixed-height footer to the bottom of the user's viewport.</p>
-            </li>
-            <li class="span3">
-              <a class="thumbnail" href="examples/carousel.html">
-                <img src="assets/img/examples/bootstrap-example-carousel.png" alt="">
-              </a>
-              <h4>Carousel jumbotron</h4>
-              <p>A more interactive riff on the basic marketing site featuring a prominent carousel.</p>
-            </li>
-          </ul>
+		   <h3>Development Classes</h3>
+		   <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns</p>
+		   
+		   <h3>Breakpoints</h3>
+		   <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns</p>
         </section>
-
-
-
-
-        <!-- Next
-        ================================================== -->
-        <section id="what-next">
-          <div class="page-header">
-            <h1>What next?</h1>
-          </div>
-          <p class="lead">Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.</p>
-          <a class="btn btn-large btn-primary" href="./scaffolding.html" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Visit docs']);">Visit the Bootstrap docs</a>
-          <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Customize']);">Customize Bootstrap</a>
-        </section>
-
-
-
 
       </div>
     </div>
