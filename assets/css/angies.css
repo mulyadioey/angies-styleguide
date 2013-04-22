@@ -27,10 +27,14 @@ a.green-btn {
 }
 .mini-layout {
   padding: 20px;
+  height: 230px;
 }
 .mini-layout.bg-pattern {
   background: url(/assets/img/pattern-bg.png) repeat 0 0;
 }
 .mini-layout h4 {
   margin-top: 0px;
+}
+.mini-layout .row-fluid .span6 img {
+  float: right;
 }
