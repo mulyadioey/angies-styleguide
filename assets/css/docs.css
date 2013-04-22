@@ -778,7 +778,7 @@ form.bs-docs-example {
   width: 228px;
   margin: 30px 0 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #f8f6ef;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -792,6 +792,7 @@ form.bs-docs-example {
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
+  color: #29a036;
 }
 .bs-docs-sidenav > li:first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
@@ -808,10 +809,16 @@ form.bs-docs-example {
   z-index: 2;
   padding: 9px 15px;
   border: 0;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  background-color: #ebe8df;
   -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
      -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
           box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+  color: #000;
+}
+.bs-docs-sidenav > .active > a,
+.bs-docs-sidenav > .active > a:hover {
+  color: #000;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
 }
 /* Chevrons */
 .bs-docs-sidenav .icon-chevron-right {
@@ -820,8 +827,9 @@ form.bs-docs-example {
   margin-right: -6px;
   opacity: .25;
 }
-.bs-docs-sidenav > li > a:hover {
-  background-color: #f5f5f5;
+.bs-docs-sidenav > li > a:hover,
+.bs-docs-sidenav > .active > a:hover {
+  background-color: #ebe8df;
 }
 .bs-docs-sidenav a:hover .icon-chevron-right {
   opacity: .5;
