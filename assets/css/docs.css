@@ -849,6 +849,20 @@ form.bs-docs-example {
 }
 
 
+/* Grades for Docs, under `The Basics' tab.
+-------------------------------------------------- */
+span.grade {
+	margin-right: 8px;
+}
+span.grade.featured {
+	margin-right: 15px;
+}
+span.grade.sm {
+	margin-right: 4px;
+}
+span.grade.inline {
+	margin-right: 0;
+}
 
 
 /* Responsive
