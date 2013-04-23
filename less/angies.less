@@ -2,11 +2,42 @@
 
 @import "bootstrap/mixins.less";
 
-@green: #29a036;
 
 /* General */
-
+.mb-0 { margin-bottom: 0; }
+.mb-10 { margin-bottom: 10px; }
 .mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-50 { margin-bottom: 50px; }
+
+h3, h4 {
+	font-family: @pnFontFamily;
+	font-weight: 700;
+}
+
+h1 {
+	font-family: @msFontFamily;
+	font-weight: 700;
+}
+
+h3 {
+	color: #525252;
+}
+
+h4 {
+	margin-bottom: 0px;
+}
+
+p, a {
+	font-family: @pnFontFamily;
+}
+
+p { 
+	margin-bottom: 15px;
+	font-size: 15px;
+	font-weight: 400;
+}
 
 /* Side Navigator */
 .bs-docs-sidenav {
@@ -14,19 +45,28 @@
 }
 
 /* Content */
+.navbar .nav > li > a {
+	font-size: 17px;
+	font-weight: 700;
+}
+
+p.lead {
+	color: #ddd;
+}
+
 a {
-	color: @green;
+	color: @al-green;
 	display: inline-block;
 	
 	&:hover {
-		color: @green;
+		color: @al-green;
 		text-decoration: none;
 	}
 	
 	&.green-btn {
+		.border-radius(5px);
 		padding: 0 25px;
-		border: 1px solid #4db346;
-		background-color: #30a33c;
+		#gradient .vertical(#4aaf55, #2da23a);
 		color: #fff;
 		font-size: 16px;
 		font-weight: bold;
@@ -36,10 +76,10 @@ a {
 } // a
 
 .mini-layout {
-	padding: 20px;
-	height: 230px;
 	
 	&.bg-pattern {
+		padding: 20px;
+		height: 230px;
 		background: url(/assets/img/pattern-bg.png) repeat 0 0;
 	}
 	
@@ -54,6 +94,14 @@ a {
 		}
 	}
 } // .mini-layout
+
+.grey { color: #7b7b7b; }
+
+code {
+	border: 0px;
+	padding: 2px 0px;
+	background-color: transparent;
+}
 
 span.grade {
 	display: inline-block;

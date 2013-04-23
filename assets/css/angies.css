@@ -26,14 +26,60 @@
   box-sizing: border-box;
 }
 /* General */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
 .mb-20 {
   margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+h3,
+h4 {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+h3 {
+  color: #525252;
+}
+h4 {
+  margin-bottom: 0px;
+}
+p,
+a {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
 }
 /* Side Navigator */
 .bs-docs-sidenav {
   width: 215px;
 }
 /* Content */
+.navbar .nav > li > a {
+  font-size: 17px;
+  font-weight: 700;
+}
+p.lead {
+  color: #ddd;
+}
 a {
   color: #29a036;
   display: inline-block;
@@ -43,20 +89,27 @@ a:hover {
   text-decoration: none;
 }
 a.green-btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   padding: 0 25px;
-  border: 1px solid #4db346;
-  background-color: #30a33c;
+  background-color: #3eaa4a;
+  background-image: -moz-linear-gradient(top, #4aaf55, #2da23a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4aaf55), to(#2da23a));
+  background-image: -webkit-linear-gradient(top, #4aaf55, #2da23a);
+  background-image: -o-linear-gradient(top, #4aaf55, #2da23a);
+  background-image: linear-gradient(to bottom, #4aaf55, #2da23a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4aaf55', endColorstr='#ff2da23a', GradientType=0);
   color: #fff;
   font-size: 16px;
   font-weight: bold;
   line-height: 40px;
   text-transform: uppercase;
 }
-.mini-layout {
+.mini-layout.bg-pattern {
   padding: 20px;
   height: 230px;
-}
-.mini-layout.bg-pattern {
   background: url(/assets/img/pattern-bg.png) repeat 0 0;
 }
 .mini-layout h4 {
@@ -64,6 +117,14 @@ a.green-btn {
 }
 .mini-layout .row-fluid .span6 img {
   float: right;
+}
+.grey {
+  color: #7b7b7b;
+}
+code {
+  border: 0px;
+  padding: 2px 0px;
+  background-color: transparent;
 }
 span.grade {
   display: inline-block;

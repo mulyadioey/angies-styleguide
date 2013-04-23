@@ -25,6 +25,18 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
                     <link rel="apple-touch-icon-precomposed" href="">
                                    <link rel="shortcut icon" href="">
+								   
+								   
+	<!---TypeKit Font-->
+	<script type="text/javascript">
+	  (function() {
+		var config = {
+		  kitId: 'bap4dbx',
+		  scriptTimeout: 3000
+		};
+		var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+	</script>
   </head>
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -89,14 +101,14 @@
             <h1>1. Intro</h1>
           </div>
           <p>This style guide outlines the HTML, CSS, Javascript and Visual Design for the Angie&rsquo;s List Web Product Design Language.</p>
-          <p>The guide includes the following content sections:</p>
-          <h3>Categories</h3>
-          <h4><a href="basics.html">The Basics</a></h4>
-          <p>Styles for the common HTML elements like how to use typography, Angie&rsquo;s List grades, forms and buttons.</p>
-          <h4><a href="components.html">Components</a></h4>
-          <p>Basic styles for common interface components like dropdowns, navbar, pagination, alerts, and more.</p>
-          <h4><a href="modules.html">Modules</a></h4>
-          <p>Templates and static examples for content modules like Deals, Promos and more.</p>
+          <p class="mb-50">The guide includes the following content sections:</p>
+          <h3 class="mb-20">Categories</h3>
+          <h4><a href="basics.html"><strong>The Basics</strong></a></h4>
+          <p class="mb-30">Styles for the common HTML elements like how to use typography, Angie&rsquo;s List grades, forms and buttons.</p>
+          <h4><a href="components.html"><strong>Components</strong></a></h4>
+          <p class="mb-30">Basic styles for common interface components like dropdowns, navbar, pagination, alerts, and more.</p>
+          <h4><a href="modules.html"><strong>Modules</strong></a></h4>
+          <p class="mb-30">Templates and static examples for content modules like Deals, Promos and more.</p>
         </section>
 
 
@@ -110,7 +122,7 @@
 		  <div class="mini-layout bg-pattern">
 			<div class="row-fluid">
 				<div class="span6">
-					<h4>See the style guide in action with the prototype!</h4>
+					<h4 class="mb-10">See the style guide in action with the prototype!</h4>
 					<p>The foundation of the style guide is based on a responsive prototype that displays how elements can be combined to create the Angie&rsquo;s List digital experience.  </p>
 					<a href="#" class="mb-20">View code on GitHub</a>
 					<a class="green-btn" href="">Launch Prototype</a>
@@ -128,33 +140,54 @@
 
         <!-- Contents
         ================================================== -->
-        <section id="contents">
+        <section id="source">
           <div class="page-header">
             <h1>3. Source Files</h1>
           </div>
-
-          <p>Also available for download are the sources files and assets.</p>
+          <p class="mb-30">Also available for download are the sources files and assets.</p>
 		  
-		  <div class="row">
+		  <div class="row mb-20">
 			<div class="span4">
-				<p>test</p>
+				<div class="media">
+					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="/assets/img/zip-folder.png" /></a>
+					<div class="media-body">
+						<h5 class="mb-0">Angies List PSD templates.zip</h5>
+						<p class="grey">122.6 MB</p>
+					</div>
+				</div>
 			</div>
-			<div class="span4">
-				<p>test</p>
+			<div class="span5">
+				<div class="media">
+					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="/assets/img/zip-folder.png" /></a>
+					<div class="media-body">
+						<h5 class="mb-0">Angies List Icons(PSD and PNG).zip</h5>
+						<p class="grey">36.4 MB</p>
+					</div>
+				</div>
 			</div>
 		  </div>
+		  <div class="row">
+			<div class="span4">
+				<div class="media">
+					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="/assets/img/zip-folder.png" /></a>
+					<div class="media-body">
+						<h5 class="mb-0">Fonts.zip</h5>
+						<p class="grey">2.3 MB</p>
+					</div>
+				</div>
+			</div>
         </section>
 
 
 		<!-- Grids
         ================================================== -->
-        <section id="gridSystem">
+        <section id="grids">
           <div class="page-header">
             <h1>4. Grids</h1>
           </div>
-		  <h2>Live fluid grid example</h2>
+		  <h3>Live fluid grid example</h3>
 		  <p>The fluid grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screens resolutions and devices</p>
-		  <div class="bs-docs-grid">
+		  <div class="bs-docs-grid mb-40">
             <div class="row show-grid">
               <div class="span1">1</div>
               <div class="span1" data-original-title="" title="">1</div>
@@ -191,6 +224,21 @@
 		   
 		   <h3>Fluid Offsetting</h3>
 		   <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns</p>
+		   
+			<div class="bs-docs-grid">
+				<div class="row-fluid show-grid">
+					<div class="span4">4</div>
+					<div class="span4 offset4">4 offset 4</div>
+				</div><!-- /row -->
+				<div class="row-fluid show-grid">
+					<div class="span3 offset3">3 offset 3</div>
+					<div class="span3 offset3">3 offset 3</div>
+				</div><!-- /row -->
+				<div class="row-fluid show-grid">
+					<div class="span6 offset6">6 offset 6</div>
+				</div><!-- /row -->
+			</div>
+		   
 <pre class="prettyprint linenums">
 <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span>
 <span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span>
@@ -201,10 +249,10 @@
 	
 
 		   <h3>Development Classes</h3>
-		   <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns</p>
+		   <p class="mb-40">Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
 		   
 		   <h3>Breakpoints</h3>
-		   <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns</p>
+		   <p>Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
         </section>
 
       </div>
