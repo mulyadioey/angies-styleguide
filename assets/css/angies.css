@@ -25,6 +25,46 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* General */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mini-layout.bg-pattern {
+  padding: 20px;
+  height: auto;
+  background: url(/assets/img/pattern-bg.png) repeat 0 0;
+}
+.mini-layout .row-fluid .span6 img {
+  float: right;
+}
+.mini-layout p.head {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.25em;
+}
+.grey {
+  color: #7b7b7b;
+}
+code {
+  border: 0px;
+  padding: 2px 0px;
+  background-color: transparent;
+}
 span.grade {
   display: block;
   width: 40px;

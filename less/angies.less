@@ -2,6 +2,45 @@
 
 @import "bootstrap/mixins.less";
 
+
+/* General */
+.mb-0 { margin-bottom: 0; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-50 { margin-bottom: 50px; }
+
+.mini-layout {
+	
+	&.bg-pattern {
+		padding: 20px;
+		height: auto;
+		background: url(/assets/img/pattern-bg.png) repeat 0 0;
+	}
+	
+	.row-fluid .span6 {
+		
+		img {
+			float: right;
+		}
+	}
+	
+	p.head {
+		font-size: 1.5em;
+		font-weight: bold;
+		line-height: 1.25em;
+	}
+} // .mini-layout
+
+.grey { color: #7b7b7b; }
+
+code {
+	border: 0px;
+	padding: 2px 0px;
+	background-color: transparent;
+}
+
 span.grade {
 	display: block;
 	.size(40px, 40px);
@@ -68,3 +107,4 @@ span.grade {
 		}
 	}
 }
+
