@@ -60,7 +60,7 @@
 .grey {
   color: #7b7b7b;
 }
-code {
+code.no-bg {
   border: 0px;
   padding: 2px 0px;
   background-color: transparent;
@@ -130,4 +130,123 @@ span.grade.inline {
 }
 span.grade.inline.a {
   color: #4db346;
+}
+/* ====The Basics===== */
+.box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 180px;
+  height: 80px;
+  padding: 0 20px;
+  color: #ffffff;
+  display: table;
+}
+.box .box-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.box p {
+  margin-bottom: 0;
+}
+.box p.head {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.box.angies-green {
+  background-color: #29a036;
+}
+.box.darker-green {
+  background-color: #227e2c;
+}
+.box.lighter-green {
+  background-color: #4db346;
+}
+.box.angies-yellow {
+  background-color: #f7c602;
+}
+.box.deals-purple {
+  background-color: #79519a;
+}
+.box.medium-taupe {
+  color: #7b7b7b;
+  background-color: #eae7db;
+}
+.box.light-taupe,
+.box.subtle-taupe,
+.box.white {
+  border: 1px solid #eae7db;
+  color: #7b7b7b;
+}
+.box.light-taupe {
+  background-color: #f9f8f2;
+}
+.box.subtle-taupe {
+  background-color: #fbfbf8;
+}
+.box.black {
+  background-color: #000000;
+}
+.box.dark-gray {
+  background-color: #7b7b7b;
+}
+.box.medium-gray {
+  background-color: #aaaaaa;
+}
+.box.light-gray {
+  background-color: #dddddd;
+}
+.box.white {
+  background-color: #ffffff;
+}
+.box.alert-red {
+  background-color: #e2431e;
+}
+table.table-striped td {
+  height: 35px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+  background-image: url(/assets/img/icon-set.png);
+}
+.icon.icon-icn-ssa {
+  background-position: 6px 1px;
+}
+.icon.icon-icn-cash {
+  background-position: -40px 0;
+}
+.icon.icon-icn-deal {
+  background-position: -73px 5px;
+}
+.icon.icon-icn-coup {
+  background-position: 8px -51px;
+}
+.icon.icon-icn-cal {
+  background-position: -33px -54px;
+}
+.icon.icon-icn-chat {
+  background-position: -80px -60px;
+}
+.icon.icon-icn-poh {
+  background-position: 8px -113px;
+}
+.icon.icon-icn-pen {
+  background-position: -31px -115px;
+}
+.icon.icon-icn-neighbour {
+  background-position: -72px -115px;
+}
+.icon.icon-icn-search-yellow {
+  background-position: 0px -180px;
+}
+.icon.icon-icn-search {
+  background-position: -40px -180px;
+}
+.icon.icon-icn-search-white {
+  background-position: -69px -170px;
 }

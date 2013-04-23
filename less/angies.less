@@ -2,7 +2,6 @@
 
 @import "bootstrap/mixins.less";
 
-
 /* General */
 .mb-0 { margin-bottom: 0; }
 .mb-10 { margin-bottom: 10px; }
@@ -35,7 +34,7 @@
 
 .grey { color: #7b7b7b; }
 
-code {
+code.no-bg {
 	border: 0px;
 	padding: 2px 0px;
 	background-color: transparent;
@@ -108,3 +107,153 @@ span.grade {
 	}
 }
 
+/* ====The Basics===== */
+.box {
+	.border-radius(5px);
+	.size(80px, 180px);
+	padding: 0 20px;
+	color: @white;
+	display: table;
+	
+	.box-content {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	p {
+		margin-bottom: 0;
+	
+		&.head {
+			margin-bottom: 5px;
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+	
+	&.angies-green {
+		background-color: @angiesGreen;
+	}
+	
+	&.darker-green {
+		background-color: @darkerGreen;
+	}
+	
+	&.lighter-green {
+		background-color: @lighterGreen;
+	}
+	
+	&.angies-yellow {
+		background-color: @angiesYellow;
+	}
+	
+	&.deals-purple {
+		background-color: @dealsPurple;
+	}
+	
+	&.medium-taupe {
+		color: @darkGray;
+		background-color: @mediumTaupe;
+	}
+	
+	&.light-taupe,
+	&.subtle-taupe,
+	&.white {
+		border: 1px solid #eae7db;
+		color: @darkGray;
+	}
+	
+	&.light-taupe {
+		background-color: @lightTaupe;
+	}
+	
+	&.subtle-taupe {
+		background-color: @subtleTaupe;
+	}
+	
+	&.black {
+		background-color: @black;
+	}
+	
+	&.dark-gray {
+		background-color: @darkGray;
+	}
+	
+	&.medium-gray {
+		background-color: @mediumGray;
+	}
+	
+	&.light-gray {
+		background-color: @lightGray;
+	}
+	
+	&.white {
+		background-color: @white;
+	}
+	
+	&.alert-red {
+		background-color: @alertRed;
+	}
+} // box
+
+table.table-striped {
+	
+	td {
+		height: 35px;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.icon {
+	.square(35px);
+	background-image: url(/assets/img/icon-set.png);
+	
+	&.icon-icn-ssa {
+		background-position: 6px 1px;
+	}
+	
+	&.icon-icn-cash {
+		background-position: -40px 0;
+	}
+	
+	&.icon-icn-deal {
+		background-position: -73px 5px;
+	}
+	
+	&.icon-icn-coup {
+		background-position: 8px -51px;
+	}
+	
+	&.icon-icn-cal {
+		background-position: -33px -54px;
+	}
+	
+	&.icon-icn-chat {
+		background-position: -80px -60px;
+	}
+	
+	&.icon-icn-poh {
+		background-position: 8px -113px;
+	}
+	
+	&.icon-icn-pen {
+		background-position: -31px -115px;
+	}
+	
+	&.icon-icn-neighbour {
+		background-position: -72px -115px;
+	}
+	
+	&.icon-icn-search-yellow {
+		background-position: 0px -180px;
+	}
+	
+	&.icon-icn-search {
+		background-position: -40px -180px;
+	}
+	
+	&.icon-icn-search-white {
+		background-position: -69px -170px;
+	}
+} // .icon
