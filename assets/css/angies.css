@@ -131,3 +131,103 @@ span.grade.inline {
 span.grade.inline.a {
   color: #4db346;
 }
+.toggle-group a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+.toggle-group .active {
+  cursor: default;
+}
+.toggle-group .active:hover {
+  color: #585239;
+  background-color: #eae7db;
+}
+.toggle-group .active:active {
+  color: #585239;
+}
+.toggle-group a:first-child {
+  border-right: none;
+  -webkit-border-radius: 0.4em 0 0 0.4em;
+  -moz-border-radius: 0.4em 0 0 0.4em;
+  border-radius: 0.4em 0 0 0.4em;
+}
+.toggle-group a:last-child {
+  -webkit-border-radius: 0 0.4em 0.4em 0;
+  -moz-border-radius: 0 0.4em 0.4em 0;
+  border-radius: 0 0.4em 0.4em 0;
+}
+.toggle-group .flyout {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.list-btn .icon {
+  background-image: url(/assets/img/icn_list_inactive.png);
+}
+.map-btn .icon {
+  background-image: url(/assets/img/icn_map_inactive.png);
+}
+.active.list-btn .icon {
+  background-image: url(/assets/img/icn_list.png);
+}
+.active.map-btn .icon {
+  background-image: url(/assets/img/icn_map.png);
+}
+.list-btn .icon,
+.map-btn .icon {
+  line-height: 160%;
+  padding: 0 0 0 1.6em;
+  margin: -0.6em 0 -0.5em 0;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+.ui-btn {
+  border: 1px solid #e8e6dd;
+  padding: .7em .6em .6em .65em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font-weight: 600;
+  font-size: 150%;
+  text-align: left;
+  line-height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fafaf5;
+  background-image: -moz-linear-gradient(top, #fbfbf7, #f9f8f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfbf7), to(#f9f8f2));
+  background-image: -webkit-linear-gradient(top, #fbfbf7, #f9f8f2);
+  background-image: -o-linear-gradient(top, #fbfbf7, #f9f8f2);
+  background-image: linear-gradient(to bottom, #fbfbf7, #f9f8f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbfbf7', endColorstr='#fff9f8f2', GradientType=0);
+  color: #7b7b7b;
+}
+.ui-btn:link {
+  color: #7b7b7b;
+}
+.ui-btn:visited {
+  color: #7b7b7b;
+}
+.ui-btn:hover {
+  color: #454545;
+  background-color: #fefefe;
+  border-color: #e8e6dd;
+}
+.ui-btn:active {
+  color: #454545;
+}
+.ui-btn.active {
+  background: #eae7db none;
+  border-color: #d5d0c3;
+  color: #585239;
+}
+.ui-btn.active:hover {
+  color: #585239;
+  background-color: #eae7db;
+}

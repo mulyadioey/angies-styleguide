@@ -192,6 +192,7 @@
 </pre>          
         </section>       
 
+        <!-- 
         <section id="icons">
           <div class="page-header">
             <h1>4. Icons</h1>
@@ -346,9 +347,11 @@
             <li><i class="icon-fullscreen"></i> icon-fullscreen</li>
           </ul>
         </section>
-
+        -->
+        
         <!-- Buttons
         ================================================== -->
+        <!--
         <section id="buttons">
           <div class="page-header">
             <h1>4. Buttons</h1>
@@ -390,18 +393,6 @@
                 <td><code>btn btn-alternate</code></td>
                 <td>...</td>
               </tr>
-              <!--
-              <tr>
-                <td><button type="button" class="btn btn-danger">Danger</button></td>
-                <td><code>btn btn-danger</code></td>
-                <td>Indicates a dangerous or potentially negative action</td>
-              </tr>
-              <tr>
-                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
-                <td><code>btn btn-inverse</code></td>
-                <td>Alternate dark gray button, not tied to a semantic action or use</td>
-              </tr>
-              -->
               <tr>
                 <td><button type="button" class="btn btn-link">Link</button></td>
                 <td><code>btn btn-link</code></td>
@@ -421,14 +412,10 @@
               <button type="button" class="btn btn-primary">Standard</button>
               <button type="button" class="btn btn-secondary">Standard</button>
             </p>
-            <!--
             <p>
-              <button type="button" class="btn btn-small btn-primary">Small button</button>
-              <button type="button" class="btn btn-small btn-secondary">Small button</button>
-            </p>
             -->
-            <p>
               <!-- AL calls this `small` whereas Bootstrap refers it as `mini`. -->
+            <!--
               <button type="button" class="btn btn-mini btn-primary">Small</button>
               <button type="button" class="btn btn-mini btn-secondary">Small</button>
             </p>
@@ -451,68 +438,8 @@
   &lt;button class="btn btn-mini" type="button"&gt;Mini button&lt;/button&gt;
 &lt;/p&gt;
 </pre>
-
-		  <!--
-          <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
-          <div class="bs-docs-example">
-            <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
-              <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
-              <button type="button" class="btn btn-large btn-block">Block level button</button>
-            </div>
-          </div>
-<pre class="prettyprint linenums">
-&lt;button class="btn btn-large btn-block btn-primary" type="button"&gt;Block level button&lt;/button&gt;
-&lt;button class="btn btn-large btn-block" type="button"&gt;Block level button&lt;/button&gt;
-</pre>
-
-
-          <h2>Disabled state</h2>
-          <p>Make buttons look unclickable by fading them back 50%.</p>
-
-          <h3>Anchor element</h3>
-          <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
-          <p class="bs-docs-example">
-            <a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
-            <a href="#" class="btn btn-large disabled">Link</a>
-          </p>
-<pre class="prettyprint linenums">
-&lt;a href="#" class="btn btn-large btn-primary disabled"&gt;Primary link&lt;/a&gt;
-&lt;a href="#" class="btn btn-large disabled"&gt;Link&lt;/a&gt;
-</pre>
-          <p>
-            <span class="label label-info">Heads up!</span>
-            We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
-          </p>
-
-          <h3>Button element</h3>
-          <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
-          <p class="bs-docs-example">
-            <button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
-            <button type="button" class="btn btn-large" disabled>Button</button>
-          </p>
-<pre class="prettyprint linenums">
-&lt;button type="button" class="btn btn-large btn-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
-&lt;button type="button" class="btn btn-large" disabled&gt;Button&lt;/button&gt;
-</pre>
-
-
-          <h2>One class, multiple tags</h2>
-          <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-          <form class="bs-docs-example">
-            <a class="btn" href="">Link</a>
-            <button class="btn" type="submit">Button</button>
-            <input class="btn" type="button" value="Input">
-            <input class="btn" type="submit" value="Submit">
-          </form>
-<pre class="prettyprint linenums">
-&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
-&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
-&lt;input class="btn" type="button" value="Input"&gt;
-&lt;input class="btn" type="submit" value="Submit"&gt;
-</pre>
-          <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
-          -->
-        </section>
+			-->
+		</section>
 
 
 
@@ -841,28 +768,7 @@
       </div>
     </div>
 
-  </div>
-
-
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
-        </ul>
-      </div>
-    </footer>
-
-
+  </div>    
 
     <!-- Le javascript
     ================================================== -->
