@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 span.grade {
-  display: inline-block;
+  display: block;
   width: 40px;
   height: 40px;
   -webkit-box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,8 +36,10 @@ span.grade {
   -moz-border-radius: 100px;
   border-radius: 100px;
   color: #ffffff;
-  font-size: 30px;
-  line-height: 40px;
+  font-family: "museo-slab", Segoe, "Segoe UI", "Times New Roman", Times, serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
   text-align: center;
 }
 span.grade.a {
@@ -53,19 +55,26 @@ span.grade.d {
   background-color: #525252;
 }
 span.grade.f {
-  background-color: #000;
+  background-color: #000000;
+}
+span.grade.na {
+  background-color: #9c9c9c;
+  font-size: 16px;
 }
 span.grade.featured {
   width: 100px;
   height: 100px;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 100px;
 }
 span.grade.sm {
   width: 26px;
   height: 26px;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 27px;
+}
+span.grade.sm.na {
+  font-size: 10px;
 }
 span.grade.inline {
   display: inline;
@@ -77,6 +86,7 @@ span.grade.inline {
   -moz-border-radius: 0;
   border-radius: 0;
   font-size: inherit;
+  line-height: inherit;
 }
 span.grade.inline.a {
   color: #4db346;

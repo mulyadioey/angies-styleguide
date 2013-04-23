@@ -58,8 +58,8 @@ a.text-success:focus { color: darken(@successText, 10%); }
 
 h1, h2, h3, h4, h5, h6 {
   margin: (@baseLineHeight / 2) 0;
-  font-family: @headingsFontFamily;
-  font-weight: @headingsFontWeight;
+  //font-family: @headingsFontFamily;
+  //font-weight: @headingsFontWeight;
   line-height: @baseLineHeight;
   color: @headingsColor;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
@@ -68,6 +68,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     color: @grayLight;
   }
+}
+
+h1, h4 {
+	font-family: @serifFontFamily;
+	font-weight: 700;
+}
+
+h2, h3, h5, h6 {
+	font-family: @sansFontFamily;
+	font-weight: bold;
 }
 
 h1,

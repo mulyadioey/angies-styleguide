@@ -9,7 +9,21 @@
 
 // Angie's List specific
 // -------------------------
-@al-green:				#29a036;
+@angiesGreen:			#29a036;
+@darkerGreen:			#227e2c;
+@lighterGreen:			#4db346;
+@angiesYellow:			#f7c602;
+@dealsPurple:			#79519a;
+@mediumTaupe: 			#eae7db;
+@lightTaupe: 			#f9f8f2;
+@subtleTaupe: 			#fbfbf8;
+@darkGray:				#7b7b7b;
+@mediumGray:			#aaaaaa;
+@lightGray:				#dddddd;
+@alertRed:				#e2431e;
+@angiesBaseBorderRadius:      2px;
+@angiesBorderRadiusLarge:     4px;
+@angiesBorderRadiusMini:     2px;
 
 
 // Grays
@@ -43,14 +57,14 @@
 
 // Links
 // -------------------------
-@linkColor:             @al-green;
+@linkColor:             @angiesGreen;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        "proxima-nova", "Helvetica", Arial, sans-serif;
+@serifFontFamily:       "museo-slab", Segoe, "Segoe UI", "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
@@ -94,7 +108,16 @@
 @btnBorder:                         #ccc;
 
 @btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 2%);
+
+@btnSecondaryBackground:            @lightTaupe;
+@btnSecondaryBackgroundHighlight:   darken(@btnSecondaryBackground, 2%);
+
+@btnDarkBackground:            		@darkGray;
+@btnDarkBackgroundHighlight:   		darken(@btnDarkBackground, 2%);
+
+@btnAlternateBackground:            @angiesYellow;
+@btnAlternateBackgroundHighlight:   darken(@btnAlternateBackground, 2%);
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -186,8 +209,8 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    60px;
-@navbarBackgroundHighlight:       @al-green;
-@navbarBackground:                @al-green;
+@navbarBackgroundHighlight:       @angiesGreen;
+@navbarBackground:                @angiesGreen;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #777;
