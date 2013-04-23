@@ -852,6 +852,7 @@ form.bs-docs-example {
 /* Grades for Docs, under `The Basics' tab.
 -------------------------------------------------- */
 span.grade {
+	float: left;
 	margin-right: 8px;
 }
 span.grade.featured {
@@ -861,9 +862,12 @@ span.grade.sm {
 	margin-right: 4px;
 }
 span.grade.inline {
+	float: none;
 	margin-right: 0;
 }
-
+p.docs-inline-grade {
+	line-height: 1.4em;
+}
 
 /* Responsive
 -------------------------------------------------- */
@@ -1081,4 +1085,19 @@ span.grade.inline {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+/* Typography type info (on 'The Basics')
+------------------------- */
+span.docs-type-info {
+	color: #aaa;
+	font-family: inherit;
+	font-size: 13px;
+	font-weight: 400;	/* Proxima Nova */
+	line-height: 1.2em;
+}
+
+h1 .docs-type-info,
+h4 .docs-type-info {
+	font-weight: 300;	/* Museo Slab */
 }
