@@ -11,6 +11,7 @@
     <link href="assets/css/bootstrap.mod.css" rel="stylesheet">
     <!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
     <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/angies.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">    
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -36,16 +37,16 @@
           <a class="brand" href="./index.html">Angie's List</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active">
+              <li class="">
                 <a href="./getting-started.html">Getting Started</a>
               </li>              
               <li class="">
-                <a href="./base-css.html">The Basics</a>
+                <a href="./basics.html">The Basics</a>
               </li>
               <li class="">
                 <a href="./components.html">Components</a>
               </li>
-              <li class="">
+              <li class="active">
                 <a href="./modules.html">Modules</a>
               </li>              
             </ul>
@@ -71,19 +72,21 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#download-bootstrap"><i class="icon-chevron-right"></i> Download</a></li>
-          <li><a href="#file-structure"><i class="icon-chevron-right"></i> File structure</a></li>
-          <li><a href="#contents"><i class="icon-chevron-right"></i> What's included</a></li>
-          <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML template</a></li>
-          <li><a href="#examples"><i class="icon-chevron-right"></i> Examples</a></li>
-          <li><a href="#what-next"><i class="icon-chevron-right"></i> What next?</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#marketing-promos">Marketing Promos</a></li>
+          <li><a href="#user-focus">User Focus</a></li>
+          <!--
+          <li><a href="#neighborhood-focus">Neighborhood Focus</a></li>
+          <li><a href="#commerce">Commerce</a></li>
+          <li><a href="#media-content">Media Content</a></li>
+          -->
         </ul>
       </div>
       <div class="span9">
 
-        <!-- Basic Formatting
+        <!-- Overview
         ================================================== -->
-        <section id="download-bootstrap">
+        <section id="overview">
           <div class="page-header">
             <h1>1. Basic Formatting Overview</h1>
           </div>
@@ -93,12 +96,94 @@
    
         <!-- Marketing Promos
         ================================================== -->
-        <section id="html-template">
+        <section id="marketing-promos">
           <div class="page-header">
             <h1>2. Marketing Promos</h1>
           </div>
-          <p class="lead">With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the <a href="./getting-started.html#file-structure">File structure</a>.</p>
-          <p>Now, here's a look at a <strong>typical HTML file</strong>:</p>
+          <h2>Large promo with a single CTA</h2>
+          <h3>Full width</h3>
+          <div class="bs-docs-example">
+          	<div class="row-promo">
+          		<i class="icon icon-icn-cash"></i>
+          		<h5>Earn $30 Angie Cash by purchasing a deal for $100 or more!</h5>
+          		<div class="cta-block">
+          			<button type="button" class="btn btn-primary btn-large">Shop Deals</button>          			
+          		</div>
+          	</div>
+          </div>
+          <h3>Tablet</h3>
+          <div class="bs-docs-example">          	
+          	<div class="row-promo tablet">
+          		<i class="icon icon-icn-cash"></i>
+          		<h5>Earn $30 Angie Cash by purchasing a deal for $100 or more!</h5>
+          		<div class="cta-block">
+          			<button type="button" class="btn btn-primary btn-large">Shop Deals</button>          			
+          		</div>
+          	</div>
+          </div>
+          <h3>Mobile</h3>
+          <div class="bs-docs-example">          	
+          	<div class="row-promo mobile">
+          		<i class="icon icon-icn-cash"></i>
+          		<h5>Earn $30 Angie Cash by purchasing a deal for $100 or more!</h5>
+          		<div class="cta-block">
+          			<button type="button" class="btn btn-primary btn-large">Shop Deals</button>          			
+          		</div>
+          	</div>
+          </div>
+          <h2>Large promo with multiple CTA</h2>
+          <p>When using multiple CTA in a group, use button color to put emphasis on the preferred action.</p>
+          <h3>Full width</h3>
+          <div class="bs-docs-example">
+          	<div class="row-promo">
+          		<i class="icon icon-icn-search-yellow"></i>
+          		<h5>You recently searched for handymen. Did you hire someone?</h5>
+          		<div class="cta-block">
+          			<button type="button" class="btn btn-primary btn-large">Yes</button>
+          			<button type="button" class="btn btn-secondary btn-large">No</button>
+          		</div>
+          	</div>
+          </div>
+          <h3>Tablet</h3>
+          <div class="bs-docs-example">
+          	<div class="row-promo tablet">
+          		<i class="icon icon-icn-search-yellow"></i>
+          		<h5>You recently searched for handymen. Did you hire someone?</h5>
+          		<div class="cta-block">
+          			<button type="button" class="btn btn-primary btn-large">Yes</button>
+          			<button type="button" class="btn btn-secondary btn-large">No</button>
+          		</div>
+          	</div>
+          </div>
+          <h3>Mobile</h3>
+          <div class="bs-docs-example">
+          	<div class="row-promo mobile">
+          		<i class="icon icon-icn-search-yellow"></i>
+          		<h5>You recently searched for handymen. Did you hire someone?</h5>
+          		<div class="cta-block">
+          			<button type="button" class="btn btn-primary btn-large">Yes</button>
+          			<button type="button" class="btn btn-secondary btn-large">No</button>
+          		</div>
+          	</div>
+          </div>
+          <h2>Single Line Text Promo</h2>
+          <div class="bs-docs-example">
+          	<p class="row-promo-single">
+          		<i class="icon icon-icn-cash"></i> Pledge allegiance to great service! Continue your membership for 2+ years and save 15%
+          		<button type="button" class="btn btn-primary btn-secondary">Save Now</button>
+          	</p>
+          </div>
+          <h2>Small Promo</h2>
+          <p>The headline should function as the CTA, followed by the small arrow icon.</p>
+          <div class="bs-docs-example">
+          	<div class="row-promo-small">
+          		<i class="icon icon-icn-cash"></i>
+          		<div>
+          			<a href="#">Pledge allegiance to great service! ▶</a>
+          			<p>Continue your membership for 2+ years and save 15%</p>
+          		</div>
+          	</div>
+          </div>
 <pre class="prettyprint linenums">
 &lt;code&gt;
   Insert code sample
@@ -106,7 +191,69 @@
 </pre>
         </section>
 
-
+        <!-- User Focus
+        ================================================== -->
+        <section id="user-focus">
+          <div class="page-header">
+            <h1>3. User Focus</h1>
+          </div>
+          <div class="bs-docs-example">
+          	<div class="recently-viewed">
+									
+							<article>
+								
+								<img src="http://placehold.it/40/eaeaea/eaeaea" />
+			
+								<h6><a href='#!'>Mulhall Construction</a></h6>
+								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">264 Reviews</a></p><p class="right">45m</p>
+								
+							</article>
+					
+							<article>
+								
+								<img src="http://placehold.it/40/eaeaea/eaeaea" />
+			
+								<h6><a href='#!'>Rayco Painting</a></h6>
+								<p class="left"><span class="letter-grade grade-a">A</span> <a href="#!" class="muted">73 Reviews</a></p><p class="right">1h</p>
+								
+							</article>
+							
+							<article>
+								
+								<img src="http://placehold.it/40/eaeaea/eaeaea" />
+			
+								<h6><a href='#!'>Gil Construction</a></h6>
+								<p class="left"><span class="letter-grade grade-a">A</span> <a href="#!" class="muted">142 Reviews</a></p><p class="right">1d</p>
+								
+							</article>
+							
+							<article>
+								
+								<img src="http://placehold.it/40/eaeaea/eaeaea" />
+			
+								<h6><a href='#!'>Bill Nass Painting</a></h6>
+								<p class="left"><span class="letter-grade grade-b">B</span> <a href="#!" class="muted">13 Reviews</a></p><p class="right">2d</p>
+								
+							</article>
+							
+							<article>
+								
+								<img src="http://placehold.it/40/eaeaea/eaeaea" />
+			
+								<h6><a href='#!'>Yui Wong Construction</a></h6>
+								<p class="left"><span class="letter-grade grade-a">A</span> <a href="#!" class="muted">48 Reviews</a></p><p class="right">3d</p>
+								
+							</article>
+											
+							<footer>
+								
+								<p><a href="#!" class="muted">My Search History <span class="triangle">&#9654;</span></a></p>
+								
+							</footer>
+							
+					</div>
+          </div>
+        </section>
 
         
 
@@ -117,27 +264,6 @@
     </div>
 
   </div>
-
-
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
-        </ul>
-      </div>
-    </footer>
-
-
 
     <!-- Le javascript
     ================================================== -->
@@ -163,5 +289,16 @@
 
     <script src="assets/js/application.js"></script>    
 
+    <!---TypeKit Font-->
+	<script type="text/javascript">
+	  (function() {
+		var config = {
+		  kitId: 'bap4dbx',
+		  scriptTimeout: 3000
+		};
+		var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+	</script>
+	
   </body>
 </html>
