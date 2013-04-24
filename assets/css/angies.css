@@ -35,6 +35,9 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+.mb-25 {
+  margin-bottom: 25px;
+}
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -43,6 +46,12 @@
 }
 .mb-50 {
   margin-bottom: 50px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.no-margin {
+  margin: 0;
 }
 .mini-layout.bg-pattern {
   padding: 20px;
@@ -57,8 +66,58 @@
   font-weight: bold;
   line-height: 1.25em;
 }
+.mini-layout.articles {
+  padding: 0;
+  margin-bottom: 5px;
+  width: 300px;
+  height: 450px;
+}
+.mini-layout.articles .article-body {
+  padding: 25px 30px;
+}
+.mini-layout.articles.horizontal {
+  width: auto;
+  height: 98px;
+  *zoom: 1;
+}
+.mini-layout.articles.horizontal:before,
+.mini-layout.articles.horizontal:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mini-layout.articles.horizontal:after {
+  clear: both;
+}
+.mini-layout.articles.horizontal .media-body {
+  margin-top: 5px;
+}
+.mini-layout.commerce {
+  width: 550px;
+  height: 50px;
+  background: url(/assets/img/pattern-bg.png) repeat 0 0;
+}
+.mini-layout.commerce.deal {
+  padding: 0;
+  width: 440px;
+  height: 120px;
+}
+.mini-layout.commerce i {
+  float: left;
+}
+.mini-layout.commerce p.pull-left {
+  margin-right: 10px;
+}
+.mini-layout div.tag {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
 .grey {
   color: #7b7b7b;
+}
+.medium-gray {
+  color: #aaaaaa;
 }
 code.no-bg {
   border: 0px;
@@ -349,4 +408,81 @@ table.table-striped td {
 }
 .icon.icon-icn-search-white {
   background-position: -69px -170px;
+}
+/* ====Modules===== */
+.price-tag .tag {
+  float: left;
+  background-image: url(/assets/img/price-tag.png);
+  *zoom: 1;
+}
+.price-tag .tag:before,
+.price-tag .tag:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.price-tag .tag:after {
+  clear: both;
+}
+.price-tag .tag.left {
+  width: 17px;
+  height: 25px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.price-tag .tag.mid {
+  min-width: 35px;
+  height: 25px;
+  background-position: 0 -40px;
+  background-repeat: repeat-x;
+}
+.price-tag .tag.right {
+  width: 6px;
+  height: 25px;
+  background-position: right 0;
+  background-repeat: no-repeat;
+}
+.price-tag span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 25px;
+}
+p.deal-head {
+  font-size: 18px;
+  font-weight: 700;
+}
+p.deal-head.lh {
+  line-height: 35px;
+}
+p.art-head {
+  color: #7b7b7b;
+  font-size: 17px;
+  font-weight: 400px;
+  line-height: 18px;
+}
+a.more {
+  padding-right: 12px;
+  background-image: url(/assets/img/arrow-more.png);
+  background-repeat: no-repeat;
+  background-position: right 6px;
+  color: #7b7b7b;
+  display: inline-block;
+  font-size: 13px;
+}
+.coupon-area {
+  width: 560px;
+  background-color: #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+.coupon-area .coupon-header {
+  padding: 9px 15px;
+  background-color: #7b7b7b;
+  border-bottom: 1px solid #eee;
 }
