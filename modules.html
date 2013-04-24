@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Getting Started · Angie's List</title>
+    <title>Modules · Angie's List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -24,7 +24,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
                     <link rel="apple-touch-icon-precomposed" href="">
-                                   <link rel="shortcut icon" href="">
+                                   <link rel="shortcut icon" href="">    	
+  
   </head>
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -77,12 +78,13 @@
           <li><a href="#user-focus">User Focus</a></li>
           <!--
           <li><a href="#neighborhood-focus">Neighborhood Focus</a></li>
-          <li><a href="#commerce">Commerce</a></li>
-          <li><a href="#media-content">Media Content</a></li>
           -->
+          <li><a href="#commerce">Commerce</a></li>          
+          <li><a href="#media-content">Media Content</a></li>          
         </ul>
       </div>
       <div class="span9">
+
 
         <!-- Overview
         ================================================== -->
@@ -93,7 +95,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
-   
+
         <!-- Marketing Promos
         ================================================== -->
         <section id="marketing-promos">
@@ -263,6 +265,184 @@
           <h2>Write a Review</h2>
           <img src="/assets/img/write-review.png" />
         </section>
+
+
+                <!-- Commerce
+        ================================================== -->
+        <section id="commerce">
+          <div class="page-header">
+            <h1>5. Commerce</h1>
+          </div>
+		  <h3>Featured Deal</h3>
+          <p>Treatment lockup for display on the My Angie&rsquo;s page.</p>
+          <div class="bs-docs-example">
+			<div class="mini-layout commerce deal">
+				<div class="media">
+				  <img class="media-object pull-left" src="/assets/img/hammer.png" alt="propic" />
+				  <div class="media-body">
+					<h5>T.Ross, Handyman</h5>
+					<p class="deal-head mb-25">Handyman Service for Half a Day</p>
+					<div class="row">
+						<div class="span2">
+							<p class="medium-gray">$360 Value</p>
+						</div>
+						<div class="span1 offset1">
+							<div class="price-tag">
+								<div class="tag left"></div>
+								<div class="tag mid"><span>$180</span></div>
+								<div class="tag right"></div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+
+			<h3>Horizontal Deal Listing</h3>
+			<p>For use on the main nav flyouts. If used elsewhere, the width is flexible from 5 to 12 columns. Use the layout from the Deal carousel above if narrower than 5 columns.</p>
+			<div class="bs-docs-example">
+				<div class="mini-layout commerce">
+					<div class="row">
+						<div class="span5">
+							<div class="media">
+							  <i class="icon icon-icn-deal"></i>
+							  <div class="media-body">
+								<h5 class="no-margin">T.Ross, Handyman</h5>
+								<p class="deal-head">Handyman Service for Half a Day</p>
+							  </div>
+							</div>
+						</div>
+						<div class="span2">
+							<p class="medium-gray text-right mb-0">$360 Value</p>
+							<div class="price-tag pull-right">
+								<div class="tag left"></div>
+								<div class="tag mid"><span>$180</span></div>
+								<div class="tag right"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+
+			<h3>Horizontal Deal listing with search result</h3>
+			<p>In the context of search results, horizontal deal listings lose the provider name and shrink to a single line.</p>
+			<div class="bs-docs-example">
+				<div class="mini-layout commerce">
+					<div class="row">
+						<div class="span5">
+							<div class="media">
+							  <i class="icon icon-icn-deal"></i>
+							  <div class="media-body">
+								<p class="deal-head lh">Handyman Service for Half a Day</p>
+							  </div>
+							</div>
+						</div>
+						<div class="span2 mt-10">
+							<p class="medium-gray mb-0 pull-left">$360 Value</p>
+							<div class="price-tag pull-left">
+								<div class="tag left"></div>
+								<div class="tag mid"><span>$180</span></div>
+								<div class="tag right"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+
+			<h3>Deal Carousel</h3>
+			<p>For use on the Service Provider page, this allows the user to cycle through all available deals. All Deals on the bottom links to the Deals tab on the SP page.</p>
+			<img src="/assets/img/deal-carousel.png" alt="deal-carousel" />
+			
+			<h3>Coupon button</h3>
+			<p>For use in search results to indicate if a Service Provider has coupons available. Clicking on the button triggers a popup showing a sample of available coupons.  All Coupons at the bottom link to the Coupons tab on the Service Provider Profile page. On mobile, the coupons modal will not display. </p>
+			<div class="bs-docs-example">
+				<div class="coupon-area">
+					<div class="coupon-header"></div>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+
+			<h3>Coupon carousel</h3>
+			<p>For use on the Service Provider page, this allows the user to cycle through all available coupons. All Coupons at the bottom links to the Coupons tab on the SP page.</p>
+			<img src="/assets/img/coupon-carousel.png"  alt="coupon-carousel" />
+			
+        </section>
+
+
+        <!---Media Content
+	  ===============================================--->
+	  <section id="media-content">
+		<div class="page-header">
+			<h1>6. Media Content</h1>
+		</div>
+		<h3>Magazine Articles</h3>
+		  <div class="bs-docs-example">
+			<p class="art-head">Angie&rsquo;s List Articles</p>
+			<div class="mini-layout articles">
+				<img src="/assets/img/articles-1.png" alt="articles" />
+				<div class="article-body">
+					<p class="deal-head">3 top tips to sell a house</p>
+					<p>Highly rated Realtors say the top three keys to selling a house as quickly as possible and at the best price are: appropriate pricing, impeccable presentation and professional online photos.</p>
+					<a href="#">Read more</a>
+				</div>
+			</div>
+			<a class="more offset2" href="#">See more articles</a>
+          </div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+
+			<h3>Magazine articles - horizontal</h3>
+			<div class="clearfix">
+				<div class="bs-docs-example">
+					<p class="art-head">Angie&rsquo;s List Articles</p>
+					<div class="mini-layout articles horizontal">
+						<div class="media">
+							<img class="media-object pull-left" src="/assets/img/articles-small.png" alt="article" />
+							<div class="media-body">
+								<p class="deal-head">3 top tips to sell a house</p>
+								<p>Highly rated Realtors say the top three keys to selling a house as quickly as possible and at the best price are: appropriate pricing, impeccable presentation and...<a href="#">Read more</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="more pull-right">See more articles</a>
+			</div>
+			
+			<h3>Tips</h3>
+			<img src="/assets/img/tips-article.png" alt="tips" />
+			
+			<h3>Large Video</h3>
+			<img src="/assets/img/large-video.png" alt="video" />
+			
+			<h3>Medium Video</h3>
+			<img src="/assets/img/medium-video.png" alt="video" />
+			
+			<h3>Small Video</h3>
+			<img src="/assets/img/small-video.png" alt="video" />
+	  </section>
 
         
 
