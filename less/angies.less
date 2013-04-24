@@ -149,9 +149,70 @@ span.grade {
 	}
 }
 
-// Single line text promo, under Modules tab.
+// Single line text promo, Modules tab.
 .row-promo-single {
+	.clearfix();
 	padding: 20px 0;
+	
+	i,
+	p {
+		float: left;
+		margin-top: 2px;
+	}
+	
+	i {
+		margin-right: 5px;
+	}
+	
+	p {
+		color: @mediumGray;
+		font-weight: 100;
+		line-height: 35px;
+		
+		strong {
+			color: @darkGray;
+			font-weight: 600;
+		}
+		
+		em {
+			font-style: normal;
+			font-weight: 600;			
+		}
+	}
+	
+	// For pixel-perfect location.
+	button {
+		position: relative;
+		top: -2px;
+		left: 3px;
+	}
+}
+
+.row-promo-small {
+	.clearfix();
+	
+	i {
+		float: left;
+		margin-right: 10px;
+	}
+	
+	> div {
+		float: left;
+		
+		a {
+			font-weight: 600;
+		}
+		
+		p {
+			color: @mediumGray;
+			font-weight: 100;
+			
+			em {
+				font-style: normal;
+				font-weight: 600;
+			}
+		}
+	}
 }
 
 .row-promo{
@@ -167,11 +228,21 @@ span.grade {
 		margin-right: 5px;
 	}
 	
-	h5 {
+	p {
 		float: left;
 		margin: 0;
+		font-size: 18px;
 		font-weight: 600;
 		line-height: 35px;	// = icon height.
+		
+		strong {
+			font-weight: 700;
+		}
+	}
+	
+	i,
+	p {
+		margin-top: 4px;
 	}
 	
 	.cta-block {
@@ -190,10 +261,15 @@ span.grade {
 		i {
 			display: none;	
 		}
-		
-		h5,
+			
+		p,
 		.cta-block {
 			float: none;			
+		}
+		
+		p {
+			margin-bottom: 13px;
+			line-height: 22px;
 		}
 				
 		.cta-block {			
@@ -207,7 +283,7 @@ span.grade {
 	
 	&.tablet {
 		
-		h5,
+		p,
 		.cta-block {
 			text-align: center;
 		}

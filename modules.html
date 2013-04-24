@@ -60,7 +60,7 @@
 <header class="jumbotron subhead" id="overview">
   <div class="container">
     <h1>Modules</h1>
-    <p class="lead">This system was designed to be modular. See below for some examples to get you started.</p>
+    <p class="lead">This system was designed to be modular. See below for some examples.</p>
   </div>
 </header>
 
@@ -102,10 +102,10 @@
           </div>
           <h2>Large promo with a single CTA</h2>
           <h3>Full width</h3>
-          <div class="bs-docs-example">
-          	<div class="row-promo">
+          <div class="bs-docs-example" style="width: 750px;">
+          	<div class="row-promo">          		          		
           		<i class="icon icon-icn-cash"></i>
-          		<h5>Earn $30 Angie Cash by purchasing a deal for $100 or more!</h5>
+          		<p><strong>Earn $30 Angie Cash</strong> by purchasing a deal for <strong>$100</strong> or more!</p>          		
           		<div class="cta-block">
           			<button type="button" class="btn btn-primary btn-large">Shop Deals</button>          			
           		</div>
@@ -115,29 +115,39 @@
           <div class="bs-docs-example">          	
           	<div class="row-promo tablet">
           		<i class="icon icon-icn-cash"></i>
-          		<h5>Earn $30 Angie Cash by purchasing a deal for $100 or more!</h5>
+          		<p><strong>Earn $30 Angie Cash</strong> by purchasing a deal for <strong>$100</strong> or more!</p>
           		<div class="cta-block">
           			<button type="button" class="btn btn-primary btn-large">Shop Deals</button>          			
           		</div>
           	</div>
           </div>
+<pre class="prettyprint linenums">
+&lt;div class="row-promo"&gt;
+	&lt;i class="icon icon-icn-cash"&gt;&lt;/i&gt;
+	&lt;p&gt;&lt;strong&gt;Earn $30 Angie Cash&lt;/strong&gt; by purchasing a deal for &lt;strong&gt;$100&lt;/strong&gt; or more!&lt;/p&gt;
+	&lt;div class="cta-block"&gt;
+		&lt;button type="button" class="btn btn-primary btn-large"&gt;Shop Deals&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
           <h3>Mobile</h3>
-          <div class="bs-docs-example">          	
+          <div class="bs-docs-example" style="width: 500px;">          	
           	<div class="row-promo mobile">
           		<i class="icon icon-icn-cash"></i>
-          		<h5>Earn $30 Angie Cash by purchasing a deal for $100 or more!</h5>
+          		<p><strong>Earn $30 Angie Cash</strong> by purchasing a deal for <strong>$100</strong> or more!</p>
           		<div class="cta-block">
           			<button type="button" class="btn btn-primary btn-large">Shop Deals</button>          			
           		</div>
           	</div>
           </div>
+          <!-- /==============================/ -->
           <h2>Large promo with multiple CTA</h2>
           <p>When using multiple CTA in a group, use button color to put emphasis on the preferred action.</p>
           <h3>Full width</h3>
-          <div class="bs-docs-example">
+          <div class="bs-docs-example" style="width: 750px;">
           	<div class="row-promo">
           		<i class="icon icon-icn-search-yellow"></i>
-          		<h5>You recently searched for handymen. Did you hire someone?</h5>
+          		<p><strong>You recently searched for handymen.</strong> Did you hire someone?</p>
           		<div class="cta-block">
           			<button type="button" class="btn btn-primary btn-large">Yes</button>
           			<button type="button" class="btn btn-secondary btn-large">No</button>
@@ -148,7 +158,7 @@
           <div class="bs-docs-example">
           	<div class="row-promo tablet">
           		<i class="icon icon-icn-search-yellow"></i>
-          		<h5>You recently searched for handymen. Did you hire someone?</h5>
+          		<p><strong>You recently searched for handymen.</strong> Did you hire someone?</p>
           		<div class="cta-block">
           			<button type="button" class="btn btn-primary btn-large">Yes</button>
           			<button type="button" class="btn btn-secondary btn-large">No</button>
@@ -156,10 +166,10 @@
           	</div>
           </div>
           <h3>Mobile</h3>
-          <div class="bs-docs-example">
+          <div class="bs-docs-example" style="width: 500px;">
           	<div class="row-promo mobile">
           		<i class="icon icon-icn-search-yellow"></i>
-          		<h5>You recently searched for handymen. Did you hire someone?</h5>
+          		<p><strong>You recently searched for handymen.</strong> Did you hire someone?</p>
           		<div class="cta-block">
           			<button type="button" class="btn btn-primary btn-large">Yes</button>
           			<button type="button" class="btn btn-secondary btn-large">No</button>
@@ -167,11 +177,11 @@
           	</div>
           </div>
           <h2>Single Line Text Promo</h2>
-          <div class="bs-docs-example">
-          	<p class="row-promo-single">
-          		<i class="icon icon-icn-cash"></i> Pledge allegiance to great service! Continue your membership for 2+ years and save 15%
-          		<button type="button" class="btn btn-primary btn-secondary">Save Now</button>
-          	</p>
+          <div class="bs-docs-example" style="width: 750px;">
+          	<div class="row-promo-single">
+          		<i class="icon icon-icn-cash"></i><p><strong>Pledge allegiance to great service!</strong> Continue your membership for 2+ years and <em>save 15%</em>
+          		<button type="button" class="btn btn-primary btn-secondary">Save Now</button></p>
+          	</div>
           </div>
           <h2>Small Promo</h2>
           <p>The headline should function as the CTA, followed by the small arrow icon.</p>
@@ -180,15 +190,10 @@
           		<i class="icon icon-icn-cash"></i>
           		<div>
           			<a href="#">Pledge allegiance to great service! ▶</a>
-          			<p>Continue your membership for 2+ years and save 15%</p>
+          			<p>Continue your membership for 2+ years and <em>save 15%</em></p>
           		</div>
           	</div>
           </div>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-  Insert code sample
-&lt;/code&gt;
-</pre>
         </section>
 
         <!-- User Focus
@@ -214,7 +219,7 @@
 								<img src="http://placehold.it/40/eaeaea/eaeaea" />
 			
 								<h6><a href='#!'>Rayco Painting</a></h6>
-								<p class="left"><span class="letter-grade grade-a">A</span> <a href="#!" class="muted">73 Reviews</a></p><p class="right">1h</p>
+								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">73 Reviews</a></p><p class="right">1h</p>
 								
 							</article>
 							
@@ -223,7 +228,7 @@
 								<img src="http://placehold.it/40/eaeaea/eaeaea" />
 			
 								<h6><a href='#!'>Gil Construction</a></h6>
-								<p class="left"><span class="letter-grade grade-a">A</span> <a href="#!" class="muted">142 Reviews</a></p><p class="right">1d</p>
+								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">142 Reviews</a></p><p class="right">1d</p>
 								
 							</article>
 							
@@ -232,7 +237,7 @@
 								<img src="http://placehold.it/40/eaeaea/eaeaea" />
 			
 								<h6><a href='#!'>Bill Nass Painting</a></h6>
-								<p class="left"><span class="letter-grade grade-b">B</span> <a href="#!" class="muted">13 Reviews</a></p><p class="right">2d</p>
+								<p class="left"><span class="grade inline b">B</span> <a href="#!" class="muted">13 Reviews</a></p><p class="right">2d</p>
 								
 							</article>
 							
@@ -241,7 +246,7 @@
 								<img src="http://placehold.it/40/eaeaea/eaeaea" />
 			
 								<h6><a href='#!'>Yui Wong Construction</a></h6>
-								<p class="left"><span class="letter-grade grade-a">A</span> <a href="#!" class="muted">48 Reviews</a></p><p class="right">3d</p>
+								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">48 Reviews</a></p><p class="right">3d</p>
 								
 							</article>
 											
@@ -253,6 +258,10 @@
 							
 					</div>
           </div>
+          <h2>Recent Searches</h2>
+          <img src="/assets/img/recent-searches.png" />
+          <h2>Write a Review</h2>
+          <img src="/assets/img/write-review.png" />
         </section>
 
         
