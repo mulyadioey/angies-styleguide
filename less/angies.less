@@ -151,6 +151,7 @@ span.grade {
 		background-color: transparent;
 		.box-shadow(none);
 		.border-radius(0);
+		font-family: @sansFontFamily;
 		font-size: inherit;
 		line-height: inherit;	// Otherwise, this will follow `.grade` `line-height`.
 		
@@ -163,7 +164,184 @@ span.grade {
 //
 // Copied from Angie's Prototype
 //
+// Note that most of the styles have been modified
+//   for the styleguide.
+//
 
+.recently-viewed{
+
+	@bgColor :	#F8F6EF;
+	@borderColor: #E8E6DD;
+	@ltGrey: 	#c2c2c2;
+	
+	background-color: @bgColor;
+	border:1px solid @borderColor;
+	.border-radius(.5em);	
+	padding:1.1em 1em 1.4em 1em;
+	width: 300px;
+	
+	h5,p{ margin:0; }
+	article{ 
+		background:@offWhite;
+		margin:0 0 .6em 0; 
+		.border-radius(.3em);
+		padding:1em;
+		overflow:hidden;
+	}
+	
+	h6{ margin:0 0 .4em 0; }
+	img{ float:left; margin-right:.75em; }
+	p{ margin:0; line-height:100%; }
+	
+	.left { float: left; }
+	.right{ float: right; color:@ltGrey; }
+	
+	footer{
+		text-align:right;
+		padding:.75em 1em 0 0;
+	}
+}
+
+// Single line text promo, Modules tab.
+.row-promo-single {
+	.clearfix();
+	padding: 20px 0;
+	
+	i,
+	p {
+		float: left;
+		margin-top: 2px;
+	}
+	
+	i {
+		margin-right: 5px;
+	}
+	
+	p {
+		color: @mediumGray;
+		font-weight: 100;
+		line-height: 35px;
+		
+		strong {
+			color: @darkGray;
+			font-weight: 600;
+		}
+		
+		em {
+			font-style: normal;
+			font-weight: 600;			
+		}
+	}
+	
+	// For pixel-perfect location.
+	button {
+		position: relative;
+		top: -2px;
+		left: 3px;
+	}
+}
+
+.row-promo-small {
+	.clearfix();
+	
+	i {
+		float: left;
+		margin-right: 10px;
+	}
+	
+	> div {
+		float: left;
+		
+		a {
+			font-weight: 600;
+		}
+		
+		p {
+			color: @mediumGray;
+			font-weight: 100;
+			
+			em {
+				font-style: normal;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.row-promo{
+	.clearfix();	// Because we float the text and button container.
+	padding: 15px 20px;
+	.border-radius(.5em);
+	overflow:hidden;
+	#gradient .vertical( #FFF0B4 , #FFE690);	
+	
+	// icon
+	i {
+		float: left;
+		margin-right: 5px;
+	}
+	
+	p {
+		float: left;
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 35px;	// = icon height.
+		
+		strong {
+			font-weight: 700;
+		}
+	}
+	
+	i,
+	p {
+		margin-top: 4px;
+	}
+	
+	.cta-block {
+		float: right;
+		
+		button {
+			margin-left: 5px;
+		}
+	}
+	
+	// We actually don't need `tablet` and `mobile` classes because the media query should
+	//   already take care of this, automatically when a certain width is reached.
+	&.tablet,
+	&.mobile {
+		
+		i {
+			display: none;	
+		}
+			
+		p,
+		.cta-block {
+			float: none;			
+		}
+		
+		p {
+			margin-bottom: 13px;
+			line-height: 22px;
+		}
+				
+		.cta-block {			
+			clear: both;
+			
+			button {
+				margin: 0;
+			}
+		}
+	}
+	
+	&.tablet {
+		
+		p,
+		.cta-block {
+			text-align: center;
+		}
+	}
+}
 
 .toggle-group{
 	
@@ -371,7 +549,7 @@ table.table-striped {
 	}
 	
 	&.icon-icn-cash {
-		background-position: -40px 0;
+		background-position: -40px 7px;
 	}
 	
 	&.icon-icn-deal {
