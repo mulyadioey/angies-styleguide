@@ -50,8 +50,29 @@
 .mt-10 {
   margin-top: 10px;
 }
+.mr-10 {
+  margin-right: 10px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
 .no-margin {
   margin: 0;
+}
+textarea {
+  padding: 15px 12px;
+  width: 270px;
+  min-height: 80px;
+}
+.info-inline {
+  color: #ec008c;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.lightPink {
+  color: #eb008c;
 }
 .mini-layout.bg-pattern {
   padding: 20px;
@@ -598,6 +619,90 @@ table.table-striped td {
 }
 .icon.icon-icn-search-white {
   background-position: -69px -170px;
+}
+hr.w-50 {
+  width: 50%;
+}
+.bs-docs-example.notif {
+  background-color: #29a036;
+}
+.bs-docs-example.notif.mobile {
+  width: 400px;
+}
+.bs-docs-example.notif.mobile .logged-in {
+  padding: 15px 20px 10px 0;
+}
+.bs-docs-example.notif.mobile a {
+  padding: 0 5px;
+}
+.bs-docs-example.notif.mobile .notification {
+  margin: 0;
+  position: relative;
+  top: -8px;
+}
+.logged-in {
+  border-bottom: 1px solid #4db346;
+  padding: 20px 20px;
+}
+.logged-in:last-child {
+  border-bottom: 0px;
+}
+.logged-in a {
+  margin: 0 0 0 2px;
+  padding: 15px 10px;
+}
+.logged-in a:hover {
+  text-decoration: none;
+}
+.logged-in span {
+  color: #ffffff;
+  font-weight: 400;
+}
+.logged-in span.notification {
+  margin-right: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background-color: #e2431e;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.logged-in span.notification.yellow {
+  color: #227e2c;
+  background-color: #f7c602;
+}
+.logged-in span.notification.inactive {
+  color: #7ac883;
+  background-color: #227e2c;
+}
+.logged-in span.caret-down {
+  margin-left: 10px;
+  border-top-color: #227e2c;
+  position: relative;
+  top: 8px;
+}
+.logged-in .mobile-icon {
+  width: 27px;
+  height: 21px;
+  background-image: url(/assets/img/icon-set.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.logged-in .mobile-icon.profile-icon {
+  background-position: 0 -240px;
+}
+.logged-in .mobile-icon.cart-icon {
+  background-position: -40px -240px;
+}
+.logged-in .mobile-icon.cart-inactive-icon {
+  background-position: -80px -240px;
+}
+.modal-body {
+  min-height: 260px;
 }
 /* ====Modules===== */
 .price-tag .tag {

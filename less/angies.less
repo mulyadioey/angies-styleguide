@@ -13,7 +13,27 @@
 
 .mt-10 { margin-top: 10px; }
 
+.mr-10 { margin-right: 10px; }
+
+.pl-40 { padding-left: 40px; }
+
 .no-margin { margin: 0; }
+
+textarea {
+	padding: 15px 12px;
+	width: 270px;
+	min-height: 80px;
+}
+
+.info-inline {
+	color: #ec008c;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.lightPink { color: #eb008c; }
 
 .mini-layout {
 	
@@ -592,6 +612,111 @@ table.table-striped {
 		background-position: -69px -170px;
 	}
 } // .icon
+
+hr {
+
+	&.w-50 {
+		width: 50%;
+	}
+}
+
+.bs-docs-example {
+
+	&.notif {
+		background-color: @angiesGreen;
+		
+		&.mobile {
+			width: 400px;
+			
+			.logged-in {
+				padding: 15px 20px 10px 0;
+			}
+			
+			a {
+				padding: 0 5px;
+			}
+			
+			.notification {
+				margin: 0;
+				position: relative;
+				top: -8px;
+			}
+		}
+	}
+}
+
+.logged-in {
+	border-bottom: 1px solid @lighterGreen;
+	padding: 20px 20px;
+	
+	&:last-child {
+		border-bottom: 0px;
+	}
+	
+	a {
+		margin: 0 0 0 2px;
+		padding: 15px 10px;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	span {
+		color: @white;
+		font-weight: 400;
+		
+		&.notification {
+			margin-right: 10px;
+			.border-radius(5px);
+			padding: 3px 10px;
+			background-color: @alertRed;
+			font-weight: bold;
+			text-align: center;
+			.box-shadow(0 1px 1px rgba(0, 0, 0, 0.25));
+			
+			&.yellow {
+				color: @darkerGreen;
+				background-color: @angiesYellow;
+			}
+			
+			&.inactive {
+				color: #7ac883;
+				background-color: @darkerGreen
+			}
+		}
+		
+		&.caret-down {
+			margin-left: 10px;
+			border-top-color: @darkerGreen;
+			position: relative;
+			top: 8px;
+		}
+	}
+	
+	.mobile-icon {
+		.size(21px, 27px);
+		background-image: url(/assets/img/icon-set.png);
+		background-repeat: no-repeat;
+		display: inline-block;
+	
+		&.profile-icon {
+			background-position: 0 -240px;
+		}
+		
+		&.cart-icon {
+			background-position: -40px -240px;
+		}
+		
+		&.cart-inactive-icon {
+			background-position: -80px -240px;
+		}
+	}
+} // .logged-in
+
+.modal-body {
+	min-height: 260px;
+}
 
 /* ====Modules===== */
 

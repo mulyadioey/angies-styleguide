@@ -77,11 +77,11 @@
           <li><a href="#grades">Grades</a></li>
           <li><a href="#icons">Icons</a></li>
           <li><a href="#buttons">Buttons</a></li>
-          <!--
           <li><a href="#forms-elements">Form Elements</a></li>
           <li><a href="#forms">Forms</a></li>
           <li><a href="#notifications">Notifications</a></li>
-          -->
+          <li><a href="#modals">Flyouts/Modals</a></li>
+          <li><a href="#ajax">Ajax Loader</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -493,11 +493,297 @@
   &lt;button class="btn btn-mini btn-primary" type="button"&gt;Mini button&lt;/button&gt;
   &lt;button class="btn btn-mini" type="button"&gt;Mini button&lt;/button&gt;
 &lt;/p&gt;
-</pre>			
+</pre>
+
+		<!-- Form Elements
+		================================================== -->
+		<section id="forms-elements">
+          <div class="page-header">
+            <h1>5. Form elements</h1>
+          </div>
+
+          <h3>Text Input Fields</h3>
+          <form class="bs-docs-example form-inline">
+            <input type="text" placeholder="Text input">
+          </form>
+<pre class="prettyprint linenums">
+&lt;input type="text" placeholder="Text input"&gt;
+</pre>
+
+          <h3>Textarea</h3>
+          <img src="/assets/img/text-area.png" alt="text-area" />
+		  <hr class="bs-docs-separator" />
+		  
+		  <h3>Plugin Styling</h3>
+		  <p>When using plugins for form fields with built-in menus like text editors, try to match it as close as possible to the style of buttons, button groups and navbars outlined in this document.</p>
+		  <img src="/assets/img/text-editor.png" alt="text-editor" />
+		  <hr class="bs-docs-separator" />
+		  
+          <h3>Stacked checkboxes and radios</h3>
+          <form class="bs-docs-example">
+            <label class="checkbox">
+              <input type="checkbox" value="">
+              Check this box <br />
+			  <input type="checkbox" value="">
+              You can also check this box
+            </label>
+            <hr class="w-50" />
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+              Option one
+            </label>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Selecting this option will deselect option one
+            </label>
+          </form>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+
+          <hr class="bs-docs-separator" />
+		  
+          <h3>Inline checkboxes</h3>
+          <form class="bs-docs-example">
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+            </label>
+          </form>
+		  <hr class="bs-docs-separator" />
+
+          <h3>Form actions</h3>
+		  <form class="bs-docs-example">
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Submit Review</button>
+              <button type="button" class="btn">Save Draft</button>
+            </div>
+          </form>
+<pre class="prettyprint linenums">
+&lt;div class="form-actions"&gt;
+   &lt;button type="submit" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+   &lt;button type="submit" class="btn"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+			<h3>Inline help text</h3>
+			<form class="form-inline">
+				<input type="text"> <span class="help-inline">Some help text</span> <span class="info-inline pl-40">Proxima Nova Light, 14pt, #7b7b7b</span>
+			</form>
+          <hr class="bs-docs-separator">
+		  
+		  <h3>Block Help Text</h3>
+		  <form class="form-inline">
+            <input type="text">
+            <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+			<span class="info-inline">Proxima Nova Light, 14pt, #7b7b7b</span>
+          </form>
+		  <hr class="bs-docs-separator">
+		  
+		  <h3>Input Focus</h3>
+		  <p>A subtle glow is added when an input is activated.</p>
+		  <form class="form-inline">
+            <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused...">
+          </form>
+		  <span class="info-inline">box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.18); <br /> border:solid 1px #dddddd; <br />border-radius: 6px;</span>
+		  <hr class="bs-docs-separator">
+		  
+		  <h3>Invalid Input</h3>
+		  <p>A red glow and border is added when an input is invalid.</p>
+		  <form class="form-inline">
+			<div class="control-group error">
+				<div class="controls">
+					<input class="span3" type="email" id="inputError" placeholder="test@example.com" required=""> <span class="help-inline">Oops! That’s not a valid email.</span>
+				</div>
+			</div>
+          </form>
+		  <span class="info-inline">box-shadow: 0px 0px 6px rgba(226, 67, 30, 0.50); <br /> border:solid 1px #e2431e; <br />border-radius: 6px;</span>
+		  <hr class="bs-docs-separator">
+		  
+		  <h3>Disabled Input</h3>
+		  <form class="form-inline">
+            <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
+          </form>
+		  <span class="info-inline">When disabled, the color of the input field changes to #f8f6ef.</span>
+		  <hr class="bs-docs-separator">
+		  
+		  <h3>Calendar Select</h3>
+		  <img src="/assets/img/calendar.png" alt="calendar" />
+		  <p><strong>Month</strong>: <span class="grey">Proxima Nova Bold 20pt, #000</span><br />
+		  <strong>Year</strong>: <span class="grey">Proxima Nova Regular 20pt, #aaaaaa</span></p>
+
+		  <p><strong>Days (S, M, T, etc)</strong>: <span class="grey">Proxima Nova Semibold 15pt, #000</span><br />
+		  <strong>Active Dates</strong>: <span class="grey">Proxima Nova Regular 15pt, #29a036</span><br />
+		  <strong>Disabled/Future Dates</strong>: <span class="grey">Proxima Nova Regular 15pt, #aaaaaa</span></p>
+		  <br />
+		  
+		  <div class="row">
+			<div class="pull-left mr-10">
+				<p class="btn btn-primary">16</p>
+			</div>
+			<div class="pull-left">
+				<p><strong>Hover/Selected Date</strong>: <span class="grey">Proxima Nova Regular 15pt, #fff<br />
+				width: 30px <br />height: 21px </span><br /><span class="lightPink">border-radius: 2px;</span></p>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="pull-left mr-10">
+				<p class="btn">22</p>
+			</div>
+			<div class="pull-left">
+				<p><strong>Today</strong>: <span class="grey">Proxima Nova Regular 15pt, #29a036<br />
+				width: 30px <br />height: 21px </span><br /><span class="lightPink">border:solid 1px #eae7db;</span><br /><span class="lightPink">border-radius: 2px;</span></p>
+			</div>
+		  </div>
+		  
 		</section>
 
+		
+		<!-- Form
+		================================================== -->
+		<section id="forms">
+          <div class="page-header">
+            <h1>6. Forms</h1>
+          </div>
+			
+			<h3>Default Styles</h3>
+			
+			<h4>Form Title</h4>
+			<label>Label name</label>
+              <!-- <input type="text" placeholder="Type something…">
+              <span class="help-block">Some help text</span> -->
+			  <img src="/assets/img/label-name.png" alt= "form" />
+			</label>
+			<hr class="bs-docs-separator">
 
+			<h3>Inline Form</h3>
+			<label>
+			  <img src="/assets/img/inline-form.png" alt= "form" />
+			</label>
+			<hr class="bs-docs-separator">
+		
+			<h3>Horizontal Form</h3>
+			<label>
+			  <img src="/assets/img/horizontal-form.png" alt= "form" />
+			</label>
+			<hr class="bs-docs-separator">
+			
+			<h3>Form Module</h3>
+			<label>
+			  <img src="/assets/img/module-form.png" alt= "form" />
+			</label>
+		</section>
+		
+		<!-- Form
+		================================================== -->
+		<section id="notifications">
+          <div class="page-header">
+            <h1>7. Notifications</h1>
+          </div>
+			
+			<h3>Red Alert Badges for Messages &rsquo; Cart</h3>
+			
+			<h5>Web</h5>
+			<div class="bs-docs-example notif">
+				<div class="logged-in text-right">						
+					<a href="#"><span class="text">My Account</span><span class="caret caret-down"></span></a>
+					<a href="#!"><span class="inline-block notification">3</span><span class="text">Messages</span><span class="caret caret-down"></span></a>
+					<a href="#!"><span class="mobile-icon cart-icon"></span><span class="text">Cart</span><span class="caret caret-down"></span></a>							
+				</div>
+				<div class="logged-in text-right">						
+					<a href="#"><span class="text">My Account</span><span class="caret caret-down"></span></a>
+					<a href="#!"><span class="text">Messages</span><span class="caret caret-down"></span></a>
+					<a href="#!"><span class="inline-block notification yellow">1</span><span class="text">Cart</span><span class="caret caret-down"></span></a>							
+				</div>
+				<div class="logged-in text-right">						
+					<a href="#"><span class="text">My Account</span><span class="caret caret-down"></span></a>
+					<a href="#!"><span class="inline-block notification">2</span><span class="text">Messages</span><span class="caret caret-down"></span></a>
+					<a href="#!"><span class="inline-block notification yellow">1</span><span class="text">Cart</span><span class="caret caret-down"></span></a>							
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
 
+			<h5>Mobile</h5>
+			<div class="bs-docs-example notif mobile">
+				<div class="logged-in text-right">						
+					<a href="#"><span class="mobile-icon profile-icon"></span></a>
+					<a href="#!"><span class="inline-block notification">3</span></a>
+					<a href="#!"><span class="mobile-icon cart-icon"></span></a>							
+				</div>
+				<div class="logged-in text-right">						
+					<a href="#"><span class="mobile-icon profile-icon"></span></a>
+					<a href="#!"><span class="inline-block notification">3</span></a>
+					<a href="#!"><span class="mobile-icon cart-icon"></span></a>							
+				</div>
+				<div class="logged-in text-right">						
+					<a href="#"><span class="mobile-icon profile-icon"></span></a>
+					<a href="#!"><span class="inline-block notification">3</span></a>
+					<a href="#!"><span class="mobile-icon cart-icon"></a>							
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+		</section>
+
+				<!-- Flyout /Modal
+		================================================== -->
+		<section id="modals">
+          <div class="page-header">
+            <h1>8. Flyouts / Modals</h1>
+          </div>
+			
+			<h3>Darken Background</h3>
+			<p>Use this for main nav flyouts or other major modals that require a dimming of the main site content. The whole site (except the nav and top green bar) gets greyed out with #eae7db at 70% opacity.</p>
+			<div class="bs-docs-example" style="background-color: #f5f5f5;">
+				<div class="modal" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>	
+		</section>
+		
+		<!-- Ajax Loader
+		================================================== -->
+		<section id="ajax">
+          <div class="page-header">
+            <h1>9. Ajax Loader</h1>
+          </div>
+			
+			<h3>Example</h3>
+			<div class="bs-docs-example">
+				<!---Empty code here--->
+				<br /> <br /> <br /> <br />
+			</div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
+		</section>
+		
         <!-- Images
         ================================================== -->
         <!--
