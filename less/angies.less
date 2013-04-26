@@ -4,6 +4,7 @@
 
 /* General */
 .mb-0 { margin-bottom: 0; }
+.mb-5 { margin-bottom: 5; }
 .mb-10 { margin-bottom: 10px; }
 .mb-20 { margin-bottom: 20px; }
 .mb-25 { margin-bottom: 25px; }
@@ -11,7 +12,11 @@
 .mb-40 { margin-bottom: 40px; }
 .mb-50 { margin-bottom: 50px; }
 
+.mt-5 { margin-top: 5px; }
 .mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+
+.ml-0 { margin-left: 0px; }
 
 .mr-10 { margin-right: 10px; }
 
@@ -101,6 +106,14 @@ textarea {
 	
 	div.tag {
 		.border-radius(0);
+	}
+	
+	&.review-block {
+		width: 300px;
+	}
+	
+	div.al-grade {
+		.border-radius(100px);
 	}
 } // .mini-layout
 
@@ -785,15 +798,250 @@ a.more {
 	font-size: 13px;
 }
 
+.coupon-info {
+	.clearfix();
+	.border-radius(5px);
+	margin-bottom: 30px;
+	border: 1px solid #d7d3c6;
+	padding: 5px 10px;
+	width: 125px;
+	height: 30px;
+	line-height: 32px;
+	color: @darkGray;
+	background-color: #f6f6f2;
+	position: relative;
+	left: 138px;
+	
+	p {
+		text-transform: uppercase;
+	}
+}
+
 .coupon-area {
-	width: 560px;
+	width: 450px;
 	background-color: @white;
+	border: 1px solid #d7d3c6;
 	.border-radius(6px);
-	.box-shadow (0 3px 7px rgba(0, 0, 0, 0.3));
+	.box-shadow (0 5px 10px rgba(0, 0, 0, 0.3));
+	position: relative;
+	
+	.arrow-coup {
+		width: 25px;
+		height: 22px;
+		background-image: url(/assets/img/arrow-up-coupon.png);
+		position: absolute;
+		top: -21px;
+		left: 200px;
+	}
+	
+	.coupon-header,
+	.coupon-footer {
+		padding: 9px 15px;
+		background-color: #f6f6f2;
+		border-bottom: 1px solid @lightGray;
+	}
 	
 	.coupon-header {
-		padding: 9px 15px;
-		background-color: @darkGray;
-		border-bottom: 1px solid #eee;
+		
+		h4 {
+			padding-left: 25px;
+			background-image: url(/assets/img/coup.png);
+			background-repeat: no-repeat;
+		}
+	}
+	
+	.coupon-body {
+		
+		.dropdown {
+		
+			li {
+				padding: 20px;
+				
+				&.divider {
+					padding: 0;
+				}
+				
+				.cta {
+					display: table;
+					
+					> div {
+						height: 45px;
+						display: table-cell;
+						vertical-align: middle;
+					}
+					
+				}
+			}
+			
+			.dropdown-menu {
+				.border-radius(0);
+				margin: 0;
+				border: 0;
+				padding: 0;
+				.box-shadow(0 0 0 rgba(0, 0, 0, 0.2));
+				display: block;
+				position: static;
+				
+				p {
+					margin-bottom: 0px;
+					color: @black;
+					font-size: 18px;
+					font-weight: 600;
+				}
+				
+				.coup-txt {
+					width: 350px;
+					height: 45px;
+					display: table;
+					
+					p {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+			}
+		} // .dropdown
+		
+		.coupon-footer {
+			border-top: 1px solid @lightGray;
+			padding: 5px;
+		}
+	}
+} // .coupon-area
+
+.review-block {
+	
+	.date {
+		float: right;
+		color: @mediumGray;
+		
+	}
+	
+	.heading {
+		margin-bottom: 20px;
+		
+		h4 {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.review-title {
+	font-size: 17px;
+}
+
+.al-grade {
+	float: left;
+	margin-right: 10px;
+	width: 47px;
+	height: 47px;
+	display: inline-block;
+	font-family: museo-slab;
+	font-weight: 700;
+	vertical-align: middle;
+	.box-shadow(inset 0 2px 1px rgba(0, 0, 0, 0.2));
+	
+	&.large-grade {
+		font-size: 18px;
+	}
+	
+	&.grade-a {
+		background-color: @lighterGreen;
+	}
+	
+	p {
+		color: @white;
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 45px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.letter-grade-a {
+	color: @lighterGreen;
+}
+
+span.title {
+	color: #454545;
+	font-weight: 600;
+}
+
+p {
+	
+	&.overall {
+		font-size: 15px;
+		line-height: 20px;
+	}
+	
+	&.date {
+		height: 45px;
+		line-height: 40px;
+	}
+}
+
+.info-review {
+	height: 388px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.neighborhood-activity {
+	
+	.activity-item {
+		border-bottom: 1px solid @grayLighter;
+		padding: 15px 0 10px 0;
+		
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	
+	h3 {
+		margin: 0;
+		font-size: 20px;
+		line-height: 23px;
+	}
+	
+	p {
+		margin-bottom: 2px;
+		
+		&.name {
+			font-size: 15px;
+			font-weight: 600;
+		}
+		
+		span {
+			font-weight: 400;
+		}
+		
+		&.comp-name {
+			font-size: 14px;
+		}
+		
+		&.hour {
+			margin-bottom: 15px;
+		}
+	}
+	
+} // .neighborhood-activity
+
+ul.list-search {
+	float: left;
+	font-weight: 600;
+	
+	li {
+		list-style: none;
+		
+		a {
+			color: @black;
+		}
+	}
+	
+	.category-heading {
+		margin-bottom: 5px;
+		font-size: 17px;
+		color: @angiesGreen;
 	}
 }
