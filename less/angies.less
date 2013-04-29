@@ -126,6 +126,54 @@ code.no-bg {
 	background-color: transparent;
 }
 
+@borderColor: #E8E6DD;
+@dkGrey:	#454545;
+@midGrey: 	#7b7b7b;
+@offWhite:	#fefefe;
+@dkborderColor: #d5d0c3;
+
+@btnBackgroundColor: #fafaf5;
+@btnBorderColor: 	 #e8e6dd;
+@btnTextColor:		 @darkGray;
+
+@btnBackgroundColorHover: #fefefe;
+@btnBorderColorHover:	  #b8b8b8;
+@btnTextColorHover:		  @black;
+
+@btnBackgroundColorActive:	#eae7db;
+
+
+// ------------------------------------------------
+//
+// Triangle (left / right).
+//
+// ------------------------------------------------
+
+// Mimic the Bootstrap `.caret`.
+.left-caret,
+.right-caret {
+	display: inline-block;
+	.size(0, 0);	
+	border-top: 4px solid rgba(0, 0, 0, 0);
+	border-bottom: 4px solid rgba(0, 0, 0, 0);
+	content: "";
+}
+
+.left-caret {
+	border-right: 5px solid #000;
+}
+
+.right-caret {
+	border-left: 5px solid #000;
+}
+
+
+// ------------------------------------------------
+//
+// Grades, The Basics tab.
+//
+// ------------------------------------------------
+
 span.grade {
 	display: block;
 	.size(40px, 40px);
@@ -194,12 +242,232 @@ span.grade {
 	}
 }
 
+// ------------------------------------------------
+//
+// Navbar, Components tab.
+//
+// ------------------------------------------------
+
+// `.basic` to differentiate from the main top nav `.navbar`.
+// The color palette is very similar to e.g. button groups, Components tab.
+// Override styles in navbar.less.
+.navbar.basic {
+	
+	.navbar-inner {
+		min-height: auto;
+		border-color: @borderColor;
+		.border-radius(0);
+		#gradient > .vertical(#FBFBF7, #F9F8F2);		
+	}
+	
+	.nav > li > a {
+		border-left: 1px solid @borderColor;
+		padding: 15px 25px;
+		color: #7b7b7b;
+		text-shadow: none;
+	}
+	
+	.nav > li:last-child > a {
+		border-right: 1px solid @borderColor;
+	}
+	
+	.nav > .active > a,
+	.nav > .active > a:hover,
+	.nav > .active > a:focus {
+		background-color: #EAE7DB;
+		.box-shadow(none);		
+	}
+}
+
+
+// ------------------------------------------------
+//
+// Breadcrumbs, Components tab.
+//
+// ------------------------------------------------
+
+// Override Bootstrap breadcrumbs.less.
+.breadcrumb {
+	background-color: transparent;
+	.border-radius(0);
+	
+	> .active {
+		color: @lightGray;
+	}
+}
+
+
+// ------------------------------------------------
+//
+// Pagination, Components tab.
+//
+// ------------------------------------------------
+
+.pagination {
+	position: relative;
+	// This is the same as .pagination-centered but I thought
+	//   it'd be safe to assume we always want to center-align the pagination.
+	text-align: center;
+
+	> ul {
+		.box-shadow(none);
+		
+		> .prev,
+		> .next {
+			position: absolute;
+			top: 0;
+		}
+	
+		> .prev {		
+			left: 0;
+			
+			// For the caret / triangle.
+			b {
+				margin-right: 5px;
+				border-right-color: @angiesGreen;
+			}
+		}
+	
+		.next {
+			right: 0;
+			
+			b {
+				margin-left: 5px;
+				border-left-color: @angiesGreen;
+			}
+		}
+	
+		// Hovering an active pagination should not
+		//   change its appearance.
+		> li.active > a,
+		> li.active > a:hover {
+			padding: 1px 5px;
+			border: 1px solid @borderColor;
+			.border-radius(2px);
+			background-color: #F9F8F2;			
+			color: #7b7b7b;
+		}
+		
+		> li > a {
+			border: none;
+			padding: 2px 6px;
+			font-weight: 600;
+			
+			&:hover {
+				border: none;
+				background-color: @angiesGreen;				
+				.border-radius(2px);
+				color: #fff;
+				
+				// For the caret / triangle.
+				b {
+					border-right-color: @white;
+					border-left-color: @white;
+				}
+			}						
+		}				
+	}	
+}
+
+
+// ------------------------------------------------
+//
+// Generic button styles, used by e.g.
+//   button dropdown menu, button groups.
+//
+// ------------------------------------------------
+
+.btn-group,
+.btn-group.open {
+	
+	// The trigger, with caret next to it.
+	.btn {
+		border: 1px solid @btnBorderColor;
+		background-color: @btnBackgroundColor !important;
+		.box-shadow(none);
+		color: @btnTextColor;
+		
+		&:hover {
+			border-bottom: 1px solid @btnBorderColorHover;
+			color: @btnTextColorHover;
+		}
+		
+		&.active {
+			background-color: @btnBackgroundColorActive !important;
+			background-image: none;
+			color: @btnTextColor;			
+		}	
+	}
+}
+
+// ------------------------------------------------
+//
+// Dropdown, Components tab.
+//
+// ------------------------------------------------
+
+
+.dropdown-menu {
+	// #fee892 is copied from the prototype.
+	@linkColorHover: #fee892;
+	
+	> li {
+	
+		> a {
+			color: @mediumGray;	
+		}
+		
+		> a:hover {
+			color: @darkGray;
+			// Simpler to call `.vertical` than to clean up the gradient
+			//   for different browser styles.			
+			#gradient > .vertical(@linkColorHover, @linkColorHover);
+		}
+	}	
+}
+
+.btn-group {
+	
+	> .btn > .caret {
+		margin-left: 30px;
+	}
+}
+
+// ------------------------------------------------
+//
+// Button Groups, Components tab.
+//
+// ------------------------------------------------
+
+.btn {
+	
+	> span.list,
+	> span.map {
+		padding: 2px 0 6px 28px;	// padding top + bottom + font size = icon height (22px)
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		line-height: 22px;
+	}
+	
+	> span.list {
+		background-image: url(/assets/img/icn_list.png);
+		background-position-y: 3px;
+	}
+		
+	> span.map {
+		background-image: url(/assets/img/icn_map.png);
+	}
+}
+
+// ////////////////////////////////////////////////
 //
 // Copied from Angie's Prototype
 //
 // Note that most of the styles have been modified
 //   for the styleguide.
 //
+// //////////////////////////////////////////////// 
 
 .recently-viewed{
 
@@ -374,105 +642,6 @@ span.grade {
 			text-align: center;
 		}
 	}
-}
-
-.toggle-group{
-	
-	a{ 
-		//.ib;
-		.border-radius(0);
-		padding-left:1.25em; padding-right:1.25em;
-	}
-	
-	.active{
-		@bg: #EAE7DB;
-		@color: #585239;
-		
-		cursor:default;
-
-		&:hover		{ color: @color; background-color: @bg; }
-		&:active	{ color: @color; }
-		
-	}
-	
-	a:first-child{
-		border-right:none;
-		.border-radius( 0.4em 0 0 0.4em);
-	}
-	a:last-child{
-		.border-radius( 0 0.4em 0.4em 0);
-	}
-
-	
-	.flyout{ position:absolute; top:0; left:0; }
-	
-	
-}
-
-.list-btn .icon{ background-image: url(/assets/img/icn_list_inactive.png); }
-.map-btn .icon{ background-image: url(/assets/img/icn_map_inactive.png); }
-
-.active{
-	&.list-btn .icon{ background-image: url(/assets/img/icn_list.png); }
-	&.map-btn .icon{ background-image: url(/assets/img/icn_map.png); }
-}
-
-.list-btn, .map-btn{
-	
-	.icon{
-		//.ib;
-		//width:1.6em;
-		line-height:160%;
-		padding:0 0 0 1.6em;
-		//height:1.8em;
-		//margin:-.75em .4em -.4em -.5em;
-		//margin: -.5em .25em -.5em -.5em;
-		margin:-.6em 0 -.5em 0;
-		
-		vertical-align:middle;
-		background-repeat: no-repeat;
-		background-position: 0 50%;
-		
-	}
-}
-
-@borderColor: #E8E6DD;
-@dkGrey:	#454545;
-@midGrey: 	#7b7b7b;
-@offWhite:	#fefefe;
-@dkborderColor: #d5d0c3;
-
-.ui-btn{
-	border:1px solid @borderColor; 
-	padding:.7em .6em .6em .65em;
-	.border-radius(.3em);
-	font-weight:600;
-	font-size:150%;
-	text-align:left;
-	line-height:100%;
-	
-	.box-sizing(border-box);
-	#gradient .vertical( #FBFBF7, #F9F8F2 );
-	
-	color: @midGrey;
-	
-	&:link		{ color: @midGrey; }
-	&:visited	{ color: @midGrey; }
-	&:hover		{ color: @dkGrey; background-color: @offWhite; border-color:@borderColor; }
-	&:active	{ color: @dkGrey; }
-	
-	
-	&.active{
-		@bg: #EAE7DB;
-		@color: #585239;
-		background: @bg none;
-		border-color:@dkborderColor;
-		color: @color;
-		
-		&:hover{ color: @color; background-color: @bg; }
-		
-	}
-	
 }
 
 /* ====The Basics===== */

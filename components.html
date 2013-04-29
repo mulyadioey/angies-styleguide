@@ -1,107 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Components · Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+<meta charset="utf-8">
+<title>Components · Angie&rsquo;s List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.mod.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/css/angies.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<!-- Le styles -->
+<link href="assets/css/bootstrap.mod.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet">
+<link href="assets/css/angies.css" rel="stylesheet">
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-    <![endif]-->
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+<![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">    
-  </head>
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="assets/ico/favicon.png">    
+</head>
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
 
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="./index.html">Angie's List</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="">
-                <a href="./getting-started.html">Getting Started</a>
-              </li>              
-              <li class="">
-                <a href="./basics.html">The Basics</a>
-              </li>
-              <li class="active">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="">
-                <a href="./modules.html">Modules</a>
-              </li>              
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Navbar
+================================================== -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand" href="./index.html">Angie's List</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li class="">
+						<a href="./getting-started.html">Getting Started</a>
+					</li>              
+					<li class="">
+						<a href="./basics.html">The Basics</a>
+					</li>
+					<li class="active">
+						<a href="./components.html">Components</a>
+					</li>
+					<li class="">
+						<a href="./modules.html">Modules</a>
+					</li>              
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- Subhead
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
-  <div class="container">
-    <h1>Components</h1>
-    <p class="lead">Examples of how to group the basic elements together to create components.</p>
-  </div>
+	<div class="container">
+		<h1>Components</h1>
+		<p class="lead">Examples of how to group the basic elements together to create components.</p>
+	</div>
 </header>
 
+<div class="container">
 
-  <div class="container">
-
-    <!-- Docs nav
-    ================================================== -->
-    <div class="row">
-      <div class="span3 bs-docs-sidebar">
-        <ul class="nav nav-list bs-docs-sidenav">          
-          <li><a href="#button-groups">Button groups</a></li>
-          <li><a href="#navbar">Navbar</a></li>          
-        </ul>
-      </div>
-      <div class="span9">
-
-		<!-- Button Groups
+	<!-- Docs nav
 	================================================== -->
-        <section id="button-groups">
-          <div class="page-header">
-            <h1>3. Button groups</h1>
-          </div>
-
-          <h3>2-Button Group</h3>
-          <div class="bs-docs-example">
-          <div class="toggle-group ib">
-						<a class="list-btn ui-btn active"><span class="icon">List</span></a><a class="map-btn ui-btn"><span class="icon">Map</span></a>
-					</div>
-          </div>
-          
-          
-          <h3>3-Button Group</h3>
-                    
-          <div class="bs-docs-example">
-            <div class="btn-group" style="margin: 9px 0 5px;">
-              <button class="btn">Left</button>
-              <button class="btn">Middle</button>
-              <button class="btn">Right</button>
-            </div>
-          </div>
+	<div class="row">
+		<div class="span3 bs-docs-sidebar">
+			<ul class="nav nav-list bs-docs-sidenav">          
+				<li><a href="#dropdown-menus">Dropdown Menus</a></li>
+				<li><a href="#button-dropdown-menus">Button Dropdown Menus</a></li>
+				<li><a href="#button-groups">Button groups</a></li>
+				<li><a href="#navbar">Navbar</a></li>
+				<li><a href="#breadcrumbs">Breadcrumbs</a></li>
+				<li><a href="#pagination">Pagination</a></li>
+				<li><a href="#images">Images</a></li>
+				<li><a href="#maps">Maps</a></li>
+				<li><a href="#content-lookups">Content Lookups</a></li>
+				<li><a href="#phone">Phone-Specific</a></li>
+				<li><a href="#alerts">Alerts</a></li>
+			</ul>
+		</div>
+		<div class="span9">
+		
+		<!-- Dropdown Menus
+		================================================== -->
+		<section id="dropdown-menus">
+			<div class="page-header">
+				<h1>1. Dropdown Menus</h1>
+			</div>
+			<h3>Example</h3>
+			<div class="bs-docs-example">
+				<!-- .dropdown is not needed for the markup; it's for presentation purposes only. -->
+				<div class="dropdown clearfix">				
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+						<li><a tabindex="-1" href="#">Action</a></li>
+						<li><a tabindex="-1" href="#">Another action</a></li>
+						<li><a tabindex="-1" href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+		</section>
+		
+		<!-- Button Dropdown Menus
+		================================================== -->
+		<section id="button-dropdown-menus">
+			<div class="page-header">
+				<h1>2. Button Dropdown Menus</h1>
+			</div>
+			<h3>Button dropdown</h3>
+			<div class="bs-docs-example">
+				<div class="btn-group">
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						With Coupons<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<!-- dropdown menu links -->
+						<li><a tabindex="-1" href="#">Action</a></li>
+						<li><a tabindex="-1" href="#">Another action</a></li>
+						<li><a tabindex="-1" href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+  &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+    With Coupons
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</section>
+		
+		<!-- Button Groups
+		================================================== -->
+		<section id="button-groups">
+			<div class="page-header">
+				<h1>3. Button groups</h1>
+			</div>
+			<h3>2-Button Group</h3>
+			<div class="bs-docs-example">				
+				<div class="btn-group">
+					<button class="btn active"><span class="list">List</span></button>					
+					<button class="btn"><span class="map">Map</span></button>
+				</div>			
+			</div>		  
+			<h3>3-Button Group</h3>
+			<div class="bs-docs-example">
+				<div class="btn-group">
+					<button class="btn">Left</button>
+					<button class="btn">Middle</button>
+					<button class="btn">Right</button>
+				</div>
+			</div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group"&gt;
   &lt;button class="btn"&gt;Left&lt;/button&gt;
@@ -111,7 +181,102 @@
 </pre>          
         </section>
 
-        
+        <!-- Navbar
+        ================================================== -->
+		<section id="navbar">
+			<div class="page-header">
+				<h1>4. Navbar</h1>
+			</div>
+			<h3>Basic Navbar</h3>
+			<p>This is used in the Service Provider profile page template.</p>
+			<div class="bs-docs-example">
+				<div class="navbar basic">
+					<div class="navbar-inner">						
+						<ul class="nav">
+							<li class="active"><a href="#">Current Page</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</section>
+		
+		<!-- Breadcrumbs
+        ================================================== -->
+		<section id="breadcrumbs">
+			<div class="page-header">
+				<h1>5. Breadcrumbs</h1>
+			</div>
+			<h3>Examples</h3>
+			<div class="bs-docs-example">
+				<ul class="breadcrumb">
+					<li class="active">Home</li>					
+				</ul>
+				<ul class="breadcrumb">
+					<li><a href="#">Home</a> <span class="divider">/</span></li>
+					<li class="active">Search for Drywall near 1030 E. Washington St., Indianapolis, IN</li>
+				</ul>
+				<ul class="breadcrumb">
+					<li><a href="#">Home</a> <span class="divider">/</span></li>
+					<li><a href="#">Search for Drywall near 1030 E. Washington St., Indianapolis, IN</a> <span class="divider">/</span></li>
+					<li class="active">Acme Drywall Co</li>
+				</ul>				
+			</div>
+		</section>
+
+		<!-- Pagination
+        ================================================== -->
+		<section id="pagination">
+			<div class="page-header">
+				<h1>6. Pagination</h1>
+			</div>
+			<h3>Standard Pagination</h3>
+			<div class="bs-docs-example">
+				<div class="pagination">
+					<ul>
+						<li class="prev"><a href="#"><b class="left-caret"></b> Prev</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="next"><a href="#">Next <b class="right-caret"></b></a></li>
+					</ul>
+				</div>			
+			</div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;prev&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;b class=&quot;left-caret&quot;&gt;&lt;/b&gt; Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Next &lt;b class=&quot;right-caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+			<h3>Condensed Pagination</h3>
+			<p>The pagination width follows its container. You don't need to change any of its code. In this example, the container is 300-pixel wide.</p>
+			<div class="bs-docs-example">
+				<div style="width: 300px">
+					<div class="pagination">
+						<ul>
+							<li class="prev"><a href="#"><b class="left-caret"></b> Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li class="next"><a href="#">Next <b class="right-caret"></b></a></li>
+						</ul>
+					</div><!-- /.pagination -->
+				</div>
+			</div>
+		</section>
+		
 		<!-- Images
         ================================================== -->
     <section id="images">
@@ -230,54 +395,45 @@
         </table>
     </section>
 
-        
+		</div><!-- /.span9 -->
+	</div><!-- /.row -->
+</div><!-- /.container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap-transition.js"></script>
+<script src="assets/js/bootstrap-alert.js"></script>
+<script src="assets/js/bootstrap-modal.js"></script>
+<script src="assets/js/bootstrap-dropdown.js"></script>
+<script src="assets/js/bootstrap-scrollspy.js"></script>
+<script src="assets/js/bootstrap-tab.js"></script>
+<script src="assets/js/bootstrap-tooltip.js"></script>
+<script src="assets/js/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-button.js"></script>
+<script src="assets/js/bootstrap-collapse.js"></script>
+<script src="assets/js/bootstrap-carousel.js"></script>
+<script src="assets/js/bootstrap-typeahead.js"></script>
+<script src="assets/js/bootstrap-affix.js"></script>
+
+<script src="assets/js/holder/holder.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+<script src="assets/js/application.js"></script>
 
 
-      </div>
-    </div>
+<!---TypeKit Font-->
+<script type="text/javascript">
+  (function() {
+	var config = {
+	  kitId: 'bap4dbx',
+	  scriptTimeout: 3000
+	};
+	var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
 
-  </div>
-
-
-
-    
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/bootstrap-affix.js"></script>
-
-    <script src="assets/js/holder/holder.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-
-    <script src="assets/js/application.js"></script>
-
-
-    <!---TypeKit Font-->
-	<script type="text/javascript">
-	  (function() {
-		var config = {
-		  kitId: 'bap4dbx',
-		  scriptTimeout: 3000
-		};
-		var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	  })();
-	</script>
-
-  </body>
+</body>
 </html>
