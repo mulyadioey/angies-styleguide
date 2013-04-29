@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Components · Bootstrap</title>
+<title>Components · Angie&rsquo;s List</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -71,13 +71,85 @@
 	<div class="row">
 		<div class="span3 bs-docs-sidebar">
 			<ul class="nav nav-list bs-docs-sidenav">          
+				<li><a href="#dropdown-menus">Dropdown Menus</a></li>
+				<li><a href="#button-dropdown-menus">Button Dropdown Menus</a></li>
 				<li><a href="#button-groups">Button groups</a></li>
 				<li><a href="#navbar">Navbar</a></li>
 				<li><a href="#breadcrumbs">Breadcrumbs</a></li>
-				<li><a href="#pagination">Pagination</a></li> 
+				<li><a href="#pagination">Pagination</a></li>
+				<li><a href="#images">Images</a></li>
+				<li><a href="#maps">Maps</a></li>
+				<li><a href="#content-lookups">Content Lookups</a></li>
+				<li><a href="#phone">Phone-Specific</a></li>
+				<li><a href="#alerts">Alerts</a></li>
 			</ul>
 		</div>
 		<div class="span9">
+		
+		<!-- Dropdown Menus
+		================================================== -->
+		<section id="dropdown-menus">
+			<div class="page-header">
+				<h1>1. Dropdown Menus</h1>
+			</div>
+			<h3>Example</h3>
+			<div class="bs-docs-example">
+				<!-- .dropdown is not needed for the markup; it's for presentation purposes only. -->
+				<div class="dropdown clearfix">				
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+						<li><a tabindex="-1" href="#">Action</a></li>
+						<li><a tabindex="-1" href="#">Another action</a></li>
+						<li><a tabindex="-1" href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+		</section>
+		
+		<!-- Button Dropdown Menus
+		================================================== -->
+		<section id="button-dropdown-menus">
+			<div class="page-header">
+				<h1>2. Button Dropdown Menus</h1>
+			</div>
+			<h3>Button dropdown</h3>
+			<div class="bs-docs-example">
+				<div class="btn-group">
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						With Coupons<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<!-- dropdown menu links -->
+						<li><a tabindex="-1" href="#">Action</a></li>
+						<li><a tabindex="-1" href="#">Another action</a></li>
+						<li><a tabindex="-1" href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+  &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+    With Coupons
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;!-- dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</section>
 		
 		<!-- Button Groups
 		================================================== -->
@@ -86,14 +158,15 @@
 				<h1>3. Button groups</h1>
 			</div>
 			<h3>2-Button Group</h3>
-			<div class="bs-docs-example">
-				<div class="toggle-group ib">
-					<a class="list-btn ui-btn active"><span class="icon">List</span></a><a class="map-btn ui-btn"><span class="icon">Map</span></a>
-				</div>
+			<div class="bs-docs-example">				
+				<div class="btn-group">
+					<button class="btn active"><span class="list">List</span></button>					
+					<button class="btn"><span class="map">Map</span></button>
+				</div>			
 			</div>		  
 			<h3>3-Button Group</h3>
 			<div class="bs-docs-example">
-				<div class="btn-group" style="margin: 9px 0 5px;">
+				<div class="btn-group">
 					<button class="btn">Left</button>
 					<button class="btn">Middle</button>
 					<button class="btn">Right</button>
@@ -172,6 +245,19 @@
 					</ul>
 				</div>			
 			</div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;prev&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;b class=&quot;left-caret&quot;&gt;&lt;/b&gt; Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Next &lt;b class=&quot;right-caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
 			<h3>Condensed Pagination</h3>
 			<p>The pagination width follows its container. You don't need to change any of its code. In this example, the container is 300-pixel wide.</p>
 			<div class="bs-docs-example">
