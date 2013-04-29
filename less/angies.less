@@ -740,6 +740,10 @@ table.table-striped {
 		display: table-cell;
 		vertical-align: middle;
 	}
+	
+	&.avatar td{
+		text-align: left;
+	}
 }
 
 .icon {
@@ -1214,3 +1218,33 @@ ul.list-search {
 		color: @angiesGreen;
 	}
 }
+
+// ===== Components ==== //
+
+.thumbnail {
+	border: 1px solid #e8e6dd;
+	padding: 0;
+	width: 300px;
+	height: 198px;
+	.box-shadow(0px 2px 2px rgba(235, 235, 231, 1));
+	
+	&.medium {
+		.size(128px, 194px);
+	}
+	
+	&.small {
+		.size(92px, 140px);
+	}
+	
+	&.deal {
+		.border-radius(6px);
+		
+		&.large {
+			.square(200px);
+		}
+		
+		&.small {
+			.square(120px);
+		}
+	}
+} // .thumbnail
