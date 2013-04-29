@@ -242,6 +242,17 @@ span.grade {
 	}
 }
 
+
+// ------------------------------------------------
+//
+// Modal, Components tab.
+//
+// ------------------------------------------------
+
+.modal {
+	border: none;
+}
+
 // ------------------------------------------------
 //
 // Navbar, Components tab.
@@ -806,39 +817,29 @@ hr {
 	}
 }
 
-.bs-docs-example {
 
-	&.notif {
-		background-color: @angiesGreen;
-		
-		&.mobile {
-			width: 400px;
-			
-			.logged-in {
-				padding: 15px 20px 10px 0;
-			}
-			
-			a {
-				padding: 0 5px;
-			}
-			
-			.notification {
-				margin: 0;
-				position: relative;
-				top: -8px;
-			}
+// ------------------------------------------------
+//
+// Notifications, The Basics.
+//
+// ------------------------------------------------
+
+.bs-docs-example {
+	
+	.logged-in {
+		border-bottom: 1px solid @darkerGreen;
+	
+		&:last-child {
+			border-bottom: none;
 		}
 	}
 }
 
 .logged-in {
-	border-bottom: 1px solid @lighterGreen;
-	padding: 20px 20px;
-	
-	&:last-child {
-		border-bottom: 0px;
-	}
-	
+	padding: 20px;	
+	background-color: @angiesGreen;
+	text-align: right;
+		
 	a {
 		margin: 0 0 0 2px;
 		padding: 15px 10px;
@@ -848,6 +849,13 @@ hr {
 		}
 	}
 	
+	// For downward caret / triangle.
+	.caret {
+		margin-left: 3px;
+		border-top-color: @darkerGreen;
+		vertical-align: middle;	
+	}
+	
 	span {
 		color: @white;
 		font-weight: 400;
@@ -855,7 +863,7 @@ hr {
 		&.notification {
 			margin-right: 10px;
 			.border-radius(5px);
-			padding: 3px 10px;
+			padding: 3px 8px;
 			background-color: @alertRed;
 			font-weight: bold;
 			text-align: center;
@@ -868,23 +876,17 @@ hr {
 			
 			&.inactive {
 				color: #7ac883;
-				background-color: @darkerGreen
+				background-color: @darkerGreen;
+				.box-shadow(inset 0 2px 4px rgba(0, 0, 0, 0.3));
 			}
-		}
-		
-		&.caret-down {
-			margin-left: 10px;
-			border-top-color: @darkerGreen;
-			position: relative;
-			top: 8px;
-		}
+		}				
 	}
 	
 	.mobile-icon {
+		display: none;
 		.size(21px, 27px);
 		background-image: url(/assets/img/icon-set.png);
-		background-repeat: no-repeat;
-		display: inline-block;
+		background-repeat: no-repeat;		
 	
 		&.profile-icon {
 			background-position: 0 -240px;
@@ -892,10 +894,34 @@ hr {
 		
 		&.cart-icon {
 			background-position: -40px -240px;
+			
+			&.inactive {
+				background-position: -80px -240px;
+			}
+		}		
+	}
+	
+	// "Mobile" version i.e. narrower container.
+	&.mobile {
+		padding: 10px;
+		
+		a {
+			padding: 0;
 		}
 		
-		&.cart-inactive-icon {
-			background-position: -80px -240px;
+		// Hide text.
+		span.text {
+			display: none;
+		}
+		
+		span.notification {
+			position: relative;
+			top: -5px;
+			margin: 0;
+		}
+		
+		.mobile-icon {
+			display: inline-block;
 		}
 	}
 } // .logged-in
