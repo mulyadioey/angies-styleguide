@@ -665,6 +665,9 @@ table.table-striped td {
 table.table-striped.avatar td {
   text-align: left;
 }
+table.table-striped.map td:first-child {
+  width: 120px;
+}
 .icon {
   width: 35px;
   height: 35px;
@@ -1089,4 +1092,22 @@ ul.list-search .category-heading {
 .thumbnail.deal.small {
   width: 120px;
   height: 120px;
+}
+.marker {
+  width: 115px;
+  height: 34px;
+  background-image: url(/assets/img/icon-set.png);
+  background-repeat: no-repeat;
+}
+.marker.green {
+  background-position: 50px -300px;
+}
+.marker.yellow {
+  background-position: 50px -360px;
+}
+.marker.gray {
+  background-position: 50px -420px;
+}
+.marker.map-review {
+  background-position: 50px -480px;
 }

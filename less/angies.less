@@ -741,8 +741,15 @@ table.table-striped {
 		vertical-align: middle;
 	}
 	
-	&.avatar td{
+	&.avatar td {
 		text-align: left;
+	}
+	
+	&.map {
+		
+		td:first-child {
+			width: 120px;
+		}
 	}
 }
 
@@ -1248,3 +1255,25 @@ ul.list-search {
 		}
 	}
 } // .thumbnail
+
+.marker {
+	.size(34px, 115px);
+	background-image: url(/assets/img/icon-set.png);
+	background-repeat: no-repeat;
+
+	&.green {
+		background-position: 50px -300px;
+	}
+	
+	&.yellow {
+		background-position: 50px -360px;
+	}
+	
+	&.gray {
+		background-position: 50px -420px;
+	}
+	
+	&.map-review {
+		background-position: 50px -480px;
+	}
+}
