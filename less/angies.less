@@ -126,6 +126,43 @@ code.no-bg {
 	background-color: transparent;
 }
 
+@borderColor: #E8E6DD;
+@dkGrey:	#454545;
+@midGrey: 	#7b7b7b;
+@offWhite:	#fefefe;
+@dkborderColor: #d5d0c3;
+
+// ------------------------------------------------
+//
+// Triangle (left / right).
+//
+// ------------------------------------------------
+
+// Mimic the Bootstrap `.caret`.
+.left-caret,
+.right-caret {
+	display: inline-block;
+	.size(0, 0);	
+	border-top: 4px solid rgba(0, 0, 0, 0);
+	border-bottom: 4px solid rgba(0, 0, 0, 0);
+	content: "";
+}
+
+.left-caret {
+	border-right: 5px solid #000;
+}
+
+.right-caret {
+	border-left: 5px solid #000;
+}
+
+
+// ------------------------------------------------
+//
+// Grades, The Basics tab.
+//
+// ------------------------------------------------
+
 span.grade {
 	display: block;
 	.size(40px, 40px);
@@ -194,12 +231,142 @@ span.grade {
 	}
 }
 
+// ------------------------------------------------
+//
+// Navbar, Components tab.
+//
+// ------------------------------------------------
+
+// `.basic` to differentiate from the main top nav `.navbar`.
+// The color palette is very similar to e.g. button groups, Components tab.
+// Override styles in navbar.less.
+.navbar.basic {
+	
+	.navbar-inner {
+		min-height: auto;
+		border-color: @borderColor;
+		.border-radius(0);
+		#gradient > .vertical(#FBFBF7, #F9F8F2);		
+	}
+	
+	.nav > li > a {
+		border-left: 1px solid @borderColor;
+		padding: 15px 25px;
+		color: #7b7b7b;
+		text-shadow: none;
+	}
+	
+	.nav > li:last-child > a {
+		border-right: 1px solid @borderColor;
+	}
+	
+	.nav > .active > a,
+	.nav > .active > a:hover,
+	.nav > .active > a:focus {
+		background-color: #EAE7DB;
+		.box-shadow(none);		
+	}
+}
+
+
+// ------------------------------------------------
+//
+// Breadcrumbs, Components tab.
+//
+// ------------------------------------------------
+
+// Override Bootstrap breadcrumbs.less.
+.breadcrumb {
+	background-color: transparent;
+	.border-radius(0);
+	
+	> .active {
+		color: @lightGray;
+	}
+}
+
+
+// ------------------------------------------------
+//
+// Pagination, Components tab.
+//
+// ------------------------------------------------
+
+.pagination {
+	position: relative;
+	// This is the same as .pagination-centered but I thought
+	//   it'd be safe to assume we always want to center-align the pagination.
+	text-align: center;
+
+	> ul {
+		.box-shadow(none);
+		
+		> .prev,
+		> .next {
+			position: absolute;
+			top: 0;
+		}
+	
+		> .prev {		
+			left: 0;
+			
+			// For the caret / triangle.
+			b {
+				margin-right: 5px;
+				border-right-color: @angiesGreen;
+			}
+		}
+	
+		.next {
+			right: 0;
+			
+			b {
+				margin-left: 5px;
+				border-left-color: @angiesGreen;
+			}
+		}
+	
+		// Hovering an active pagination should not
+		//   change its appearance.
+		> li.active > a,
+		> li.active > a:hover {
+			padding: 1px 5px;
+			border: 1px solid @borderColor;
+			.border-radius(2px);
+			background-color: #F9F8F2;			
+			color: #7b7b7b;
+		}
+		
+		> li > a {
+			border: none;
+			padding: 2px 6px;
+			font-weight: 600;
+			
+			&:hover {
+				border: none;
+				background-color: @angiesGreen;				
+				.border-radius(2px);
+				color: #fff;
+				
+				// For the caret / triangle.
+				b {
+					border-right-color: @white;
+					border-left-color: @white;
+				}
+			}						
+		}				
+	}	
+}
+
+
+// ////////////////////////////////////////////////
 //
 // Copied from Angie's Prototype
 //
 // Note that most of the styles have been modified
 //   for the styleguide.
 //
+// //////////////////////////////////////////////// 
 
 .recently-viewed{
 
@@ -435,12 +602,6 @@ span.grade {
 		
 	}
 }
-
-@borderColor: #E8E6DD;
-@dkGrey:	#454545;
-@midGrey: 	#7b7b7b;
-@offWhite:	#fefefe;
-@dkborderColor: #d5d0c3;
 
 .ui-btn{
 	border:1px solid @borderColor; 

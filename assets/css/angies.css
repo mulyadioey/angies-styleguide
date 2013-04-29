@@ -165,6 +165,21 @@ code.no-bg {
   padding: 2px 0px;
   background-color: transparent;
 }
+.left-caret,
+.right-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  content: "";
+}
+.left-caret {
+  border-right: 5px solid #000;
+}
+.right-caret {
+  border-left: 5px solid #000;
+}
 span.grade {
   display: block;
   width: 40px;
@@ -231,6 +246,102 @@ span.grade.inline {
 }
 span.grade.inline.a {
   color: #4db346;
+}
+.navbar.basic .navbar-inner {
+  min-height: auto;
+  border-color: #e8e6dd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #fafaf5;
+  background-image: -moz-linear-gradient(top, #fbfbf7, #f9f8f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfbf7), to(#f9f8f2));
+  background-image: -webkit-linear-gradient(top, #fbfbf7, #f9f8f2);
+  background-image: -o-linear-gradient(top, #fbfbf7, #f9f8f2);
+  background-image: linear-gradient(to bottom, #fbfbf7, #f9f8f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbfbf7', endColorstr='#fff9f8f2', GradientType=0);
+}
+.navbar.basic .nav > li > a {
+  border-left: 1px solid #e8e6dd;
+  padding: 15px 25px;
+  color: #7b7b7b;
+  text-shadow: none;
+}
+.navbar.basic .nav > li:last-child > a {
+  border-right: 1px solid #e8e6dd;
+}
+.navbar.basic .nav > .active > a,
+.navbar.basic .nav > .active > a:hover,
+.navbar.basic .nav > .active > a:focus {
+  background-color: #EAE7DB;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.breadcrumb {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.breadcrumb > .active {
+  color: #dddddd;
+}
+.pagination {
+  position: relative;
+  text-align: center;
+}
+.pagination > ul {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.pagination > ul > .prev,
+.pagination > ul > .next {
+  position: absolute;
+  top: 0;
+}
+.pagination > ul > .prev {
+  left: 0;
+}
+.pagination > ul > .prev b {
+  margin-right: 5px;
+  border-right-color: #29a036;
+}
+.pagination > ul .next {
+  right: 0;
+}
+.pagination > ul .next b {
+  margin-left: 5px;
+  border-left-color: #29a036;
+}
+.pagination > ul > li.active > a,
+.pagination > ul > li.active > a:hover {
+  padding: 1px 5px;
+  border: 1px solid #e8e6dd;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #F9F8F2;
+  color: #7b7b7b;
+}
+.pagination > ul > li > a {
+  border: none;
+  padding: 2px 6px;
+  font-weight: 600;
+}
+.pagination > ul > li > a:hover {
+  border: none;
+  background-color: #29a036;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+}
+.pagination > ul > li > a:hover b {
+  border-right-color: #ffffff;
+  border-left-color: #ffffff;
 }
 .recently-viewed {
   background-color: #f8f6ef;
