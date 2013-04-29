@@ -23,6 +23,8 @@
 .pl-40 { padding-left: 40px; }
 
 .no-margin { margin: 0; }
+.no-padding { padding: 0; }
+
 
 textarea {
 	padding: 15px 12px;
@@ -1275,5 +1277,95 @@ ul.list-search {
 	
 	&.map-review {
 		background-position: 50px -480px;
+	}
+}
+
+.review-count {
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+	
+	span {
+		font-size: 13px;
+		font-style: italic;
+		line-height: 16px;
+	}
+}
+
+.grade-lockup {
+	.clearfix();
+	
+	p,
+	span {
+		float: left;
+	}
+	
+	.grade.a {
+		margin-left: 10px;
+	}
+	
+	.icon.icon-icn-coup {
+		background-position: 0 -59px;
+	}
+	
+	h5 {
+		margin: 0 0 5px 0;
+	}
+	
+	.provider {
+		width: 250px;
+	}
+}
+
+.mobile {
+	
+	.name-lockup {
+		
+		div.header-lockup {
+			padding-left: 0px;
+		}
+	}
+}
+
+.name-lockup {
+	
+	div.header-lockup {
+		padding: 0 0 0 75px;
+	}
+	
+	h3 {
+		margin-top: 0;
+		line-height: 27px;
+	}
+	
+	img.results-avatar {
+		margin-right: 10px;
+	}
+}
+
+a.popover-reviews,
+a.incognito {
+	color: @black;
+	
+	&:hover {
+		color: @black;
+	}
+}
+
+.coupon-count {
+	.border-radius(5px);
+	border: 1px solid #e8e6dd;
+	padding: 3px 6px 3px 6px;
+	background-color: #f3f3ef;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+	}
+	
+	.icon.icon-icn-coup {
+		background-position: 8px -59px;
 	}
 }

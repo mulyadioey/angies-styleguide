@@ -71,6 +71,9 @@
 .no-margin {
   margin: 0;
 }
+.no-padding {
+  padding: 0;
+}
 textarea {
   padding: 15px 12px;
   width: 270px;
@@ -1110,4 +1113,80 @@ ul.list-search .category-heading {
 }
 .marker.map-review {
   background-position: 50px -480px;
+}
+.review-count {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+.review-count span {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 16px;
+}
+.grade-lockup {
+  *zoom: 1;
+}
+.grade-lockup:before,
+.grade-lockup:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.grade-lockup:after {
+  clear: both;
+}
+.grade-lockup p,
+.grade-lockup span {
+  float: left;
+}
+.grade-lockup .grade.a {
+  margin-left: 10px;
+}
+.grade-lockup .icon.icon-icn-coup {
+  background-position: 0 -59px;
+}
+.grade-lockup h5 {
+  margin: 0 0 5px 0;
+}
+.grade-lockup .provider {
+  width: 250px;
+}
+.mobile .name-lockup div.header-lockup {
+  padding-left: 0px;
+}
+.name-lockup div.header-lockup {
+  padding: 0 0 0 75px;
+}
+.name-lockup h3 {
+  margin-top: 0;
+  line-height: 27px;
+}
+.name-lockup img.results-avatar {
+  margin-right: 10px;
+}
+a.popover-reviews,
+a.incognito {
+  color: #000000;
+}
+a.popover-reviews:hover,
+a.incognito:hover {
+  color: #000000;
+}
+.coupon-count {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #e8e6dd;
+  padding: 3px 6px 3px 6px;
+  background-color: #f3f3ef;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.coupon-count:hover {
+  text-decoration: none;
+}
+.coupon-count .icon.icon-icn-coup {
+  background-position: 8px -59px;
 }
