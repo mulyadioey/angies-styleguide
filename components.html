@@ -181,7 +181,102 @@
 </pre>          
         </section>
 
-        
+        <!-- Navbar
+        ================================================== -->
+		<section id="navbar">
+			<div class="page-header">
+				<h1>4. Navbar</h1>
+			</div>
+			<h3>Basic Navbar</h3>
+			<p>This is used in the Service Provider profile page template.</p>
+			<div class="bs-docs-example">
+				<div class="navbar basic">
+					<div class="navbar-inner">						
+						<ul class="nav">
+							<li class="active"><a href="#">Current Page</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</section>
+		
+		<!-- Breadcrumbs
+        ================================================== -->
+		<section id="breadcrumbs">
+			<div class="page-header">
+				<h1>5. Breadcrumbs</h1>
+			</div>
+			<h3>Examples</h3>
+			<div class="bs-docs-example">
+				<ul class="breadcrumb">
+					<li class="active">Home</li>					
+				</ul>
+				<ul class="breadcrumb">
+					<li><a href="#">Home</a> <span class="divider">/</span></li>
+					<li class="active">Search for Drywall near 1030 E. Washington St., Indianapolis, IN</li>
+				</ul>
+				<ul class="breadcrumb">
+					<li><a href="#">Home</a> <span class="divider">/</span></li>
+					<li><a href="#">Search for Drywall near 1030 E. Washington St., Indianapolis, IN</a> <span class="divider">/</span></li>
+					<li class="active">Acme Drywall Co</li>
+				</ul>				
+			</div>
+		</section>
+
+		<!-- Pagination
+        ================================================== -->
+		<section id="pagination">
+			<div class="page-header">
+				<h1>6. Pagination</h1>
+			</div>
+			<h3>Standard Pagination</h3>
+			<div class="bs-docs-example">
+				<div class="pagination">
+					<ul>
+						<li class="prev"><a href="#"><b class="left-caret"></b> Prev</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="next"><a href="#">Next <b class="right-caret"></b></a></li>
+					</ul>
+				</div>			
+			</div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;prev&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;b class=&quot;left-caret&quot;&gt;&lt;/b&gt; Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Next &lt;b class=&quot;right-caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+			<h3>Condensed Pagination</h3>
+			<p>The pagination width follows its container. You don't need to change any of its code. In this example, the container is 300-pixel wide.</p>
+			<div class="bs-docs-example">
+				<div style="width: 300px">
+					<div class="pagination">
+						<ul>
+							<li class="prev"><a href="#"><b class="left-caret"></b> Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li class="next"><a href="#">Next <b class="right-caret"></b></a></li>
+						</ul>
+					</div><!-- /.pagination -->
+				</div>
+			</div>
+		</section>
+		
 		<!-- Images
         ================================================== -->
     <section id="images">
@@ -299,102 +394,6 @@
             </tbody>
         </table>
     </section>
-
-        <!-- Navbar
-        ================================================== -->
-		<section id="navbar">
-			<div class="page-header">
-				<h1>4. Navbar</h1>
-			</div>
-			<h3>Basic Navbar</h3>
-			<p>This is used in the Service Provider profile page template.</p>
-			<div class="bs-docs-example">
-				<div class="navbar basic">
-					<div class="navbar-inner">						
-						<ul class="nav">
-							<li class="active"><a href="#">Current Page</a></li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-						</ul>
-					</div>
-				</div>				
-			</div>
-		</section>
-		
-		<!-- Breadcrumbs
-        ================================================== -->
-		<section id="breadcrumbs">
-			<div class="page-header">
-				<h1>5. Breadcrumbs</h1>
-			</div>
-			<h3>Examples</h3>
-			<div class="bs-docs-example">
-				<ul class="breadcrumb">
-					<li class="active">Home</li>					
-				</ul>
-				<ul class="breadcrumb">
-					<li><a href="#">Home</a> <span class="divider">/</span></li>
-					<li class="active">Search for Drywall near 1030 E. Washington St., Indianapolis, IN</li>
-				</ul>
-				<ul class="breadcrumb">
-					<li><a href="#">Home</a> <span class="divider">/</span></li>
-					<li><a href="#">Search for Drywall near 1030 E. Washington St., Indianapolis, IN</a> <span class="divider">/</span></li>
-					<li class="active">Acme Drywall Co</li>
-				</ul>				
-			</div>
-		</section>
-
-		<!-- Pagination
-        ================================================== -->
-		<section id="pagination">
-			<div class="page-header">
-				<h1>6. Pagination</h1>
-			</div>
-			<h3>Standard Pagination</h3>
-			<div class="bs-docs-example">
-				<div class="pagination">
-					<ul>
-						<li class="prev"><a href="#"><b class="left-caret"></b> Prev</a></li>
-						<li><a href="#">1</a></li>
-						<li class="active"><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li class="next"><a href="#">Next <b class="right-caret"></b></a></li>
-					</ul>
-				</div>			
-			</div>
-<pre class="prettyprint linenums">
-&lt;div class="pagination"&gt;
-  &lt;ul&gt;
-    &lt;li class=&quot;prev&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;b class=&quot;left-caret&quot;&gt;&lt;/b&gt; Prev&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Next &lt;b class=&quot;right-caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</pre>
-			<h3>Condensed Pagination</h3>
-			<p>The pagination width follows its container. You don't need to change any of its code. In this example, the container is 300-pixel wide.</p>
-			<div class="bs-docs-example">
-				<div style="width: 300px">
-					<div class="pagination">
-						<ul>
-							<li class="prev"><a href="#"><b class="left-caret"></b> Prev</a></li>
-							<li><a href="#">1</a></li>
-							<li class="active"><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li class="next"><a href="#">Next <b class="right-caret"></b></a></li>
-						</ul>
-					</div><!-- /.pagination -->
-				</div>
-			</div>
-		</section>
 
 		</div><!-- /.span9 -->
 	</div><!-- /.row -->
