@@ -681,45 +681,52 @@ table.table-striped.avatar td {
 table.table-striped.map td:first-child {
   width: 120px;
 }
-.icon {
+[class*=" icn-"] {
+  margin-top: 1px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: 14px;
+  vertical-align: text-top;
+}
+.icn {
   width: 35px;
   height: 35px;
   background-image: url(/assets/img/icon-set.png);
 }
-.icon.icon-icn-ssa {
+.icn.icn-ssa {
   background-position: 6px 1px;
 }
-.icon.icon-icn-cash {
+.icn.icn-cash {
   background-position: -40px 7px;
 }
-.icon.icon-icn-deal {
+.icn.icn-deal {
   background-position: -73px 5px;
 }
-.icon.icon-icn-coup {
+.icn.icn-coup {
   background-position: 8px -51px;
 }
-.icon.icon-icn-cal {
+.icn.icn-cal {
   background-position: -33px -54px;
 }
-.icon.icon-icn-chat {
+.icn.icn-chat {
   background-position: -80px -60px;
 }
-.icon.icon-icn-poh {
+.icn.icn-poh {
   background-position: 8px -113px;
 }
-.icon.icon-icn-pen {
+.icn.icn-pen {
   background-position: -31px -115px;
 }
-.icon.icon-icn-neighbour {
+.icn.icn-neighbour {
   background-position: -72px -115px;
 }
-.icon.icon-icn-search-yellow {
+.icn.icn-search-yellow {
   background-position: 0px -180px;
 }
-.icon.icon-icn-search {
+.icn.icn-search {
   background-position: -40px -180px;
 }
-.icon.icon-icn-search-white {
+.icn.icn-search-white {
   background-position: -69px -170px;
 }
 hr.w-50 {
