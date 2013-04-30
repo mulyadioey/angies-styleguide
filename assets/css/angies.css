@@ -569,6 +569,7 @@ section {
 }
 .row-promo .cta-block button {
   margin-left: 5px;
+  font-weight: 700;
 }
 .row-promo.tablet i,
 .row-promo.mobile i {
