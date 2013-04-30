@@ -253,6 +253,10 @@ span.grade.inline.a {
 .modal {
   border: none;
 }
+.navbar-fixed-top .nav > li > a {
+  font-size: 17px;
+  font-weight: 700;
+}
 .navbar.basic .navbar-inner {
   min-height: auto;
   border-color: #e8e6dd;
