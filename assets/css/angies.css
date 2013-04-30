@@ -183,6 +183,10 @@ code.no-bg {
 .right-caret {
   border-left: 5px solid #000;
 }
+.navbar-fixed-top .nav > li > a {
+  font-size: 17px;
+  font-weight: 600;
+}
 span.grade {
   display: block;
   width: 40px;
@@ -252,10 +256,6 @@ span.grade.inline.a {
 }
 .modal {
   border: none;
-}
-.navbar-fixed-top .nav > li > a {
-  font-size: 17px;
-  font-weight: 700;
 }
 .navbar.basic .navbar-inner {
   min-height: auto;
