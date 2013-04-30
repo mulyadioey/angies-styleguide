@@ -142,6 +142,7 @@ code.no-bg {
 
 @btnBackgroundColorActive:	#eae7db;
 
+@inputBackgroundColorDisabled: #f8f6ef;
 
 // ------------------------------------------------
 //
@@ -815,6 +816,128 @@ hr {
 	&.w-50 {
 		width: 50%;
 	}
+}
+
+
+// ------------------------------------------------
+//
+// Form Elements, The Basics.
+//
+// ------------------------------------------------
+
+// Override Bootstrap forms.less.
+
+input {
+	.placeholder(@mediumGray);
+	
+	&:-moz-placeholder {
+		font-style: italic;
+		font-weight: 100;
+	}
+  
+	&:-ms-input-placeholder {
+		font-style: italic;
+		font-weight: 100;
+	}
+	
+	&::-webkit-input-placeholder {
+		font-style: italic;
+		font-weight: 100;
+	}
+}
+
+// Shared size and type resets
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	padding: 8px 12px;
+	.border-radius(6px);
+	font-size: 16px;
+	line-height: 16px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border: 1px solid @borderColor;
+	.box-shadow(none);
+	
+	// Focus state
+	&:focus {
+		border-color: @lightGray;		
+		.box-shadow(0 0 6px rgba(0,0,0,0.18));
+	}
+}
+
+textarea {
+	padding: 15px 12px;
+	line-height: 22px;
+}
+
+// Inline and block help text.
+.help-block,
+.help-inline {
+	color: @darkGray;
+	font-weight: 100;	// Proxima Nova Light
+}
+
+// Invalid input, mixins.less.
+.control-group.error {
+
+	.control-label,
+	.help-block,
+	.help-inline {
+		color: @alertRed;
+	}
+
+	input,
+	select,
+	textarea {
+		border-color: @alertRed;
+		color: @alertRed;
+
+		&:focus {
+			border-color: @alertRed;
+			.box-shadow(0 0 6px rgba(226,67,30,0.5));
+		}
+	}
+}
+
+// Disabled input.
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+	background-color: @inputBackgroundColorDisabled;
 }
 
 

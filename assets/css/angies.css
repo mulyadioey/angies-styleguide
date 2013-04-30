@@ -712,6 +712,129 @@ table.table-striped.avatar td {
 hr.w-50 {
   width: 50%;
 }
+input:-moz-placeholder {
+  color: #aaaaaa;
+}
+input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+input:-moz-placeholder {
+  font-style: italic;
+  font-weight: 100;
+}
+input:-ms-input-placeholder {
+  font-style: italic;
+  font-weight: 100;
+}
+input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 100;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  padding: 8px 12px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 16px;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border: 1px solid #e8e6dd;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #dddddd;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+}
+textarea {
+  padding: 15px 12px;
+  line-height: 22px;
+}
+.help-block,
+.help-inline {
+  color: #7b7b7b;
+  font-weight: 100;
+}
+.control-group.error .control-label,
+.control-group.error .help-block,
+.control-group.error .help-inline {
+  color: #e2431e;
+}
+.control-group.error input,
+.control-group.error select,
+.control-group.error textarea {
+  border-color: #e2431e;
+  color: #e2431e;
+}
+.control-group.error input:focus,
+.control-group.error select:focus,
+.control-group.error textarea:focus {
+  border-color: #e2431e;
+  -webkit-box-shadow: 0 0 6px rgba(226, 67, 30, 0.5);
+  -moz-box-shadow: 0 0 6px rgba(226, 67, 30, 0.5);
+  box-shadow: 0 0 6px rgba(226, 67, 30, 0.5);
+}
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  background-color: #f8f6ef;
+}
 .bs-docs-example .logged-in {
   border-bottom: 1px solid #227e2c;
 }
