@@ -362,7 +362,7 @@ code.no-bg {
 }
 .docs-custom-pin .grade {
   float: none;
-  margin: 0 0 0 53px;
+  margin: 0 0 0 -16px;
 }
 .left-caret,
 .right-caret {
