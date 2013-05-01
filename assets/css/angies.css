@@ -727,6 +727,21 @@ table.table-striped.map td:first-child {
 .icn.icn-search-white {
   background-position: -69px -170px;
 }
+.icn.icn-acc-mobile {
+  background-position: -140px 0;
+}
+.icn.icn-cart-mobile {
+  background-position: -140px -60px;
+}
+.icn.icn-pencil {
+  background-position: -140px -120px;
+}
+.icn.icn-search-mobile {
+  background-position: -140px -180px;
+}
+.icn.icn-location-mobile {
+  background-position: -140px -240px;
+}
 hr.w-50 {
   width: 50%;
 }
@@ -1333,4 +1348,26 @@ a.incognito:hover {
 }
 .coupon-count .icon.icon-icn-coup {
   background-position: 8px -59px;
+}
+.alert,
+.alert-block {
+  border-color: #f7c602;
+  color: #000000;
+}
+.alert h4,
+.alert-block h4 {
+  color: #000000;
+}
+.alert-error {
+  border-color: #e2431e;
+  color: #b94a48;
+}
+.alert-success {
+  border-color: #29a036;
+  color: #000000;
+}
+.alert-info {
+  background-color: #f9f8f2;
+  border-color: #eae7db;
+  color: #000000;
 }

@@ -28,7 +28,7 @@ page_open();
 				<li><a href="#pagination">Pagination</a></li>
 				<li><a href="#images">Images</a></li>
 				<li><a href="#maps">Maps</a></li>
-				<li><a href="#content-lookups">Content Lookups</a></li>
+				<li><a href="#content-lookups">Content Lockups</a></li>
 				<li><a href="#phone">Phone-Specific</a></li>
 				<li><a href="#alerts">Alerts</a></li>
 			</ul>
@@ -447,7 +447,6 @@ Insert code sample
 Insert code sample
 &lt;/code&gt;
 </pre>
-	</section>
 	
 		<h3>Provider Listing - Tablet</h3>
 		<div class="bs-docs-example">
@@ -562,6 +561,129 @@ Insert code sample
 &lt;/code&gt;
 </pre>
 
+	</section>
+
+	<!-- Phone Specific
+	================================================== -->
+	<section id="phone">
+		<div class="page-header">
+			<h1>9. Phone-Specific Elements</h1>
+		</div>
+
+		<h3>Icons</h3>
+		<table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Icon</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="icn icn-acc-mobile"></i></td>
+                <td><code>icn icn-acc-mobile</code></td>
+                <td>Top nav - My Account</td>
+              </tr>
+              <tr>
+                <td><i class="icn icn-cart-mobile"></i></td>
+                <td><code>icn icn-cart-mobile</code></td>
+                <td>Top nav - Cart</td>
+              </tr>
+              <tr>
+                <td><i class="icn icn-pencil"></i></td>
+                <td><code>icn icn-pencil</code></td>
+                <td>Pencil icon for Write a Review button</td>
+              </tr>
+              <tr>
+                <td><i class="icn icn-search-mobile"></i></td>
+                <td><code>icn icn-search-mobile</code></td>
+                <td>Search icon for left side of search bar</td>
+              </tr>
+			  <tr>
+                <td><i class="icn icn-location-mobile"></i></td>
+                <td><code>icn icn-location-mobile</code></td>
+                <td>Location icon for left side of location bar (search)</td>
+              </tr>
+            </tbody>
+        </table>
+		
+		<h3>Top Menus</h3>
+		<h5>Account</h5>
+		<img src="/assets/img/account-screenshot.png" alt="account screenshot" class="mb-50" />
+		
+		<h5>Message</h5>
+		<img src="/assets/img/message-screenshot.png" alt="messages screenshot" class="mb-50" />
+		
+		<h5>Cart</h5>
+		<img src="/assets/img/cart-screenshot.png" alt="cart screenshot" class="mb-50" />
+		
+		<h3>Buttons</h3>
+		<table class="table table-bordered table-striped" style="width:500px;">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn btn-primary">Write a Review</button></td>
+                <td>Primary Button</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-secondary">Cancel</button></td>
+                <td>Secondary Button</td>
+              </tr>
+            </tbody>
+        </table>
+	</section>
+
+	
+	<!-- Alert
+	================================================== -->
+	<section id="alerts">
+		<div class="page-header">
+			<h1>10. Alerts</h1>
+		</div>
+	
+		<h3>Basic Alert</h3>
+		<div class="alert">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <span><strong>Warning!</strong> This is a basic alert</span>
+        </div>
+		
+		<hr class="bs-docs-separator" />
+		
+		<h3>Longer alert messages</h3>
+		<div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Warning!</h4>
+            <span>Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. </span>
+        </div>
+		
+		<hr class="bs-docs-separator" />
+		
+		<h3>Error</h3>
+		<div class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <span><strong>Error!</strong> Something&rsquo;s wrong</span>
+        </div>
+		
+		<hr class="bs-docs-separator" />
+		
+		<h3>Success</h3>
+		<div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <span><strong>Well done!</strong> You successfully read this important alert message.</span>
+        </div>
+		
+		<hr class="bs-docs-separator" />
+		<h3>Information</h3>
+		<div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <span><strong>Heads up!</strong> This alert needs your attention, but it&rsquo;s not super important.</span>
+        </div>
 	</section>
 	
 		</div><!-- /.span9 -->
