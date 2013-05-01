@@ -233,90 +233,50 @@ page_open();
 			<h1>7. Images</h1>
 		</div>
 
-		<h3>Image thumbnails</h3>
-		<h4>Large (300x200)</h4>
-		<ul class="thumbnails">
-			<li>
-				<a href="#" class="thumbnail">
-					<img alt="300x200" src="/assets/img/thumb-large.png">
-				</a>
-			</li>
-			<li class="info-inline">
-				<p>border:solid 1px #e8e6dd; <br />
-					box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
-			</li>
-		</ul>
-		  
-		<h4>Medium (194x128)</h4>
-		<ul class="thumbnails">
-            <li>
-				<a href="#" class="thumbnail medium">
-					<img alt="194x128" src="/assets/img/thumb-medium.png">
-				</a>
-            </li>
-			<li class="info-inline">
-				<p>border: solid 1px #e8e6dd; <br />
-				box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
-			</li>
-		</ul>
-          
-		<h4>Small (140x92)</h4>
-		<ul class="thumbnails">
-			<li>
-				<a href="#" class="thumbnail small">
-					<img alt="140x92" src="/assets/img/thumb-small.png">
-				</a>
-			</li>
-			<li class="info-inline">
-				<p>border: solid 1px #e8e6dd; <br />
-				box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
-			</li>
-		</ul>
+		<h3>Image Thumbnails</h3>
+		<h5>Large (300x200)</h5>
+		<img class="thumb" src="./assets/img/thumb-large.png" alt="300x200">
+						
+		<h5>Medium (194x128)</h5>
+		<img class="thumb" src="./assets/img/thumb-medium.png" alt="194x128">
+		
+		<h5>Small (140x92)</h5>
+		<img class="thumb" src="./assets/img/thumb-small.png" alt="140x92">				
 		
 		<hr class="bs-docs-separator" />
 		
-		<h3>Deal thumbnails</h3>
+		<h3>Deal Thumbnails</h3>
 		
-		<h4>Large Deal Thumbnails (200x200)</h4>
-		<ul class="thumbnails">
-            <li>
-				<a href="#" class="thumbnail deal large">
-					<img alt="200x200" src="/assets/img/thumb-deal-large.png">
-				</a>
-            </li>
-			<li class="span5">
+		<h5>Large Deal Thumbnails (200x200)</h5>
+		<div class="docs-image">
+			<img class="deal-large" src="/assets/img/thumb-deal-large.png" alt="200x200">			
+			<div class="info">
 				<p>Use this on a Deal detail page. The image is cropped to a square and the corners are rounded with a 6px radius.</p>
-				<p class="info-inline">border:solid 1px #e8e6dd; <br />
-				border-radius:6px; <br />
-				box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
+				<p class="info-inline">
+					border:solid 1px #e8e6dd;<br>
+					border-radius:6px;<br>
+					box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
 				</p>
-			</li>
-        </ul>
-		
-		<h4>Deal Thumbnails (120x120)</h4>
-		<ul class="thumbnails">
-            <li>
-				<a href="#" class="thumbnail deal small">
-					<img alt="120x120" src="/assets/img/thumb-deal-small.png">
-				</a>
-            </li>
-			<li class="span5">
+			</div>
+		</div>
+		<h5>Deal Thumbnails (120x120)</h5>
+		<div class="docs-image">
+			<img class="deal" src="/assets/img/thumb-deal.png" alt="120x120">			
+			<div class="info">
 				<p>For use on the far left of the standard deal module. The rounded left corners match the rounded corners of the deal module.</p>
-				<p class="info-inline">border-top-left-radius:6px; <br />
-				border-top-right-radius:0px; <br />
-				border-bottom-left-radius:6px; <br />
-				border-bottom-right-radius:0px;
+				<p class="info-inline">
+					border-top-left-radius: 6px;<br>
+					border-top-right-radius: 0px;<br>
+					border-bottom-left-radius: 6px;<br>
+					border-bottom-right-radius: 0px;
 				</p>
-			</li>
-        </ul>
+			</div>
+		</div>				
 		
 		<hr class="bs-docs-separator" />
 		
 		<h3>Avatars</h3>
-		<table class="table table-bordered table-striped avatar">
+		<table class="table table-bordered table-striped">
             <thead>
               <tr>
                 <th>Default Image</th>
@@ -325,19 +285,19 @@ page_open();
             </thead>
             <tbody>
               <tr>
-                <td><img src="/assets/img/user-img-large.png" /></td>
+                <td><img src="./assets/img/user-img-large.png" /></td>
                 <td><strong>100 x 100</strong> Featured placement for the Service Provider page.</td>
               </tr>
               <tr>
-                <td><img src="/assets/img/user-img-standar.png" /></td>
+                <td><img src="./assets/img/user-img-standar.png" /></td>
                 <td><strong>60 x 60</strong> Standard size for use in search results</td>
               </tr>
               <tr>
-                <td><img src="/assets/img/user-img-small.png" /></td>
+                <td><img src="./assets/img/user-img-small.png" /></td>
                 <td><strong>40 x 40</strong> Smaller size for use in modules like Recently Viewed.</td>
               </tr>
               <tr>
-                <td><img src="/assets/img/user-img-smaller.png" /></td>
+                <td><img src="./assets/img/user-img-smaller.png" /></td>
                 <td><strong>24 x 24</strong> Smallest size to be used for social meta data.</td>
               </tr>
             </tbody>

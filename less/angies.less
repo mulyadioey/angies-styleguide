@@ -2,6 +2,9 @@
 
 @import "bootstrap/mixins.less";
 
+@import "angies-components.less";
+
+
 /* General */
 .mb-0 { margin-bottom: 0; }
 .mb-5 { margin-bottom: 5; }
@@ -37,7 +40,6 @@ textarea {
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 400;
-	vertical-align: middle;
 }
 
 .lightPink { color: #eb008c; }
@@ -145,6 +147,18 @@ code.no-bg {
 @btnBackgroundColorActive:	#eae7db;
 
 @inputBackgroundColorDisabled: #f8f6ef;
+
+
+// Layout for images, Components tab.
+.docs-image {
+	.clearfix();
+	margin: 0 0 30px;
+	
+	img {
+		float: left;
+		margin-right: 20px;
+	}
+}
 
 // ------------------------------------------------
 //
@@ -757,27 +771,6 @@ span.grade {
 		background-color: @alertRed;
 	}
 } // box
-
-table.table-striped {
-	
-	td {
-		height: 35px;
-		text-align: center;
-		display: table-cell;
-		vertical-align: middle;
-	}
-	
-	&.avatar td {
-		text-align: left;
-	}
-	
-	&.map {
-		
-		td:first-child {
-			width: 120px;
-		}
-	}
-}
 
 [class*=" icn-"] {
 	margin-top: 1px;
