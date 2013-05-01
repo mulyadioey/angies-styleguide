@@ -227,176 +227,138 @@ page_open();
 		</section>
 		
 		<!-- Images
-        ================================================== -->
-    <section id="images">
-		<div class="page-header">
-			<h1>7. Images</h1>
-		</div>
-
-		<h3>Image thumbnails</h3>
-		<h4>Large (300x200)</h4>
-		<ul class="thumbnails">
-			<li>
-				<a href="#" class="thumbnail">
-					<img alt="300x200" src="/assets/img/thumb-large.png">
-				</a>
-			</li>
-			<li class="info-inline">
-				<p>border:solid 1px #e8e6dd; <br />
-					box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
-			</li>
-		</ul>
-		  
-		<h4>Medium (194x128)</h4>
-		<ul class="thumbnails">
-            <li>
-				<a href="#" class="thumbnail medium">
-					<img alt="194x128" src="/assets/img/thumb-medium.png">
-				</a>
-            </li>
-			<li class="info-inline">
-				<p>border: solid 1px #e8e6dd; <br />
-				box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
-			</li>
-		</ul>
-          
-		<h4>Small (140x92)</h4>
-		<ul class="thumbnails">
-			<li>
-				<a href="#" class="thumbnail small">
-					<img alt="140x92" src="/assets/img/thumb-small.png">
-				</a>
-			</li>
-			<li class="info-inline">
-				<p>border: solid 1px #e8e6dd; <br />
-				box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
-			</li>
-		</ul>
+	    ================================================== -->
+		<section id="images">
+			<div class="page-header">
+				<h1>7. Images</h1>
+			</div>
 		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Deal thumbnails</h3>
-		
-		<h4>Large Deal Thumbnails (200x200)</h4>
-		<ul class="thumbnails">
-            <li>
-				<a href="#" class="thumbnail deal large">
-					<img alt="200x200" src="/assets/img/thumb-deal-large.png">
-				</a>
-            </li>
-			<li class="span5">
-				<p>Use this on a Deal detail page. The image is cropped to a square and the corners are rounded with a 6px radius.</p>
-				<p class="info-inline">border:solid 1px #e8e6dd; <br />
-				border-radius:6px; <br />
-				box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
-			</li>
-        </ul>
-		
-		<h4>Deal Thumbnails (120x120)</h4>
-		<ul class="thumbnails">
-            <li>
-				<a href="#" class="thumbnail deal small">
-					<img alt="120x120" src="/assets/img/thumb-deal-small.png">
-				</a>
-            </li>
-			<li class="span5">
-				<p>For use on the far left of the standard deal module. The rounded left corners match the rounded corners of the deal module.</p>
-				<p class="info-inline">border-top-left-radius:6px; <br />
-				border-top-right-radius:0px; <br />
-				border-bottom-left-radius:6px; <br />
-				border-bottom-right-radius:0px;
-				</p>
-			</li>
-        </ul>
-		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Avatars</h3>
-		<table class="table table-bordered table-striped avatar">
-            <thead>
-              <tr>
-                <th>Default Image</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src="/assets/img/user-img-large.png" /></td>
-                <td><strong>100 x 100</strong> Featured placement for the Service Provider page.</td>
-              </tr>
-              <tr>
-                <td><img src="/assets/img/user-img-standar.png" /></td>
-                <td><strong>60 x 60</strong> Standard size for use in search results</td>
-              </tr>
-              <tr>
-                <td><img src="/assets/img/user-img-small.png" /></td>
-                <td><strong>40 x 40</strong> Smaller size for use in modules like Recently Viewed.</td>
-              </tr>
-              <tr>
-                <td><img src="/assets/img/user-img-smaller.png" /></td>
-                <td><strong>24 x 24</strong> Smallest size to be used for social meta data.</td>
-              </tr>
-            </tbody>
-        </table>
-    </section>
+			<h3>Image Thumbnails</h3>
+			<h5>Large (300x200)</h5>
+			<img class="thumb" src="./assets/img/thumb-large.png" alt="300x200">							
+			<h5>Medium (194x128)</h5>
+			<img class="thumb" src="./assets/img/thumb-medium.png" alt="194x128">			
+			<h5>Small (140x92)</h5>
+			<img class="thumb" src="./assets/img/thumb-small.png" alt="140x92">				
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Deal Thumbnails</h3>			
+			<h5>Large Deal Thumbnails (200x200)</h5>
+			<div class="docs-image">
+				<img class="deal-large" src="/assets/img/thumb-deal-large.png" alt="200x200">			
+				<div class="info">
+					<p>Use this on a Deal detail page. The image is cropped to a square and the corners are rounded with a 6px radius.</p>
+					<p class="info-inline">
+						border:solid 1px #e8e6dd;<br>
+						border-radius:6px;<br>
+						box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
+					</p>
+				</div>
+			</div>
+			<h5>Deal Thumbnails (120x120)</h5>
+			<div class="docs-image">
+				<img class="deal" src="/assets/img/thumb-deal.png" alt="120x120">			
+				<div class="info">
+					<p>For use on the far left of the standard deal module. The rounded left corners match the rounded corners of the deal module.</p>
+					<p class="info-inline">
+						border-top-left-radius: 6px;<br>
+						border-top-right-radius: 0px;<br>
+						border-bottom-left-radius: 6px;<br>
+						border-bottom-right-radius: 0px;
+					</p>
+				</div>
+			</div>				
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Avatars</h3>
+			<table class="table table-bordered table-striped">
+		        <thead>
+		          <tr>
+		            <th>Default Image</th>
+		            <th>Description</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td><img src="./assets/img/user-img-large.png" /></td>
+		            <td><strong>100 x 100</strong> Featured placement for the Service Provider page.</td>
+		          </tr>
+		          <tr>
+		            <td><img src="./assets/img/user-img-standar.png" /></td>
+		            <td><strong>60 x 60</strong> Standard size for use in search results</td>
+		          </tr>
+		          <tr>
+		            <td><img src="./assets/img/user-img-small.png" /></td>
+		            <td><strong>40 x 40</strong> Smaller size for use in modules like Recently Viewed.</td>
+		          </tr>
+		          <tr>
+		            <td><img src="./assets/img/user-img-smaller.png" /></td>
+		            <td><strong>24 x 24</strong> Smallest size to be used for social meta data.</td>
+		          </tr>
+		        </tbody>
+		    </table>
+		</section>
 	
-	<!-- Maps
-        ================================================== -->
-    <section id="maps">
-		<div class="page-header">
-			<h1>8. Maps</h1>
-		</div>
-
-		<h3>Custom pins</h3>
-		<table class="table table-bordered table-striped map">
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><div class="marker green"></div></td>
-                <td align="left">Map marker for search results</td>
-              </tr>
-              <tr>
-                <td><div class="marker yellow"></div></td>
-                <td>Highlight state for map marker</td>
-              </tr>
-              <tr>
-                <td><div class="marker gray"></div></td>
-                <td>Secondary map marker</td>
-              </tr>
-              <tr>
-                <td><div class="marker map-review"></div></td>
-                <td>Use smallest size grade icons (24 px) to display reviews on the map</td>
-              </tr>
-            </tbody>
-        </table>
-		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Basic map - integration with Google Maps</h3>
-		<img src="/assets/img/maps.png" />
-		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Service Map</h3>
-		<div class="row">
-			<div class="span3">
-				<img src="/assets/img/maps.png" />
+		<!-- Maps
+		================================================== -->
+		<section id="maps">
+			<div class="page-header">
+				<h1>8. Maps</h1>
 			</div>
-			<div class="span3">
-				<p class="info-inline"><strong>Service area overlay</strong> <br /> #4db346 (Lighter Green) 30% opacity</p>
-			</div>
-		</div>
 		
-	</section>
+			<h3>Custom pins</h3>
+			<div class="docs-custom-pin">
+				<table class="table table-bordered table-striped">			
+			        <thead>
+			          <tr>
+			            <th>Image</th>
+			            <th>Description</th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <td><mark class="marker"><b>1</b></mark></td>
+			            <td align="left">Map marker for search results</td>
+			          </tr>
+			          <tr>
+			            <td><mark class="marker highlight"><b>1</b></mark></td>
+			            <td>Highlight state for map marker</td>
+			          </tr>
+			          <tr>
+			            <td><mark class="marker secondary"><b>1</b></mark></td>
+			            <td>Secondary map marker</td>
+			          </tr>
+			          <tr>
+			            <td><span class="grade sm a">A</span></td>
+			            <td>Use smallest size grade icons (24 px) to display reviews on the map</td>
+			          </tr>
+			        </tbody>
+			    </table>
+			</div>
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Basic map - integration with Google Maps</h3>
+			<img src="./assets/img/maps.png" />
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Service Map</h3>
+			<div class="row">
+				<div class="span3">
+					<img src="./assets/img/maps.png" />
+				</div>
+				<div class="span6">
+					<p class="info-inline" style="margin-top: 30px;">
+						<strong>Service area overlay</strong><br>
+						#4db346 (Lighter Green)<br>
+						30% opacity
+					</p>
+				</div>
+			</div>			
+		</section>
 
 	<!-- Content Lockups
         ================================================== -->
@@ -408,8 +370,8 @@ page_open();
 		<h3>Image, Headline, Marketing Copy</h3>
 		<div class="bs-docs-example">
 			<div class="media">
-				<a class="pull-left thumbnail" href="#">
-					<img class="media-object" alt="image" src="/assets/img/thumb-large.png">
+				<a class="pull-left" href="#">
+					<img class="media-object thumb" alt="image" src="/assets/img/thumb-large.png">
 				</a>
 				<div class="media-body">
 					<h4 class="media-heading">Headline</h4>
@@ -418,108 +380,136 @@ page_open();
             </div>
 		</div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
+&lt;div class="media"&gt;
+  &lt;a class="pull-left" href="#"&gt;
+    &lt;img class="media-object" data-src="holder.js/64x64"&gt;
+  &lt;/a&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Headline&lt;/h4&gt;
+    &lt;p&gt;...&lt;/p&gt;    
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre>
 
 		<h3>Provider Listing</h3>
-		<div class="bs-docs-example">
+		<div class="bs-docs-example">			
 			<header class="row-fluid">	
 				<div class="pull-right grade-lockup">
-					<p class="review-count"><a href="#!" class="popover-reviews">63 reviews</a><br> <span>31 by Neighbors</span></p>
-					<span class="grade a">A</span>
-				</div>
-					
+					<p class="review-count"><a href="#!" class="popover-reviews">63 Reviews</a><br> <span>7 by Neighbors</span></p>
+					<span class="grade a">A</span><span class="grade sm a">A</span>
+				</div>								
 				<div class="name-lockup">
-					<img src="/assets/img/user-img-standar.png" class="pull-left results-avatar">
-					<div class="header-lockup">
-						<h3><a href="#!" class="incognito">Mulhall Construction</a></h3>
-						<p></p>
+					<img class="pull-left" src="./assets/img/user-img-standar.png">
+					<div>
+						<h3><a href="#!" class="incognito">Mulhall Construction</a></h3>						
 					</div>
-					<p><a href="#!" class="coupon-count"><i class="icon icon-icn-coup"></i>2 coupons</a></p>
+					<!-- Display on desktop. -->	
+					<p class="desktop">						
+						<a href="#!" class="coupon-count"><i class="icn icn-coup"></i> 2 coupons</a>
+					</p>
+					<!-- Display on tablet. -->
+					<p class="tablet">						
+						<i class="icn icn-coup"></i>
+					</p>
+					<!-- Display on mobile. -->
+					<p class="mobile">
+						<span class="grade inline a">A</span> 16 Reviews
+						<i class="icn icn-coup"></i>
+					</p>					
 				</div>
-
 			</header>
 		</div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
+&lt;header class=&quot;row-fluid&quot;&gt;  
+  &lt;div class=&quot;pull-right grade-lockup&quot;&gt;
+    &lt;p class=&quot;review-count&quot;&gt;&lt;a href=&quot;#!&quot; class=&quot;popover-reviews&quot;&gt;63 Reviews&lt;/a&gt;&lt;br&gt; &lt;span&gt;7 by Neighbors&lt;/span&gt;&lt;/p&gt;
+    &lt;span class=&quot;grade a&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;grade sm a&quot;&gt;A&lt;/span&gt;
+  &lt;/div&gt;                                
+  &lt;div class=&quot;name-lockup&quot;&gt;
+    &lt;img class=&quot;pull-left&quot; src=&quot;./assets/img/user-img-standar.png&quot;&gt;
+    &lt;div&gt;
+      &lt;h3&gt;&lt;a href=&quot;#!&quot; class=&quot;incognito&quot;&gt;Mulhall Construction&lt;/a&gt;&lt;/h3&gt;                        
+    &lt;/div&gt;
+    &lt;!-- Display on desktop. --&gt;  
+    &lt;p class=&quot;desktop&quot;&gt;                     
+      &lt;a href=&quot;#!&quot; class=&quot;coupon-count&quot;&gt;&lt;i class=&quot;icn icn-coup&quot;&gt;&lt;/i&gt; 2 coupons&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;!-- Display on tablet. --&gt;
+    &lt;p class=&quot;tablet&quot;&gt;                      
+      &lt;i class=&quot;icn icn-coup&quot;&gt;&lt;/i&gt;
+    &lt;/p&gt;
+    &lt;!-- Display on mobile. --&gt;
+    &lt;p class=&quot;mobile&quot;&gt;
+      &lt;span class=&quot;grade inline a&quot;&gt;A&lt;/span&gt; 16 Reviews
+      &lt;i class=&quot;icn icn-coup&quot;&gt;&lt;/i&gt;
+    &lt;/p&gt;                  
+  &lt;/div&gt;
+&lt;/header&gt;
 </pre>
 	
 		<h3>Provider Listing - Tablet</h3>
-		<div class="bs-docs-example">
-			<header class="row-fluid tablet">	
+		<div class="bs-docs-example" style="width: 550px;">			
+			<div class="article-result-tablet">
+			<header class="row-fluid">				
+				<div class="pull-right grade-lockup">
+					<p class="review-count"><a href="#!" class="popover-reviews">63 Reviews</a><br> <span>7 by Neighbors</span></p>
+					<span class="grade a">A</span><span class="grade sm a">A</span>
+				</div>					
 				<div class="name-lockup">
-					<div class="span11">
-						<h4><a href="#!" class="incognito">Mulhall Construction</a></h4>
-						<p></p>
+					<img class="pull-left" src="./assets/img/user-img-standar.png">
+					<div>
+						<h3><a href="#!" class="incognito">Mulhall Construction</a></h3>						
 					</div>
-					<p class="review-count pull-right mt-10"><a href="#!" class="popover-reviews">16 reviews</a></p>
+					<!-- Display on desktop. -->	
+					<p class="desktop">						
+						<a href="#!" class="coupon-count"><i class="icn icn-coup"></i> 2 coupons</a>
+					</p>
+					<!-- Display on tablet. -->
+					<p class="tablet">						
+						<i class="icn icn-coup"></i>
+					</p>
+					<!-- Display on mobile. -->
+					<p class="mobile">
+						<span class="grade inline a">A</span> 16 Reviews
+						<i class="icn icn-coup"></i>
+					</p>					
 				</div>
-				
-				<div class="grade-lockup">
-					<p class="span11"><i class="icon icon-icn-coup"></i></p>
-					<span class="grade sm a pull-right">A</span>
-				</div>
-
 			</header>
+			</div>
 		</div>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
-</pre>
 
 		<h3>Provider Listing - Mobile</h3>
-		<div class="bs-docs-example">
-			<header class="row-fluid mobile">	
+		<p>At the mobile size, individual pieces of the provider listing (coupons, reviews, etc.) are no longer active. The entire row acts as a button that leads to the Service Provider page.</p>
+		<div class="bs-docs-example" style="width: 400px;">
+			<div class="article-result-mobile">
+			<!--
+			  The whole container needs to be enclosed by `<a>` (requirement: the entire row acts as a button.
+			    Thus, we'd need to get JavaScript help to remove all `<a>` insider `<header>`. For the purpose
+			    for this styleguide (Beta), the removal was done manually.	
+			-->
+			<a href="#">
+			<header class="row-fluid">
+				<div class="pull-right grade-lockup">
+					<p class="review-count"><span class="popover-reviews">63 Reviews<span><br> <span>7 by Neighbors</span></p>
+					<span class="grade a">A</span>
+					<span class="grade sm a">A</span>
+				</div>					
 				<div class="name-lockup">
-					<div class="header-lockup">
-						<h4><a href="#!" class="incognito">Mulhall Construction</a></h4>
-						<p></p>
-					</div>
+					<img class="pull-left results-avatar" src="./assets/img/user-img-standar.png">
+					<div>
+						<h3>Mulhall Construction</h3>
+					</div>					
+					<p class="mobile">
+						<span class="grade inline a">A</span> 16 Reviews
+						<i class="icn icn-coup"></i>
+					</p>					
 				</div>
 				
-				<div class="grade-lockup">
-					<div class="span11">
-						<span class="letter-grade letter-grade-a">A&nbsp;</span>
-						<p class="review-count"><a href="#!" class="popover-reviews">16 reviews</a></p>
-					</div>
-					<p><i class="icon icon-icn-coup"></i></p>
-				</div>
-
 			</header>
+			</a>
+			</div>
 		</div>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
-</pre>
-
-		<h3>Small Provider Listing</h3>
-		<div class="bs-docs-example">
-			<header class="row-fluid">
-				<div class="grade-lockup">
-					<img src="/assets/img/user-img-small.png" class="pull-left mr-10" />
-					<div class="pull-left provider">
-						<h5><a href="#!" class="incognito">Mulhall Construction</a></h5>
-						<div class="span9">
-							<span class="letter-grade letter-grade-a">A&nbsp;</span>
-							<p class="review-count"><a href="#!" class="popover-reviews">264 reviews</a></p>
-						</div>
-						<p class="span2">45m</p>
-					</div>
-				</div>
-			</header>
-		</div>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
-</pre>
-
+		
 		<h3>Activity</h3>
 		<div class="bs-docs-example">
 			<div class="neighborhood-activity">
