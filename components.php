@@ -227,142 +227,138 @@ page_open();
 		</section>
 		
 		<!-- Images
-        ================================================== -->
-    <section id="images">
-		<div class="page-header">
-			<h1>7. Images</h1>
-		</div>
-
-		<h3>Image Thumbnails</h3>
-		<h5>Large (300x200)</h5>
-		<img class="thumb" src="./assets/img/thumb-large.png" alt="300x200">
-						
-		<h5>Medium (194x128)</h5>
-		<img class="thumb" src="./assets/img/thumb-medium.png" alt="194x128">
-		
-		<h5>Small (140x92)</h5>
-		<img class="thumb" src="./assets/img/thumb-small.png" alt="140x92">				
-		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Deal Thumbnails</h3>
-		
-		<h5>Large Deal Thumbnails (200x200)</h5>
-		<div class="docs-image">
-			<img class="deal-large" src="/assets/img/thumb-deal-large.png" alt="200x200">			
-			<div class="info">
-				<p>Use this on a Deal detail page. The image is cropped to a square and the corners are rounded with a 6px radius.</p>
-				<p class="info-inline">
-					border:solid 1px #e8e6dd;<br>
-					border-radius:6px;<br>
-					box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
-				</p>
+	    ================================================== -->
+		<section id="images">
+			<div class="page-header">
+				<h1>7. Images</h1>
 			</div>
-		</div>
-		<h5>Deal Thumbnails (120x120)</h5>
-		<div class="docs-image">
-			<img class="deal" src="/assets/img/thumb-deal.png" alt="120x120">			
-			<div class="info">
-				<p>For use on the far left of the standard deal module. The rounded left corners match the rounded corners of the deal module.</p>
-				<p class="info-inline">
-					border-top-left-radius: 6px;<br>
-					border-top-right-radius: 0px;<br>
-					border-bottom-left-radius: 6px;<br>
-					border-bottom-right-radius: 0px;
-				</p>
+		
+			<h3>Image Thumbnails</h3>
+			<h5>Large (300x200)</h5>
+			<img class="thumb" src="./assets/img/thumb-large.png" alt="300x200">							
+			<h5>Medium (194x128)</h5>
+			<img class="thumb" src="./assets/img/thumb-medium.png" alt="194x128">			
+			<h5>Small (140x92)</h5>
+			<img class="thumb" src="./assets/img/thumb-small.png" alt="140x92">				
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Deal Thumbnails</h3>			
+			<h5>Large Deal Thumbnails (200x200)</h5>
+			<div class="docs-image">
+				<img class="deal-large" src="/assets/img/thumb-deal-large.png" alt="200x200">			
+				<div class="info">
+					<p>Use this on a Deal detail page. The image is cropped to a square and the corners are rounded with a 6px radius.</p>
+					<p class="info-inline">
+						border:solid 1px #e8e6dd;<br>
+						border-radius:6px;<br>
+						box-shadow: 0px 2px 2px rgba(235, 235, 231, 1);
+					</p>
+				</div>
 			</div>
-		</div>				
-		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Avatars</h3>
-		<table class="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Default Image</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src="./assets/img/user-img-large.png" /></td>
-                <td><strong>100 x 100</strong> Featured placement for the Service Provider page.</td>
-              </tr>
-              <tr>
-                <td><img src="./assets/img/user-img-standar.png" /></td>
-                <td><strong>60 x 60</strong> Standard size for use in search results</td>
-              </tr>
-              <tr>
-                <td><img src="./assets/img/user-img-small.png" /></td>
-                <td><strong>40 x 40</strong> Smaller size for use in modules like Recently Viewed.</td>
-              </tr>
-              <tr>
-                <td><img src="./assets/img/user-img-smaller.png" /></td>
-                <td><strong>24 x 24</strong> Smallest size to be used for social meta data.</td>
-              </tr>
-            </tbody>
-        </table>
-    </section>
+			<h5>Deal Thumbnails (120x120)</h5>
+			<div class="docs-image">
+				<img class="deal" src="/assets/img/thumb-deal.png" alt="120x120">			
+				<div class="info">
+					<p>For use on the far left of the standard deal module. The rounded left corners match the rounded corners of the deal module.</p>
+					<p class="info-inline">
+						border-top-left-radius: 6px;<br>
+						border-top-right-radius: 0px;<br>
+						border-bottom-left-radius: 6px;<br>
+						border-bottom-right-radius: 0px;
+					</p>
+				</div>
+			</div>				
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Avatars</h3>
+			<table class="table table-bordered table-striped">
+		        <thead>
+		          <tr>
+		            <th>Default Image</th>
+		            <th>Description</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td><img src="./assets/img/user-img-large.png" /></td>
+		            <td><strong>100 x 100</strong> Featured placement for the Service Provider page.</td>
+		          </tr>
+		          <tr>
+		            <td><img src="./assets/img/user-img-standar.png" /></td>
+		            <td><strong>60 x 60</strong> Standard size for use in search results</td>
+		          </tr>
+		          <tr>
+		            <td><img src="./assets/img/user-img-small.png" /></td>
+		            <td><strong>40 x 40</strong> Smaller size for use in modules like Recently Viewed.</td>
+		          </tr>
+		          <tr>
+		            <td><img src="./assets/img/user-img-smaller.png" /></td>
+		            <td><strong>24 x 24</strong> Smallest size to be used for social meta data.</td>
+		          </tr>
+		        </tbody>
+		    </table>
+		</section>
 	
-	<!-- Maps
-        ================================================== -->
-    <section id="maps">
-		<div class="page-header">
-			<h1>8. Maps</h1>
-		</div>
-
-		<h3>Custom pins</h3>
-		<div class="docs-custom-pin">
-		<table class="table table-bordered table-striped">			
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><mark class="marker"><b>1</b></mark></td>
-                <td align="left">Map marker for search results</td>
-              </tr>
-              <tr>
-                <td><mark class="marker highlight"><b>1</b></mark></td>
-                <td>Highlight state for map marker</td>
-              </tr>
-              <tr>
-                <td><mark class="marker secondary"><b>1</b></mark></td>
-                <td>Secondary map marker</td>
-              </tr>
-              <tr>
-                <td><span class="grade sm a">A</span></td>
-                <td>Use smallest size grade icons (24 px) to display reviews on the map</td>
-              </tr>
-            </tbody>
-        </table>
-		</div>
-		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Basic map - integration with Google Maps</h3>
-		<img src="./assets/img/maps.png" />
-		
-		<hr class="bs-docs-separator" />
-		
-		<h3>Service Map</h3>
-		<div class="row">
-			<div class="span3">
-				<img src="./assets/img/maps.png" />
+		<!-- Maps
+		================================================== -->
+		<section id="maps">
+			<div class="page-header">
+				<h1>8. Maps</h1>
 			</div>
-			<div class="span6">
-				<p class="info-inline" style="margin-top: 30px;">
-					<strong>Service area overlay</strong><br>
-					#4db346 (Lighter Green)<br>
-					30% opacity
-				</p>
-			</div>
-		</div>
 		
-	</section>
+			<h3>Custom pins</h3>
+			<div class="docs-custom-pin">
+				<table class="table table-bordered table-striped">			
+			        <thead>
+			          <tr>
+			            <th>Image</th>
+			            <th>Description</th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <td><mark class="marker"><b>1</b></mark></td>
+			            <td align="left">Map marker for search results</td>
+			          </tr>
+			          <tr>
+			            <td><mark class="marker highlight"><b>1</b></mark></td>
+			            <td>Highlight state for map marker</td>
+			          </tr>
+			          <tr>
+			            <td><mark class="marker secondary"><b>1</b></mark></td>
+			            <td>Secondary map marker</td>
+			          </tr>
+			          <tr>
+			            <td><span class="grade sm a">A</span></td>
+			            <td>Use smallest size grade icons (24 px) to display reviews on the map</td>
+			          </tr>
+			        </tbody>
+			    </table>
+			</div>
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Basic map - integration with Google Maps</h3>
+			<img src="./assets/img/maps.png" />
+			
+			<hr class="bs-docs-separator" />
+			
+			<h3>Service Map</h3>
+			<div class="row">
+				<div class="span3">
+					<img src="./assets/img/maps.png" />
+				</div>
+				<div class="span6">
+					<p class="info-inline" style="margin-top: 30px;">
+						<strong>Service area overlay</strong><br>
+						#4db346 (Lighter Green)<br>
+						30% opacity
+					</p>
+				</div>
+			</div>			
+		</section>
 
 	<!-- Content Lockups
         ================================================== -->
