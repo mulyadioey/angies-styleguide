@@ -370,8 +370,8 @@ page_open();
 		<h3>Image, Headline, Marketing Copy</h3>
 		<div class="bs-docs-example">
 			<div class="media">
-				<a class="pull-left thumbnail" href="#">
-					<img class="media-object" alt="image" src="/assets/img/thumb-large.png">
+				<a class="pull-left" href="#">
+					<img class="media-object thumb" alt="image" src="/assets/img/thumb-large.png">
 				</a>
 				<div class="media-body">
 					<h4 class="media-heading">Headline</h4>
@@ -380,109 +380,137 @@ page_open();
             </div>
 		</div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
+&lt;div class="media"&gt;
+  &lt;a class="pull-left" href="#"&gt;
+    &lt;img class="media-object" data-src="holder.js/64x64"&gt;
+  &lt;/a&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Headline&lt;/h4&gt;
+    &lt;p&gt;...&lt;/p&gt;    
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre>
 
 		<h3>Provider Listing</h3>
-		<div class="bs-docs-example">
+		<div class="bs-docs-example">			
 			<header class="row-fluid">	
 				<div class="pull-right grade-lockup">
-					<p class="review-count"><a href="#!" class="popover-reviews">63 reviews</a><br> <span>31 by Neighbors</span></p>
-					<span class="grade a">A</span>
-				</div>
-					
+					<p class="review-count"><a href="#!" class="popover-reviews">63 Reviews</a><br> <span>7 by Neighbors</span></p>
+					<span class="grade a">A</span><span class="grade sm a">A</span>
+				</div>								
 				<div class="name-lockup">
-					<img src="/assets/img/user-img-standar.png" class="pull-left results-avatar">
-					<div class="header-lockup">
-						<h3><a href="#!" class="incognito">Mulhall Construction</a></h3>
-						<p></p>
+					<img class="pull-left" src="./assets/img/user-img-standar.png">
+					<div>
+						<h3><a href="#!" class="incognito">Mulhall Construction</a></h3>						
 					</div>
-					<p><a href="#!" class="coupon-count"><i class="icon icon-icn-coup"></i>2 coupons</a></p>
+					<!-- Display on desktop. -->	
+					<p class="desktop">						
+						<a href="#!" class="coupon-count"><i class="icn icn-coup"></i> 2 coupons</a>
+					</p>
+					<!-- Display on tablet. -->
+					<p class="tablet">						
+						<i class="icn icn-coup"></i>
+					</p>
+					<!-- Display on mobile. -->
+					<p class="mobile">
+						<span class="grade inline a">A</span> 16 Reviews
+						<i class="icn icn-coup"></i>
+					</p>					
 				</div>
-
 			</header>
 		</div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
+&lt;header class=&quot;row-fluid&quot;&gt;  
+  &lt;div class=&quot;pull-right grade-lockup&quot;&gt;
+    &lt;p class=&quot;review-count&quot;&gt;&lt;a href=&quot;#!&quot; class=&quot;popover-reviews&quot;&gt;63 Reviews&lt;/a&gt;&lt;br&gt; &lt;span&gt;7 by Neighbors&lt;/span&gt;&lt;/p&gt;
+    &lt;span class=&quot;grade a&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;grade sm a&quot;&gt;A&lt;/span&gt;
+  &lt;/div&gt;                                
+  &lt;div class=&quot;name-lockup&quot;&gt;
+    &lt;img class=&quot;pull-left&quot; src=&quot;./assets/img/user-img-standar.png&quot;&gt;
+    &lt;div&gt;
+      &lt;h3&gt;&lt;a href=&quot;#!&quot; class=&quot;incognito&quot;&gt;Mulhall Construction&lt;/a&gt;&lt;/h3&gt;                        
+    &lt;/div&gt;
+    &lt;!-- Display on desktop. --&gt;  
+    &lt;p class=&quot;desktop&quot;&gt;                     
+      &lt;a href=&quot;#!&quot; class=&quot;coupon-count&quot;&gt;&lt;i class=&quot;icn icn-coup&quot;&gt;&lt;/i&gt; 2 coupons&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;!-- Display on tablet. --&gt;
+    &lt;p class=&quot;tablet&quot;&gt;                      
+      &lt;i class=&quot;icn icn-coup&quot;&gt;&lt;/i&gt;
+    &lt;/p&gt;
+    &lt;!-- Display on mobile. --&gt;
+    &lt;p class=&quot;mobile&quot;&gt;
+      &lt;span class=&quot;grade inline a&quot;&gt;A&lt;/span&gt; 16 Reviews
+      &lt;i class=&quot;icn icn-coup&quot;&gt;&lt;/i&gt;
+    &lt;/p&gt;                  
+  &lt;/div&gt;
+&lt;/header&gt;
 </pre>
 	</section>
 	
 		<h3>Provider Listing - Tablet</h3>
-		<div class="bs-docs-example">
-			<header class="row-fluid tablet">	
+		<div class="bs-docs-example" style="width: 550px;">			
+			<div class="article-result-tablet">
+			<header class="row-fluid">				
+				<div class="pull-right grade-lockup">
+					<p class="review-count"><a href="#!" class="popover-reviews">63 Reviews</a><br> <span>7 by Neighbors</span></p>
+					<span class="grade a">A</span><span class="grade sm a">A</span>
+				</div>					
 				<div class="name-lockup">
-					<div class="span11">
-						<h4><a href="#!" class="incognito">Mulhall Construction</a></h4>
-						<p></p>
+					<img class="pull-left" src="./assets/img/user-img-standar.png">
+					<div>
+						<h3><a href="#!" class="incognito">Mulhall Construction</a></h3>						
 					</div>
-					<p class="review-count pull-right mt-10"><a href="#!" class="popover-reviews">16 reviews</a></p>
+					<!-- Display on desktop. -->	
+					<p class="desktop">						
+						<a href="#!" class="coupon-count"><i class="icn icn-coup"></i> 2 coupons</a>
+					</p>
+					<!-- Display on tablet. -->
+					<p class="tablet">						
+						<i class="icn icn-coup"></i>
+					</p>
+					<!-- Display on mobile. -->
+					<p class="mobile">
+						<span class="grade inline a">A</span> 16 Reviews
+						<i class="icn icn-coup"></i>
+					</p>					
 				</div>
-				
-				<div class="grade-lockup">
-					<p class="span11"><i class="icon icon-icn-coup"></i></p>
-					<span class="grade sm a pull-right">A</span>
-				</div>
-
 			</header>
+			</div>
 		</div>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
-</pre>
 
 		<h3>Provider Listing - Mobile</h3>
-		<div class="bs-docs-example">
-			<header class="row-fluid mobile">	
+		<p>At the mobile size, individual pieces of the provider listing (coupons, reviews, etc.) are no longer active. The entire row acts as a button that leads to the Service Provider page.</p>
+		<div class="bs-docs-example" style="width: 400px;">
+			<div class="article-result-mobile">
+			<!--
+			  The whole container needs to be enclosed by `<a>` (requirement: the entire row acts as a button.
+			    Thus, we'd need to get JavaScript help to remove all `<a>` insider `<header>`. For the purpose
+			    for this styleguide (Beta), the removal was done manually.	
+			-->
+			<a href="#">
+			<header class="row-fluid">
+				<div class="pull-right grade-lockup">
+					<p class="review-count"><span class="popover-reviews">63 Reviews<span><br> <span>7 by Neighbors</span></p>
+					<span class="grade a">A</span>
+					<span class="grade sm a">A</span>
+				</div>					
 				<div class="name-lockup">
-					<div class="header-lockup">
-						<h4><a href="#!" class="incognito">Mulhall Construction</a></h4>
-						<p></p>
-					</div>
+					<img class="pull-left results-avatar" src="./assets/img/user-img-standar.png">
+					<div>
+						<h3>Mulhall Construction</h3>
+					</div>					
+					<p class="mobile">
+						<span class="grade inline a">A</span> 16 Reviews
+						<i class="icn icn-coup"></i>
+					</p>					
 				</div>
 				
-				<div class="grade-lockup">
-					<div class="span11">
-						<span class="letter-grade letter-grade-a">A&nbsp;</span>
-						<p class="review-count"><a href="#!" class="popover-reviews">16 reviews</a></p>
-					</div>
-					<p><i class="icon icon-icn-coup"></i></p>
-				</div>
-
 			</header>
+			</a>
+			</div>
 		</div>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
-</pre>
-
-		<h3>Small Provider Listing</h3>
-		<div class="bs-docs-example">
-			<header class="row-fluid">
-				<div class="grade-lockup">
-					<img src="/assets/img/user-img-small.png" class="pull-left mr-10" />
-					<div class="pull-left provider">
-						<h5><a href="#!" class="incognito">Mulhall Construction</a></h5>
-						<div class="span9">
-							<span class="letter-grade letter-grade-a">A&nbsp;</span>
-							<p class="review-count"><a href="#!" class="popover-reviews">264 reviews</a></p>
-						</div>
-						<p class="span2">45m</p>
-					</div>
-				</div>
-			</header>
-		</div>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-Insert code sample
-&lt;/code&gt;
-</pre>
-
+		
 		<h3>Activity</h3>
 		<div class="bs-docs-example">
 			<div class="neighborhood-activity">

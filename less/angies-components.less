@@ -1,3 +1,6 @@
+@import "bootstrap/variables.less";
+
+
 // ------------------------------------------------
 //
 // Images.
@@ -63,5 +66,172 @@ img.deal-large {
 	
 	&.map-review {
 		background-position-y: -480px;
+	}
+}
+
+
+// ------------------------------------------------
+//
+// Provider listing.
+//
+// ------------------------------------------------
+
+a.popover-reviews,
+a.incognito {
+	color: @black;
+	
+	&:hover {
+		color: @lighterGreen;
+		border-bottom: 1px solid @lighterGreen;
+		text-decoration: none;
+	}
+}
+
+.review-count {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;	
+	
+	a {
+		color: inherit;			
+	}	
+	
+	span {
+		color: @mediumGray;
+		font-size: 13px;
+		font-style: italic;
+		line-height: 16px;
+	}
+}
+
+.grade-lockup {	
+	text-align: right;
+	
+	.grade {
+		float: none;
+		margin-left: 10px;
+	}
+			
+	// Hide elements for tablet / mobile.
+	.grade.sm {
+		display: none;
+	}
+}
+
+.name-lockup {		
+	
+	h3 {
+		margin-top: 0;
+		color: @black;	// Need to be explicit, otherwise the color will be changed
+						//   to link color on mobile version.
+		line-height: 27px;
+	}
+	
+	img {
+		margin-right: 10px;
+	}
+	
+	.coupon-count {
+		padding: 3px 10px;	
+		border: 1px solid @borderColor;	
+		background-color: #f3f3ef;
+		.border-radius(5px);
+		color: @darkGray;
+		font-size: 13px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-decoration: none;
+		
+		&:hover {
+			color: @darkGray;
+			text-decoration: none;
+		}
+		
+		.icn {
+			margin-right: 3px;
+		}
+	}
+	
+	// By default, display desktop version and
+	//   hide the rest.
+	.tablet,
+	.mobile {
+		display: none;
+	}
+}
+
+// Mobile version for provider listing.
+//
+// `.article-result-tablet` and `.article-result-mobile` are just to simulate when
+//   `<article class="result">` is viewed on tablet and mobile, respectively. In fact,
+//   if we'd like to add these classes too (via media query), it's not a bad idea at all.
+.article-result-tablet {
+
+	.desktop,
+	.mobile,
+	// Hide avatar.
+	img {
+		display: none;
+	}
+	
+	.tablet {
+		display: block;
+	}
+	
+	.grade-lockup {
+		
+		.grade,
+		p > span {
+			display: none;
+		}
+		
+		.grade.sm {
+			display: inline-block;			
+			margin: 0;			
+		}
+		
+		p {
+			display: block;
+			margin: 0 0 3px;
+			color: @mediumGray;
+			font-size: 90%;
+		}
+	}
+}
+
+.article-result-mobile {
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
+	.desktop,
+	.tablet,
+	.grade-lockup,
+	// Hide avatar.
+	img {
+		display: none;
+	}			
+	
+	.mobile {
+		display: block;
+	}
+	
+	.name-lockup {	
+
+		h3 {
+			margin: 0;
+			font-size: 17px;
+			line-height: 20px;
+		}		
+	
+		p {
+			color: @mediumGray;
+		}
+				
+		// Scissors icon.
+		.icn {
+			float: right;
+		}			
 	}
 }

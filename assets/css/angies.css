@@ -86,6 +86,117 @@ img.deal-large {
 .marker.map-review {
   background-position-y: -480px;
 }
+a.popover-reviews,
+a.incognito {
+  color: #000000;
+}
+a.popover-reviews:hover,
+a.incognito:hover {
+  color: #4db346;
+  border-bottom: 1px solid #4db346;
+  text-decoration: none;
+}
+.review-count {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+.review-count a {
+  color: inherit;
+}
+.review-count span {
+  color: #aaaaaa;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 16px;
+}
+.grade-lockup {
+  text-align: right;
+}
+.grade-lockup .grade {
+  float: none;
+  margin-left: 10px;
+}
+.grade-lockup .grade.sm {
+  display: none;
+}
+.name-lockup h3 {
+  margin-top: 0;
+  color: #000000;
+  line-height: 27px;
+}
+.name-lockup img {
+  margin-right: 10px;
+}
+.name-lockup .coupon-count {
+  padding: 3px 10px;
+  border: 1px solid #e8e6dd;
+  background-color: #f3f3ef;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #7b7b7b;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.name-lockup .coupon-count:hover {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+.name-lockup .coupon-count .icn {
+  margin-right: 3px;
+}
+.name-lockup .tablet,
+.name-lockup .mobile {
+  display: none;
+}
+.article-result-tablet .desktop,
+.article-result-tablet .mobile,
+.article-result-tablet img {
+  display: none;
+}
+.article-result-tablet .tablet {
+  display: block;
+}
+.article-result-tablet .grade-lockup .grade,
+.article-result-tablet .grade-lockup p > span {
+  display: none;
+}
+.article-result-tablet .grade-lockup .grade.sm {
+  display: inline-block;
+  margin: 0;
+}
+.article-result-tablet .grade-lockup p {
+  display: block;
+  margin: 0 0 3px;
+  color: #aaaaaa;
+  font-size: 90%;
+}
+.article-result-mobile a:hover {
+  text-decoration: none;
+}
+.article-result-mobile .desktop,
+.article-result-mobile .tablet,
+.article-result-mobile .grade-lockup,
+.article-result-mobile img {
+  display: none;
+}
+.article-result-mobile .mobile {
+  display: block;
+}
+.article-result-mobile .name-lockup h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+}
+.article-result-mobile .name-lockup p {
+  color: #aaaaaa;
+}
+.article-result-mobile .name-lockup .icn {
+  float: right;
+}
 /* General */
 .mb-0 {
   margin-bottom: 0;
@@ -273,7 +384,7 @@ code.no-bg {
   font-weight: 600;
 }
 span.grade {
-  display: block;
+  display: inline-block;
   width: 40px;
   height: 40px;
   -webkit-box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -774,7 +885,9 @@ span.grade.inline.a {
   background-position: -73px 5px;
 }
 .icn.icn-coup {
-  background-position: 8px -51px;
+  width: 20px;
+  height: 15px;
+  background-position: 0 -59px;
 }
 .icn.icn-cal {
   background-position: -33px -54px;
@@ -1220,9 +1333,6 @@ a.more {
   text-transform: uppercase;
   text-align: center;
 }
-.letter-grade-a {
-  color: #4db346;
-}
 span.title {
   color: #454545;
   font-weight: 600;
@@ -1282,80 +1392,4 @@ ul.list-search .category-heading {
   margin-bottom: 5px;
   font-size: 17px;
   color: #29a036;
-}
-.review-count {
-  text-align: right;
-  display: inline-block;
-  vertical-align: middle;
-}
-.review-count span {
-  font-size: 13px;
-  font-style: italic;
-  line-height: 16px;
-}
-.grade-lockup {
-  *zoom: 1;
-}
-.grade-lockup:before,
-.grade-lockup:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.grade-lockup:after {
-  clear: both;
-}
-.grade-lockup p,
-.grade-lockup span {
-  float: left;
-}
-.grade-lockup .grade.a {
-  margin-left: 10px;
-}
-.grade-lockup .icon.icon-icn-coup {
-  background-position: 0 -59px;
-}
-.grade-lockup h5 {
-  margin: 0 0 5px 0;
-}
-.grade-lockup .provider {
-  width: 250px;
-}
-.mobile .name-lockup div.header-lockup {
-  padding-left: 0px;
-}
-.name-lockup div.header-lockup {
-  padding: 0 0 0 75px;
-}
-.name-lockup h3 {
-  margin-top: 0;
-  line-height: 27px;
-}
-.name-lockup img.results-avatar {
-  margin-right: 10px;
-}
-a.popover-reviews,
-a.incognito {
-  color: #000000;
-}
-a.popover-reviews:hover,
-a.incognito:hover {
-  color: #000000;
-}
-.coupon-count {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #e8e6dd;
-  padding: 3px 6px 3px 6px;
-  background-color: #f3f3ef;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.coupon-count:hover {
-  text-decoration: none;
-}
-.coupon-count .icon.icon-icn-coup {
-  background-position: 8px -59px;
 }

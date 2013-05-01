@@ -217,7 +217,7 @@ code.no-bg {
 // ------------------------------------------------
 
 span.grade {
-	display: block;
+	display: inline-block;
 	.size(40px, 40px);
 	.box-shadow(inset 0 2px 1px rgba(0, 0, 0, 0.2));
 	.border-radius(100px);
@@ -812,7 +812,8 @@ span.grade {
 	}
 	
 	&.icn-coup {
-		background-position: 8px -51px;
+		.size(15px, 20px);
+		background-position: 0 -59px;
 	}
 	
 	&.icn-cal {
@@ -1318,10 +1319,6 @@ a.more {
 	}
 }
 
-.letter-grade-a {
-	color: @lighterGreen;
-}
-
 span.title {
 	color: #454545;
 	font-weight: 600;
@@ -1402,95 +1399,5 @@ ul.list-search {
 		margin-bottom: 5px;
 		font-size: 17px;
 		color: @angiesGreen;
-	}
-}
-
-.review-count {
-	text-align: right;
-	display: inline-block;
-	vertical-align: middle;
-	
-	span {
-		font-size: 13px;
-		font-style: italic;
-		line-height: 16px;
-	}
-}
-
-.grade-lockup {
-	.clearfix();
-	
-	p,
-	span {
-		float: left;
-	}
-	
-	.grade.a {
-		margin-left: 10px;
-	}
-	
-	.icon.icon-icn-coup {
-		background-position: 0 -59px;
-	}
-	
-	h5 {
-		margin: 0 0 5px 0;
-	}
-	
-	.provider {
-		width: 250px;
-	}
-}
-
-.mobile {
-	
-	.name-lockup {
-		
-		div.header-lockup {
-			padding-left: 0px;
-		}
-	}
-}
-
-.name-lockup {
-	
-	div.header-lockup {
-		padding: 0 0 0 75px;
-	}
-	
-	h3 {
-		margin-top: 0;
-		line-height: 27px;
-	}
-	
-	img.results-avatar {
-		margin-right: 10px;
-	}
-}
-
-a.popover-reviews,
-a.incognito {
-	color: @black;
-	
-	&:hover {
-		color: @black;
-	}
-}
-
-.coupon-count {
-	.border-radius(5px);
-	border: 1px solid #e8e6dd;
-	padding: 3px 6px 3px 6px;
-	background-color: #f3f3ef;
-	font-weight: 600;
-	text-transform: uppercase;
-	text-decoration: none;
-	
-	&:hover {
-		text-decoration: none;
-	}
-	
-	.icon.icon-icn-coup {
-		background-position: 8px -59px;
 	}
 }
