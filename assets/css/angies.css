@@ -54,6 +54,38 @@ img.deal-large {
   -moz-box-shadow: 0px 2px 2px #ebebe7;
   box-shadow: 0px 2px 2px #ebebe7;
 }
+.marker {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background: transparent url(../img/icon-set.png) no-repeat 0 -300px;
+}
+.marker b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 22px;
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+}
+.marker.highlight {
+  background-position-y: -360px;
+}
+.marker.highlight b {
+  color: #000;
+}
+.marker.secondary {
+  background-position-y: -420px;
+}
+.marker.map-review {
+  background-position-y: -480px;
+}
 /* General */
 .mb-0 {
   margin-bottom: 0;
@@ -212,6 +244,14 @@ code.no-bg {
 .docs-image img {
   float: left;
   margin-right: 20px;
+}
+.docs-custom-pin table td:first-child {
+  width: 150px;
+  text-align: center;
+}
+.docs-custom-pin .grade {
+  float: none;
+  margin: 0 0 0 53px;
 }
 .left-caret,
 .right-caret {
@@ -1242,54 +1282,6 @@ ul.list-search .category-heading {
   margin-bottom: 5px;
   font-size: 17px;
   color: #29a036;
-}
-.thumbnail {
-  border: 1px solid #e8e6dd;
-  padding: 0;
-  width: 300px;
-  height: 198px;
-  -webkit-box-shadow: 0px 2px 2px #ebebe7;
-  -moz-box-shadow: 0px 2px 2px #ebebe7;
-  box-shadow: 0px 2px 2px #ebebe7;
-}
-.thumbnail.medium {
-  width: 194px;
-  height: 128px;
-}
-.thumbnail.small {
-  width: 140px;
-  height: 92px;
-}
-.thumbnail.deal {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.thumbnail.deal.large {
-  width: 200px;
-  height: 200px;
-}
-.thumbnail.deal.small {
-  width: 120px;
-  height: 120px;
-}
-.marker {
-  width: 115px;
-  height: 34px;
-  background-image: url(../img/icon-set.png);
-  background-repeat: no-repeat;
-}
-.marker.green {
-  background-position: 50px -300px;
-}
-.marker.yellow {
-  background-position: 50px -360px;
-}
-.marker.gray {
-  background-position: 50px -420px;
-}
-.marker.map-review {
-  background-position: 50px -480px;
 }
 .review-count {
   text-align: right;

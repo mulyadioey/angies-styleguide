@@ -312,7 +312,8 @@ page_open();
 		</div>
 
 		<h3>Custom pins</h3>
-		<table class="table table-bordered table-striped map">
+		<div class="docs-custom-pin">
+		<table class="table table-bordered table-striped">			
             <thead>
               <tr>
                 <th>Image</th>
@@ -321,38 +322,43 @@ page_open();
             </thead>
             <tbody>
               <tr>
-                <td><div class="marker green"></div></td>
+                <td><mark class="marker"><b>1</b></mark></td>
                 <td align="left">Map marker for search results</td>
               </tr>
               <tr>
-                <td><div class="marker yellow"></div></td>
+                <td><mark class="marker highlight"><b>1</b></mark></td>
                 <td>Highlight state for map marker</td>
               </tr>
               <tr>
-                <td><div class="marker gray"></div></td>
+                <td><mark class="marker secondary"><b>1</b></mark></td>
                 <td>Secondary map marker</td>
               </tr>
               <tr>
-                <td><div class="marker map-review"></div></td>
+                <td><span class="grade sm a">A</span></td>
                 <td>Use smallest size grade icons (24 px) to display reviews on the map</td>
               </tr>
             </tbody>
         </table>
+		</div>
 		
 		<hr class="bs-docs-separator" />
 		
 		<h3>Basic map - integration with Google Maps</h3>
-		<img src="/assets/img/maps.png" />
+		<img src="./assets/img/maps.png" />
 		
 		<hr class="bs-docs-separator" />
 		
 		<h3>Service Map</h3>
 		<div class="row">
 			<div class="span3">
-				<img src="/assets/img/maps.png" />
+				<img src="./assets/img/maps.png" />
 			</div>
-			<div class="span3">
-				<p class="info-inline"><strong>Service area overlay</strong> <br /> #4db346 (Lighter Green) 30% opacity</p>
+			<div class="span6">
+				<p class="info-inline" style="margin-top: 30px;">
+					<strong>Service area overlay</strong><br>
+					#4db346 (Lighter Green)<br>
+					30% opacity
+				</p>
 			</div>
 		</div>
 		

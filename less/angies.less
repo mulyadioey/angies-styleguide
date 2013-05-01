@@ -149,7 +149,7 @@ code.no-bg {
 @inputBackgroundColorDisabled: #f8f6ef;
 
 
-// Layout for images, Components tab.
+// Layout for Images, Components tab.
 .docs-image {
 	.clearfix();
 	margin: 0 0 30px;
@@ -157,6 +157,21 @@ code.no-bg {
 	img {
 		float: left;
 		margin-right: 20px;
+	}
+}
+
+// Layout for Maps, Components tab.
+.docs-custom-pin {
+	
+	table td:first-child {
+		width: 150px;
+		text-align: center;
+	}
+	
+	// Unfloat.
+	.grade {
+		float: none;
+		margin: 0 0 0 53px;
 	}
 }
 
@@ -1387,58 +1402,6 @@ ul.list-search {
 		margin-bottom: 5px;
 		font-size: 17px;
 		color: @angiesGreen;
-	}
-}
-
-// ===== Components ==== //
-
-.thumbnail {
-	border: 1px solid #e8e6dd;
-	padding: 0;
-	width: 300px;
-	height: 198px;
-	.box-shadow(0px 2px 2px rgba(235, 235, 231, 1));
-	
-	&.medium {
-		.size(128px, 194px);
-	}
-	
-	&.small {
-		.size(92px, 140px);
-	}
-	
-	&.deal {
-		.border-radius(6px);
-		
-		&.large {
-			.square(200px);
-		}
-		
-		&.small {
-			.square(120px);
-		}
-	}
-} // .thumbnail
-
-.marker {
-	.size(34px, 115px);
-	background-image: url(../img/icon-set.png);
-	background-repeat: no-repeat;
-
-	&.green {
-		background-position: 50px -300px;
-	}
-	
-	&.yellow {
-		background-position: 50px -360px;
-	}
-	
-	&.gray {
-		background-position: 50px -420px;
-	}
-	
-	&.map-review {
-		background-position: 50px -480px;
 	}
 }
 
