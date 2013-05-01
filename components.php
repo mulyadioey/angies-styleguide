@@ -581,8 +581,8 @@ Insert code sample
                 <td>Top nav - Cart</td>
               </tr>
               <tr>
-                <td><i class="icn icn-pencil"></i></td>
-                <td><code>icn icn-pencil</code></td>
+                <td><i class="icn icn-pen"></i></td>
+                <td><code>icn icn-pen</code></td>
                 <td>Pencil icon for Write a Review button</td>
               </tr>
               <tr>

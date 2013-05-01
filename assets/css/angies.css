@@ -870,18 +870,22 @@ span.grade.inline.a {
   vertical-align: text-top;
 }
 .icn {
-  width: 35px;
-  height: 35px;
   background-image: url(../img/icon-set.png);
 }
 .icn.icn-ssa {
-  background-position: 6px 1px;
+  width: 25px;
+  height: 33px;
+  background-position: 0 0;
 }
 .icn.icn-cash {
-  background-position: -40px 7px;
+  width: 34px;
+  height: 25px;
+  background-position: -40px 0;
 }
 .icn.icn-deal {
-  background-position: -73px 5px;
+  width: 22px;
+  height: 22px;
+  background-position: -80px 0;
 }
 .icn.icn-coup {
   width: 20px;
@@ -889,43 +893,64 @@ span.grade.inline.a {
   background-position: 0 -59px;
 }
 .icn.icn-cal {
-  background-position: -33px -54px;
+  width: 25px;
+  height: 23px;
+  background-position: -40px -60px;
 }
 .icn.icn-chat {
+  width: 29px;
+  height: 34px;
   background-position: -80px -60px;
 }
 .icn.icn-poh {
-  background-position: 8px -113px;
+  width: 20px;
+  height: 20px;
+  background-position: 0px -120px;
 }
 .icn.icn-pen {
-  background-position: -31px -115px;
+  width: 18px;
+  height: 26px;
+  background-position: -40px -120px;
 }
 .icn.icn-neighbour {
-  background-position: -72px -115px;
+  width: 18px;
+  height: 23px;
+  background-position: -80px -120px;
 }
 .icn.icn-search-yellow {
-  background-position: 0px -180px;
+  width: 34px;
+  height: 34px;
+  background-position: 0 -180px;
 }
 .icn.icn-search {
+  width: 30px;
+  height: 30px;
   background-position: -40px -180px;
 }
 .icn.icn-search-white {
-  background-position: -69px -170px;
+  width: 15px;
+  height: 15px;
+  background-position: -80px -180px;
 }
 .icn.icn-acc-mobile {
+  width: 23px;
+  height: 21px;
   background-position: -140px 0;
 }
 .icn.icn-cart-mobile {
+  width: 25px;
+  height: 20px;
   background-position: -140px -60px;
 }
-.icn.icn-pencil {
+.icn.icn-search-mobile {
+  width: 17px;
+  height: 17px;
   background-position: -140px -120px;
 }
-.icn.icn-search-mobile {
-  background-position: -140px -180px;
-}
 .icn.icn-location-mobile {
-  background-position: -140px -240px;
+  width: 15px;
+  height: 15px;
+  background-position: -140px -180px;
 }
 hr.w-50 {
   width: 50%;

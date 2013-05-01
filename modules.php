@@ -306,7 +306,7 @@ page_open();
 							<img class="pull-left mr-10" src="/assets/img/user-05-medium.png" />
 							<div class="copy">
 								<p class="name">Jennifer P. <span>reviewed</span></p>
-								<h3>Rayco Painting <span class="letter-grade-a">A</span></h3>
+								<h3>Rayco Painting <span class="grade inline a">A</span></h3>
 								<p class="comp-name">They did an amazing job painting the whole interior of my house. I got est...”</p>
 							</div>
 						</div>
