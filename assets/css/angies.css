@@ -92,7 +92,7 @@ textarea {
 .mini-layout.bg-pattern {
   padding: 20px;
   height: auto;
-  background: url(/assets/img/pattern-bg.png) repeat 0 0;
+  background: url(../img/pattern-bg.png) repeat 0 0;
 }
 .mini-layout .row-fluid .span6 img {
   float: right;
@@ -131,7 +131,7 @@ textarea {
 .mini-layout.commerce {
   width: 550px;
   height: 50px;
-  background: url(/assets/img/pattern-bg.png) repeat 0 0;
+  background: url(../img/pattern-bg.png) repeat 0 0;
 }
 .mini-layout.commerce.deal {
   padding: 0;
@@ -399,11 +399,11 @@ span.grade.inline.a {
   line-height: 22px;
 }
 .btn > span.list {
-  background-image: url(/assets/img/icn_list.png);
+  background-image: url(../img/icn_list.png);
   background-position-y: 3px;
 }
 .btn > span.map {
-  background-image: url(/assets/img/icn_map.png);
+  background-image: url(../img/icn_map.png);
 }
 .recently-viewed {
   background-color: #f8f6ef;
@@ -689,7 +689,7 @@ table.table-striped.map td:first-child {
 .icn {
   width: 35px;
   height: 35px;
-  background-image: url(/assets/img/icon-set.png);
+  background-image: url(../img/icon-set.png);
 }
 .icn.icn-ssa {
   background-position: 6px 1px;
@@ -908,7 +908,7 @@ textarea[readonly] {
   display: none;
   width: 27px;
   height: 21px;
-  background-image: url(/assets/img/icon-set.png);
+  background-image: url(../img/icon-set.png);
   background-repeat: no-repeat;
 }
 .logged-in .mobile-icon.profile-icon {
@@ -943,7 +943,7 @@ textarea[readonly] {
 /* ====Modules===== */
 .price-tag .tag {
   float: left;
-  background-image: url(/assets/img/price-tag.png);
+  background-image: url(../img/price-tag.png);
   *zoom: 1;
 }
 .price-tag .tag:before,
@@ -995,7 +995,7 @@ p.art-head {
 }
 a.more {
   padding-right: 12px;
-  background-image: url(/assets/img/arrow-more.png);
+  background-image: url(../img/arrow-more.png);
   background-repeat: no-repeat;
   background-position: right 6px;
   color: #7b7b7b;
@@ -1045,7 +1045,7 @@ a.more {
 .coupon-area .arrow-coup {
   width: 25px;
   height: 22px;
-  background-image: url(/assets/img/arrow-up-coupon.png);
+  background-image: url(../img/arrow-up-coupon.png);
   position: absolute;
   top: -21px;
   left: 200px;
@@ -1058,7 +1058,7 @@ a.more {
 }
 .coupon-area .coupon-header h4 {
   padding-left: 25px;
-  background-image: url(/assets/img/coup.png);
+  background-image: url(../img/coup.png);
   background-repeat: no-repeat;
 }
 .coupon-area .coupon-body .dropdown li {
@@ -1243,7 +1243,7 @@ ul.list-search .category-heading {
 .marker {
   width: 115px;
   height: 34px;
-  background-image: url(/assets/img/icon-set.png);
+  background-image: url(../img/icon-set.png);
   background-repeat: no-repeat;
 }
 .marker.green {

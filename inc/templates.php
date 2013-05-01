@@ -37,21 +37,21 @@ function page_open() {
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="brand" href="./getting-started.html">Angie's List</a>
+				<a class="brand" href="./getting-started.php">Angie's List</a>
 				<div class="nav-collapse collapse">
 					<!-- `.active` for the `<li>`s is done via JS. -->
 					<ul class="nav">						
 						<li class="">
-							<a href="./getting-started.html">Getting Started</a>
+							<a href="./getting-started.php">Getting Started</a>
 						</li>              
 						<li class="">
-							<a href="./basics.html">The Basics</a>
+							<a href="./basics.php">The Basics</a>
 						</li>
 						<li class="">
-							<a href="./components.html">Components</a>
+							<a href="./components.php">Components</a>
 						</li>
 						<li class="">
-							<a href="./modules.html">Modules</a>
+							<a href="./modules.php">Modules</a>
 						</li>              
 					</ul>
 				</div>
