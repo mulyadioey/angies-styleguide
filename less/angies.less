@@ -47,7 +47,7 @@ textarea {
 	&.bg-pattern {
 		padding: 20px;
 		height: auto;
-		background: url(/assets/img/pattern-bg.png) repeat 0 0;
+		background: url(../img/pattern-bg.png) repeat 0 0;
 	}
 	
 	.row-fluid .span6 {
@@ -89,7 +89,7 @@ textarea {
 	&.commerce {
 		width: 550px;
 		height: 50px;
-		background: url(/assets/img/pattern-bg.png) repeat 0 0;
+		background: url(../img/pattern-bg.png) repeat 0 0;
 		
 		&.deal {
 			padding: 0;
@@ -144,6 +144,7 @@ code.no-bg {
 
 @btnBackgroundColorActive:	#eae7db;
 
+@inputBackgroundColorDisabled: #f8f6ef;
 
 // ------------------------------------------------
 //
@@ -167,6 +168,16 @@ code.no-bg {
 
 .right-caret {
 	border-left: 5px solid #000;
+}
+
+
+// Top navbar.
+.navbar-fixed-top {
+	
+	.nav > li > a {
+		font-size: 17px;
+		font-weight: 600;
+	}
 }
 
 
@@ -255,18 +266,6 @@ span.grade {
 	border: none;
 }
 
-// ------NavBar Top Menu-------- //
-section {
-	padding-top: 50px;
-}
-
-.navbar-fixed-top {
-	
-	.nav > li > a {
-		font-size: 17px;
-		font-weight: 700;
-	}
-}
 
 // ------------------------------------------------
 //
@@ -477,12 +476,12 @@ section {
 	}
 	
 	> span.list {
-		background-image: url(/assets/img/icn_list.png);
+		background-image: url(../img/icn_list.png);
 		background-position-y: 3px;
 	}
 		
 	> span.map {
-		background-image: url(/assets/img/icn_map.png);
+		background-image: url(../img/icn_map.png);
 	}
 }
 
@@ -790,7 +789,7 @@ table.table-striped {
 
 .icn {
 	.square(35px);
-	background-image: url(/assets/img/icon-set.png);
+	background-image: url(../img/icon-set.png);
 	
 	&.icn-ssa {
 		background-position: 6px 1px;
@@ -846,6 +845,128 @@ hr {
 	&.w-50 {
 		width: 50%;
 	}
+}
+
+
+// ------------------------------------------------
+//
+// Form Elements, The Basics.
+//
+// ------------------------------------------------
+
+// Override Bootstrap forms.less.
+
+input {
+	.placeholder(@mediumGray);
+	
+	&:-moz-placeholder {
+		font-style: italic;
+		font-weight: 100;
+	}
+  
+	&:-ms-input-placeholder {
+		font-style: italic;
+		font-weight: 100;
+	}
+	
+	&::-webkit-input-placeholder {
+		font-style: italic;
+		font-weight: 100;
+	}
+}
+
+// Shared size and type resets
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	padding: 8px 12px;
+	.border-radius(6px);
+	font-size: 16px;
+	line-height: 16px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border: 1px solid @borderColor;
+	.box-shadow(none);
+	
+	// Focus state
+	&:focus {
+		border-color: @lightGray;		
+		.box-shadow(0 0 6px rgba(0,0,0,0.18));
+	}
+}
+
+textarea {
+	padding: 15px 12px;
+	line-height: 22px;
+}
+
+// Inline and block help text.
+.help-block,
+.help-inline {
+	color: @darkGray;
+	font-weight: 100;	// Proxima Nova Light
+}
+
+// Invalid input, mixins.less.
+.control-group.error {
+
+	.control-label,
+	.help-block,
+	.help-inline {
+		color: @alertRed;
+	}
+
+	input,
+	select,
+	textarea {
+		border-color: @alertRed;
+		color: @alertRed;
+
+		&:focus {
+			border-color: @alertRed;
+			.box-shadow(0 0 6px rgba(226,67,30,0.5));
+		}
+	}
+}
+
+// Disabled input.
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+	background-color: @inputBackgroundColorDisabled;
 }
 
 
@@ -916,7 +1037,7 @@ hr {
 	.mobile-icon {
 		display: none;
 		.size(21px, 27px);
-		background-image: url(/assets/img/icon-set.png);
+		background-image: url(../img/icon-set.png);
 		background-repeat: no-repeat;		
 	
 		&.profile-icon {
@@ -967,7 +1088,7 @@ hr {
 
 	.tag {
 		float: left;
-		background-image: url(/assets/img/price-tag.png);
+		background-image: url(../img/price-tag.png);
 		.clearfix();
 		
 		&.left {
@@ -1020,7 +1141,7 @@ p {
 
 a.more {
 	padding-right: 12px;
-	background-image: url(/assets/img/arrow-more.png);
+	background-image: url(../img/arrow-more.png);
 	background-repeat: no-repeat;
 	background-position: right 6px;
 	color: @darkGray;
@@ -1058,7 +1179,7 @@ a.more {
 	.arrow-coup {
 		width: 25px;
 		height: 22px;
-		background-image: url(/assets/img/arrow-up-coupon.png);
+		background-image: url(../img/arrow-up-coupon.png);
 		position: absolute;
 		top: -21px;
 		left: 200px;
@@ -1075,7 +1196,7 @@ a.more {
 		
 		h4 {
 			padding-left: 25px;
-			background-image: url(/assets/img/coup.png);
+			background-image: url(../img/coup.png);
 			background-repeat: no-repeat;
 		}
 	}
@@ -1308,7 +1429,7 @@ ul.list-search {
 
 .marker {
 	.size(34px, 115px);
-	background-image: url(/assets/img/icon-set.png);
+	background-image: url(../img/icon-set.png);
 	background-repeat: no-repeat;
 
 	&.green {

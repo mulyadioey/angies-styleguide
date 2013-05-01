@@ -1,60 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Modules · Angie's List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<?php
+require('inc/templates.php');
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.mod.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/css/angies.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">    
-    
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
-                    <link rel="apple-touch-icon-precomposed" href="">
-                                   <link rel="shortcut icon" href="">    	
-  
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="./getting-started.html">Angie's List</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="">
-                <a href="./getting-started.html">Getting Started</a>
-              </li>              
-              <li class="">
-                <a href="./basics.html">The Basics</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="active">
-                <a href="./modules.html">Modules</a>
-              </li>              
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+page_open();
+?>
 
 <!-- Subhead
 ================================================== -->
@@ -351,7 +299,7 @@
 					<article class="activity-item">
 						<div class="cta-column pull-right">
 							<p class="hour">3 hours ago</p>
-							<button type="button" class="btn">Read</button>
+							<button type="button" class="btn btn-secondary">Read</button>
 						</div>
 							
 						<div>
@@ -384,34 +332,34 @@
 					<article>
 						<img src="/assets/img/user-01.png">
 						<h6><a href="#!">Mulhall Construction</a></h6>
-						<p><span class="grade inline a">A</span> <a href="#!" class="muted">264 Reviews</a></p>
+						<p><span class="grade inline a">A</span> <a href="#!" class="muted">264 Neighbor Reviews</a></p>
 					</article>
 					<article>
 						<img src="/assets/img/user-02.png">
 						<h6><a href="#!">Rayco Painting</a></h6>
-						<p><span class="grade inline a">A</span> <a href="#!" class="muted">73 Reviews</a></p>
+						<p><span class="grade inline a">A</span> <a href="#!" class="muted">73 Neighbor Reviews</a></p>
 					</article>
 							
 					<article>
 						<img src="/assets/img/user-03.png">
 						<h6><a href="#!">Gil Construction</a></h6>
-						<p><span class="grade inline a">A</span> <a href="#!" class="muted">142 Reviews</a></p>		
+						<p><span class="grade inline a">A</span> <a href="#!" class="muted">142 Neighbor Reviews</a></p>		
 					</article>
 							
 					<article>
 						<img src="/assets/img/user-04.png">
 						<h6><a href="#!">Bill Nass Painting</a></h6>
-						<p><span class="grade inline b">B</span> <a href="#!" class="muted">13 Reviews</a></p>
+						<p><span class="grade inline b">B</span> <a href="#!" class="muted">13 Neighbor Reviews</a></p>
 					</article>
 							
 					<article>
 						<img src="/assets/img/user-05.png">
 						<h6><a href="#!">Yui Wong Construction</a></h6>
-						<p><span class="grade inline a">A</span> <a href="#!" class="muted">48 Reviews</a></p>
+						<p><span class="grade inline a">A</span> <a href="#!" class="muted">48 Neighbor Reviews</a></p>
 					</article>
 											
 					<footer>	
-						<p><a href="#!" class="muted">More neighborhood Activity <span class="triangle">▶</span></a></p>
+						<p><a href="#!" class="muted">More Neighborhood Activity <span class="triangle">▶</span></a></p>
 					</footer>		
 				</div>
 			</div>
@@ -691,40 +639,6 @@
 
   </div>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/bootstrap-affix.js"></script>
-
-    <script src="assets/js/holder/holder.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-
-    <script src="assets/js/application.js"></script>    
-
-    <!---TypeKit Font-->
-	<script type="text/javascript">
-	  (function() {
-		var config = {
-		  kitId: 'bap4dbx',
-		  scriptTimeout: 3000
-		};
-		var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	  })();
-	</script>
-	
-  </body>
-</html>
+<?php
+page_close();
+?>

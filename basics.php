@@ -1,63 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Basics · Angie's List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<?php
+require('inc/templates.php');
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.mod.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/css/angies.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
-                    <link rel="apple-touch-icon-precomposed" href="">
-                                   <link rel="shortcut icon" href="">    
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="./getting-started.html">Angie's List</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li>
-                <a href="./getting-started.html">Getting Started</a>
-              </li>              
-              <li class="active">
-                <a href="./basics.html">The Basics</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="">
-                <a href="./modules.html">Modules</a>
-              </li>              
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+page_open();
+?>
 
 <!-- Subhead
 ================================================== -->
-<header class="jumbotron subhead" id="overview">
+<header class="jumbotron subhead">
   <div class="container">
     <h1>The Basics</h1>
     <p class="lead">Basic styles for the common HTML elements like typography, tables, forms and buttons.</p>
@@ -510,7 +459,9 @@
 </pre>
 
           <h3>Textarea</h3>
-          <img src="/assets/img/text-area.png" alt="text-area" />
+          <form class="bs-docs-example form-inline">
+            <textarea>Larger resizable text area. The grabber in the bottom right allows the user to resize the field.</textarea>
+          </form>
 		  <hr class="bs-docs-separator" />
 		  
 		  <h3>Plugin Styling</h3>
@@ -547,23 +498,21 @@
           <h3>Inline checkboxes</h3>
           <form class="bs-docs-example">
             <label class="checkbox inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+              <input type="checkbox" id="inlineCheckbox1" value="option1">1
             </label>
             <label class="checkbox inline">
-              <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+              <input type="checkbox" id="inlineCheckbox2" value="option2">2
             </label>
             <label class="checkbox inline">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+              <input type="checkbox" id="inlineCheckbox3" value="option3">3
             </label>
           </form>
 		  <hr class="bs-docs-separator" />
 
           <h3>Form actions</h3>
-		  <form class="bs-docs-example">
-            <div class="form-actions">
+		  <form class="bs-docs-example">            
               <button type="submit" class="btn btn-primary">Submit Review</button>
-              <button type="button" class="btn">Save Draft</button>
-            </div>
+              <button type="button" class="btn btn-secondary">Save Draft</button>
           </form>
 <pre class="prettyprint linenums">
 &lt;div class="form-actions"&gt;
@@ -575,45 +524,44 @@
 
           <hr class="bs-docs-separator">
 
-			<h3>Inline help text</h3>
-			<form class="form-inline">
-				<input type="text"> <span class="help-inline">Some help text</span> <span class="info-inline pl-40">Proxima Nova Light, 14pt, #7b7b7b</span>
+			<h3>Inline Help Text</h3>
+			<form class="bs-docs-example form-inline">
+				<input type="text"> <span class="help-inline">Some help text</span>
 			</form>
           <hr class="bs-docs-separator">
 		  
 		  <h3>Block Help Text</h3>
-		  <form class="form-inline">
+		  <form class="bs-docs-example">
             <input type="text">
-            <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-			<span class="info-inline">Proxima Nova Light, 14pt, #7b7b7b</span>
+            <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>			
           </form>
 		  <hr class="bs-docs-separator">
 		  
 		  <h3>Input Focus</h3>
 		  <p>A subtle glow is added when an input is activated.</p>
-		  <form class="form-inline">
-            <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused...">
+		  <form class="bs-docs-example form-inline">
+            <input class="input-xlarge focused" id="focusedInput" type="text" placeholder="Click to focus...">
           </form>
-		  <span class="info-inline">box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.18); <br /> border:solid 1px #dddddd; <br />border-radius: 6px;</span>
+		  
 		  <hr class="bs-docs-separator">
 		  
 		  <h3>Invalid Input</h3>
 		  <p>A red glow and border is added when an input is invalid.</p>
-		  <form class="form-inline">
+		  <form class="bs-docs-example form-inline">
 			<div class="control-group error">
 				<div class="controls">
-					<input class="span3" type="email" id="inputError" placeholder="test@example.com" required=""> <span class="help-inline">Oops! That’s not a valid email.</span>
+					<input type="email" value="name@email"> <span class="help-inline">Oops! That&rsquo;s not a valid email.</span>
 				</div>
 			</div>
-          </form>
-		  <span class="info-inline">box-shadow: 0px 0px 6px rgba(226, 67, 30, 0.50); <br /> border:solid 1px #e2431e; <br />border-radius: 6px;</span>
+          </form>		  
 		  <hr class="bs-docs-separator">
 		  
 		  <h3>Disabled Input</h3>
+		  <p>When disabled, the color of the input field changes to #f8f6ef.</p>
 		  <form class="form-inline">
             <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
           </form>
-		  <span class="info-inline">When disabled, the color of the input field changes to #f8f6ef.</span>
+		  
 		  <hr class="bs-docs-separator">
 		  
 		  <h3>Calendar Select</h3>
@@ -626,7 +574,7 @@
 		  <strong>Disabled/Future Dates</strong>: <span class="grey">Proxima Nova Regular 15pt, #aaaaaa</span></p>
 		  <br />
 		  
-		  <div class="row">
+		  <div class="row" style="padding-left: 20px;">
 			<div class="pull-left mr-10">
 				<p class="btn btn-primary">16</p>
 			</div>
@@ -635,7 +583,7 @@
 				width: 30px <br />height: 21px </span><br /><span class="lightPink">border-radius: 2px;</span></p>
 			</div>
 		  </div>
-		  <div class="row">
+		  <div class="row" style="padding-left: 20px;">
 			<div class="pull-left mr-10">
 				<p class="btn">22</p>
 			</div>
@@ -764,40 +712,6 @@
     </div>
 
   </div>    
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/bootstrap-affix.js"></script>
-
-    <script src="assets/js/holder/holder.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-
-    <script src="assets/js/application.js"></script>
-
-	<!-- Typekit -->    
-    <script type="text/javascript">
-	  (function() {
-	    var config = {
-	      kitId: 'bap4dbx',
-	      scriptTimeout: 3000
-	    };
-	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	  })();
-	</script>
-  </body>
-</html>
+<?php
+page_close();
+?>
