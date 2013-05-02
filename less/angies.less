@@ -5,6 +5,28 @@
 @import "angies-components.less";
 
 
+// ------------------------------------------------
+//
+// FOUT
+//
+// ------------------------------------------------
+.wf-loading {
+
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, span, a {
+		.opacity(90);
+		visibility: hidden;
+	}
+}
+
+.wf-active { 
+
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, span, a {
+		.opacity(100);
+		visibility: visible;
+	}
+}
+
+
 /* General */
 .mb-0 { margin-bottom: 0; }
 .mb-5 { margin-bottom: 5; }
