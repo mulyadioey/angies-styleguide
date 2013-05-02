@@ -1537,3 +1537,39 @@ ul.list-search .category-heading {
   border-color: #eae7db;
   color: #000000;
 }
+.icon-alone {
+  display: inline-block;
+  color: #000000;
+}
+.icon-alone:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+#characters {
+  padding-top: 10px;
+}
+#characters ul {
+  margin: 0;
+  width: 530px;
+  *zoom: 1;
+}
+#characters ul:before,
+#characters ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#characters ul:after {
+  clear: both;
+}
+#characters ul li {
+  float: left;
+  margin: 0 15px 0 0;
+  height: 30px;
+  list-style: none;
+}
