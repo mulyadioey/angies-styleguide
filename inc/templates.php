@@ -15,6 +15,7 @@ function page_open() {
 	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="assets/css/docs.css" rel="stylesheet">
 	<link href="assets/css/angies.css" rel="stylesheet">
+	<link href="assets/css/entypo.css" rel="stylesheet">
 	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
