@@ -88,7 +88,7 @@ page_open();
 		  <div class="row mb-20">
 			<div class="span4">
 				<div class="media">
-					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="/assets/img/zip-folder.png" /></a>
+					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="./assets/img/zip-folder.png" /></a>
 					<div class="media-body">
 						<h5 class="mb-0">Angies List PSD templates.zip</h5>
 						<p class="grey">122.6 MB</p>
@@ -97,7 +97,7 @@ page_open();
 			</div>
 			<div class="span5">
 				<div class="media">
-					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="/assets/img/zip-folder.png" /></a>
+					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="./assets/img/zip-folder.png" /></a>
 					<div class="media-body">
 						<h5 class="mb-0">Angies List Icons(PSD and PNG).zip</h5>
 						<p class="grey">36.4 MB</p>
@@ -108,7 +108,7 @@ page_open();
 		  <div class="row">
 			<div class="span4">
 				<div class="media">
-					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="/assets/img/zip-folder.png" /></a>
+					<a class="pull-left" href="#"><img class="media-object" alt="zip-file" src="./assets/img/zip-folder.png" /></a>
 					<div class="media-body">
 						<h5 class="mb-0">Fonts.zip</h5>
 						<p class="grey">2.3 MB</p>

@@ -246,7 +246,7 @@ page_open();
 			<h3>Deal Thumbnails</h3>			
 			<h5>Large Deal Thumbnails (200x200)</h5>
 			<div class="docs-image">
-				<img class="deal-large" src="/assets/img/thumb-deal-large.png" alt="200x200">			
+				<img class="deal-large" src="./assets/img/thumb-deal-large.png" alt="200x200">			
 				<div class="info">
 					<p>Use this on a Deal detail page. The image is cropped to a square and the corners are rounded with a 6px radius.</p>
 					<p class="info-inline">
@@ -258,7 +258,7 @@ page_open();
 			</div>
 			<h5>Deal Thumbnails (120x120)</h5>
 			<div class="docs-image">
-				<img class="deal" src="/assets/img/thumb-deal.png" alt="120x120">			
+				<img class="deal" src="./assets/img/thumb-deal.png" alt="120x120">			
 				<div class="info">
 					<p>For use on the far left of the standard deal module. The rounded left corners match the rounded corners of the deal module.</p>
 					<p class="info-inline">
@@ -371,7 +371,7 @@ page_open();
 		<div class="bs-docs-example">
 			<div class="media">
 				<a class="pull-left" href="#">
-					<img class="media-object thumb" alt="image" src="/assets/img/thumb-large.png">
+					<img class="media-object thumb" alt="image" src="./assets/img/thumb-large.png">
 				</a>
 				<div class="media-body">
 					<h4 class="media-heading">Headline</h4>
@@ -520,7 +520,7 @@ page_open();
 					</div>
 						
 					<div>
-						<img class="pull-left mr-10" src="/assets/img/user-05-medium.png">
+						<img class="pull-left mr-10" src="./assets/img/user-05-medium.png">
 						<div class="copy">
 							<p class="name">User<span> did something</span></p>
 							<h3>What they bought/posted/reviewed</h3>
@@ -535,7 +535,7 @@ page_open();
 					</div>
 						
 					<div>
-						<img class="pull-left mr-10" src="/assets/img/user-05-medium.png">
+						<img class="pull-left mr-10" src="./assets/img/user-05-medium.png">
 						<div class="copy">
 							<p class="name">Switched Electric<span> posted a tip</span></p>
 							<h3>Easy Ways To Weatherproof Your Home</h3>
@@ -600,13 +600,13 @@ Insert code sample
 		
 		<h3>Top Menus</h3>
 		<h5>Account</h5>
-		<img src="/assets/img/account-screenshot.png" alt="account screenshot" class="mb-50" />
+		<img src="./assets/img/account-screenshot.png" alt="account screenshot" class="mb-50" />
 		
 		<h5>Message</h5>
-		<img src="/assets/img/message-screenshot.png" alt="messages screenshot" class="mb-50" />
+		<img src="./assets/img/message-screenshot.png" alt="messages screenshot" class="mb-50" />
 		
 		<h5>Cart</h5>
-		<img src="/assets/img/cart-screenshot.png" alt="cart screenshot" class="mb-50" />
+		<img src="./assets/img/cart-screenshot.png" alt="cart screenshot" class="mb-50" />
 		
 		<h3>Buttons</h3>
 		<table class="table table-bordered table-striped" style="width:500px;">

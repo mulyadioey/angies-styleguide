@@ -696,7 +696,7 @@ page_open();
 		  
 		  <h3>Plugin Styling</h3>
 		  <p>When using plugins for form fields with built-in menus like text editors, try to match it as close as possible to the style of buttons, button groups and navbars outlined in this document.</p>
-		  <img src="/assets/img/text-editor.png" alt="text-editor" />
+		  <img src="./assets/img/text-editor.png" alt="text-editor" />
 		  <hr class="bs-docs-separator" />
 		  
           <h3>Stacked checkboxes and radios</h3>
@@ -795,7 +795,7 @@ page_open();
 		  <hr class="bs-docs-separator">
 		  
 		  <h3>Calendar Select</h3>
-		  <img src="/assets/img/calendar.png" alt="calendar" />
+		  <img src="./assets/img/calendar.png" alt="calendar" />
 		  <p><strong>Month</strong>: <span class="grey">Proxima Nova Bold 20pt, #000</span><br />
 		  <strong>Year</strong>: <span class="grey">Proxima Nova Regular 20pt, #aaaaaa</span></p>
 
@@ -839,25 +839,25 @@ page_open();
 			<label>Label name</label>
               <!-- <input type="text" placeholder="Type something…">
               <span class="help-block">Some help text</span> -->
-			  <img src="/assets/img/label-name.png" alt= "form" />
+			  <img src="./assets/img/label-name.png" alt= "form" />
 			</label>
 			<hr class="bs-docs-separator">
 
 			<h3>Inline Form</h3>
 			<label>
-			  <img src="/assets/img/inline-form.png" alt= "form" />
+			  <img src="./assets/img/inline-form.png" alt= "form" />
 			</label>
 			<hr class="bs-docs-separator">
 		
 			<h3>Horizontal Form</h3>
 			<label>
-			  <img src="/assets/img/horizontal-form.png" alt= "form" />
+			  <img src="./assets/img/horizontal-form.png" alt= "form" />
 			</label>
 			<hr class="bs-docs-separator">
 			
 			<h3>Form Module</h3>
 			<label>
-			  <img src="/assets/img/module-form.png" alt= "form" />
+			  <img src="./assets/img/module-form.png" alt= "form" />
 			</label>
 		</section>
 		

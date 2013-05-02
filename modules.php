@@ -155,7 +155,7 @@ page_open();
 									
 							<article>
 								
-								<img src="/assets/img/user-01.png" />
+								<img src="./assets/img/user-01.png" />
 			
 								<h6><a href='#!'>Mulhall Construction</a></h6>
 								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">264 Reviews</a></p><p class="right">45m</p>
@@ -164,7 +164,7 @@ page_open();
 					
 							<article>
 								
-								<img src="/assets/img/user-02.png" />
+								<img src="./assets/img/user-02.png" />
 			
 								<h6><a href='#!'>Rayco Painting</a></h6>
 								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">73 Reviews</a></p><p class="right">1h</p>
@@ -173,7 +173,7 @@ page_open();
 							
 							<article>
 								
-								<img src="/assets/img/user-03.png" />
+								<img src="./assets/img/user-03.png" />
 			
 								<h6><a href='#!'>Gil Construction</a></h6>
 								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">142 Reviews</a></p><p class="right">1d</p>
@@ -182,7 +182,7 @@ page_open();
 							
 							<article>
 								
-								<img src="/assets/img/user-04.png" />
+								<img src="./assets/img/user-04.png" />
 			
 								<h6><a href='#!'>Bill Nass Painting</a></h6>
 								<p class="left"><span class="grade inline b">B</span> <a href="#!" class="muted">13 Reviews</a></p><p class="right">2d</p>
@@ -191,7 +191,7 @@ page_open();
 							
 							<article>
 								
-								<img src="/assets/img/user-05.png" />
+								<img src="./assets/img/user-05.png" />
 			
 								<h6><a href='#!'>Yui Wong Construction</a></h6>
 								<p class="left"><span class="grade inline a">A</span> <a href="#!" class="muted">48 Reviews</a></p><p class="right">3d</p>
@@ -207,9 +207,9 @@ page_open();
 					</div>
           </div>
           <h2>Recent Searches</h2>
-          <img src="/assets/img/recent-searches.png" />
+          <img src="./assets/img/recent-searches.png" />
           <h2>Write a Review</h2>
-          <img src="/assets/img/write-review.png" />
+          <img src="./assets/img/write-review.png" />
         </section>
 		
 		
@@ -247,7 +247,7 @@ page_open();
 			<article>
 				<div class="row">
 					<div class="span4">
-						<img src="/assets/img/neighbour-review.png" alt="neighbour-review" />
+						<img src="./assets/img/neighbour-review.png" alt="neighbour-review" />
 					</div>
 					<div class="span4">
 						<div class="info-review">
@@ -270,7 +270,7 @@ page_open();
 						</div>
 							
 						<div>
-							<img class="pull-left mr-10" src="/assets/img/user-05-medium.png" />
+							<img class="pull-left mr-10" src="./assets/img/user-05-medium.png" />
 							<div class="copy">
 								<p class="name">John F. <span>& 11 others bought</span></p>
 								<h3>$99 for $200 of Plumbing Services </h3>
@@ -288,7 +288,7 @@ page_open();
 						</div>
 							
 						<div>
-							<img class="pull-left mr-10" src="/assets/img/user-05-medium.png" />
+							<img class="pull-left mr-10" src="./assets/img/user-05-medium.png" />
 							<div class="copy">
 								<p class="name">John F. <span>& 11 others bought</span></p>
 								<h3>$99 for $200 of Plumbing Services </h3>
@@ -303,7 +303,7 @@ page_open();
 						</div>
 							
 						<div>
-							<img class="pull-left mr-10" src="/assets/img/user-05-medium.png" />
+							<img class="pull-left mr-10" src="./assets/img/user-05-medium.png" />
 							<div class="copy">
 								<p class="name">Jennifer P. <span>reviewed</span></p>
 								<h3>Rayco Painting <span class="grade inline a">A</span></h3>
@@ -322,7 +322,7 @@ page_open();
 			<h3>Popular providers in your area, specific category</h3>
 			<p class="review-title">Popular Providers in Indianapolis</p>
 			<article>
-				<img src="/assets/img/popular-activity.png" />
+				<img src="./assets/img/popular-activity.png" />
 			</article>
 			
 			<h3>Popular providers in your area, overall</h3>
@@ -330,30 +330,30 @@ page_open();
 			<div class="bs-docs-example">
 				<div class="recently-viewed">				
 					<article>
-						<img src="/assets/img/user-01.png">
+						<img src="./assets/img/user-01.png">
 						<h6><a href="#!">Mulhall Construction</a></h6>
 						<p><span class="grade inline a">A</span> <a href="#!" class="muted">264 Neighbor Reviews</a></p>
 					</article>
 					<article>
-						<img src="/assets/img/user-02.png">
+						<img src="./assets/img/user-02.png">
 						<h6><a href="#!">Rayco Painting</a></h6>
 						<p><span class="grade inline a">A</span> <a href="#!" class="muted">73 Neighbor Reviews</a></p>
 					</article>
 							
 					<article>
-						<img src="/assets/img/user-03.png">
+						<img src="./assets/img/user-03.png">
 						<h6><a href="#!">Gil Construction</a></h6>
 						<p><span class="grade inline a">A</span> <a href="#!" class="muted">142 Neighbor Reviews</a></p>		
 					</article>
 							
 					<article>
-						<img src="/assets/img/user-04.png">
+						<img src="./assets/img/user-04.png">
 						<h6><a href="#!">Bill Nass Painting</a></h6>
 						<p><span class="grade inline b">B</span> <a href="#!" class="muted">13 Neighbor Reviews</a></p>
 					</article>
 							
 					<article>
-						<img src="/assets/img/user-05.png">
+						<img src="./assets/img/user-05.png">
 						<h6><a href="#!">Yui Wong Construction</a></h6>
 						<p><span class="grade inline a">A</span> <a href="#!" class="muted">48 Neighbor Reviews</a></p>
 					</article>
@@ -372,7 +372,7 @@ page_open();
 			<h3>Popular searches in your area, with photo</h3>
 			<p class="review-title">Popular Providers in Indianapolis</p>
 			<article>
-				<img src="/assets/img/popular-search.png" />
+				<img src="./assets/img/popular-search.png" />
 			</article>
 			
 			<h3>Popular searches in your area</h3>
@@ -416,7 +416,7 @@ page_open();
           <div class="bs-docs-example">
 			<div class="mini-layout commerce deal">
 				<div class="media">
-				  <img class="media-object pull-left" src="/assets/img/hammer.png" alt="propic" />
+				  <img class="media-object pull-left" src="./assets/img/hammer.png" alt="propic" />
 				  <div class="media-body">
 					<h5>T.Ross, Handyman</h5>
 					<p class="deal-head mb-25">Handyman Service for Half a Day</p>
@@ -505,7 +505,7 @@ page_open();
 
 			<h3>Deal Carousel</h3>
 			<p>For use on the Service Provider page, this allows the user to cycle through all available deals. All Deals on the bottom links to the Deals tab on the SP page.</p>
-			<img src="/assets/img/deal-carousel.png" alt="deal-carousel" />
+			<img src="./assets/img/deal-carousel.png" alt="deal-carousel" />
 			
 			<h3>Coupon button</h3>
 			<p>For use in search results to indicate if a Service Provider has coupons available. Clicking on the button triggers a popup showing a sample of available coupons.  All Coupons at the bottom link to the Coupons tab on the Service Provider Profile page. On mobile, the coupons modal will not display. </p>
@@ -569,7 +569,7 @@ page_open();
 
 			<h3>Coupon carousel</h3>
 			<p>For use on the Service Provider page, this allows the user to cycle through all available coupons. All Coupons at the bottom links to the Coupons tab on the SP page.</p>
-			<img src="/assets/img/coupon-carousel.png"  alt="coupon-carousel" />
+			<img src="./assets/img/coupon-carousel.png"  alt="coupon-carousel" />
 			
         </section>
 
@@ -584,7 +584,7 @@ page_open();
 		  <div class="bs-docs-example">
 			<p class="art-head">Angie&rsquo;s List Articles</p>
 			<div class="mini-layout articles">
-				<img src="/assets/img/articles-1.png" alt="articles" />
+				<img src="./assets/img/articles-1.png" alt="articles" />
 				<div class="article-body">
 					<p class="deal-head">3 top tips to sell a house</p>
 					<p>Highly rated Realtors say the top three keys to selling a house as quickly as possible and at the best price are: appropriate pricing, impeccable presentation and professional online photos.</p>
@@ -605,7 +605,7 @@ page_open();
 					<p class="art-head">Angie&rsquo;s List Articles</p>
 					<div class="mini-layout articles horizontal">
 						<div class="media">
-							<img class="media-object pull-left" src="/assets/img/articles-small.png" alt="article" />
+							<img class="media-object pull-left" src="./assets/img/articles-small.png" alt="article" />
 							<div class="media-body">
 								<p class="deal-head">3 top tips to sell a house</p>
 								<p>Highly rated Realtors say the top three keys to selling a house as quickly as possible and at the best price are: appropriate pricing, impeccable presentation and...<a href="#">Read more</a></p>
@@ -617,16 +617,16 @@ page_open();
 			</div>
 			
 			<h3>Tips</h3>
-			<img src="/assets/img/tips-article.png" alt="tips" />
+			<img src="./assets/img/tips-article.png" alt="tips" />
 			
 			<h3>Large Video</h3>
-			<img src="/assets/img/large-video.png" alt="video" />
+			<img src="./assets/img/large-video.png" alt="video" />
 			
 			<h3>Medium Video</h3>
-			<img src="/assets/img/medium-video.png" alt="video" />
+			<img src="./assets/img/medium-video.png" alt="video" />
 			
 			<h3>Small Video</h3>
-			<img src="/assets/img/small-video.png" alt="video" />
+			<img src="./assets/img/small-video.png" alt="video" />
 	  </section>
 
         
