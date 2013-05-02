@@ -617,8 +617,11 @@ Insert code sample
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td><button type="button" class="btn btn-primary">Write a Review</button></td>
+              <tr>              	
+                <td>
+                	<!-- Width is set to 100% to preview how it looks like to stretch the whole container. -->
+                	<button type="button" class="btn btn-primary-phone" style="width: 100%;">Write a Review</button>
+                </td>
                 <td>Primary Button</td>
               </tr>
               <tr>

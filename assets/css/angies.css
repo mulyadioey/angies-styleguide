@@ -197,6 +197,43 @@ a.incognito:hover {
 .article-result-mobile .name-lockup .icn {
   float: right;
 }
+.btn-primary-phone {
+  padding: 6px 25px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #289d35;
+  background-image: -moz-linear-gradient(top, #29a036, #279833);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#29a036), to(#279833));
+  background-image: -webkit-linear-gradient(top, #29a036, #279833);
+  background-image: -o-linear-gradient(top, #29a036, #279833);
+  background-image: linear-gradient(to bottom, #29a036, #279833);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff29a036', endColorstr='#ff279833', GradientType=0);
+  border-color: #279833 #279833 #175b1f;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #279833;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  font-family: "museo-slab", Segoe, "Segoe UI", "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+}
+.btn-primary-phone:hover,
+.btn-primary-phone:focus,
+.btn-primary-phone:active,
+.btn-primary-phone.active,
+.btn-primary-phone.disabled,
+.btn-primary-phone[disabled] {
+  color: #ffffff;
+  background-color: #279833;
+  *background-color: #22842c;
+}
+.btn-primary-phone:active,
+.btn-primary-phone.active {
+  background-color: #1d6f26 \9;
+}
 /* General */
 .mb-0 {
   margin-bottom: 0;
@@ -898,7 +935,7 @@ span.grade.inline.a {
   background-position: -40px -60px;
 }
 .icn.icn-chat {
-  width: 29px;
+  width: 31px;
   height: 34px;
   background-position: -80px -60px;
 }
@@ -1430,6 +1467,21 @@ ul.list-search .category-heading {
   margin-bottom: 5px;
   font-size: 17px;
   color: #29a036;
+}
+.alert {
+  padding: 15px 35px 15px 20px;
+}
+.alert span {
+  font-size: 14px;
+}
+.alert h4 {
+  font-family: "proxima-nova", "Helvetica", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+.alert .close {
+  font-size: 30px;
+  line-height: 30px;
 }
 .alert,
 .alert-block {
