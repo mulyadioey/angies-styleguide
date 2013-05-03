@@ -244,9 +244,9 @@ page_open('Modules - Angie&rsquo;s List');
 					<article>
 					<p class="date">3/12/2013</p>
 						<div class="heading">
-							<div class="al-grade large-grade grade-a"><p>A</p></div>
+							<span class="grade a">A</span>
 							<h4>Rayco Painting</h4>
-							<p class="grey"><span class="letter-grade letter-grade-a">A</span> 73 Reviews</p>
+							<p class="grey"><span class="grade inline a">A</span> 73 Reviews</p>
 						</div>
 						<p class="overall"><span class="title">I got a free quote for interior painting...</span><br />The guy that came out was very nice and he got the quote turned around very quickly and I'm seeing that with a lot of painters in the area. My house...</p>	
 						<a href="#">Read more</a>
@@ -255,7 +255,18 @@ page_open('Modules - Angie&rsquo;s List');
 			</div>
 <pre class="prettyprint linenums">
 &lt;code&gt;
-  Insert code sample
+&lt;div class="mini-layout review-block"&gt;
+  &lt;article&gt;
+   &lt;p class="date"&gt;3/12/2013&lt;/p&gt;
+   &lt;div class="heading"&gt;
+    &lt;span class="grade a">A&lt;/span&gt;
+    &lt;h4>Rayco Painting&lt;/h4&gt;
+    &lt;p class="grey"&gt;&lt;span class="grade inline a">A&lt;/span&gt; 73 Reviews&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;p class="overall"&gt;&lt;span class="title"&gt;I got a free quote for interior painting...&lt;/span&gt;&lt;br /&gt;The guy that came out was very nice and he got the quote turned around very quickly and I'm seeing that with a lot of painters in the area. My house...&lt;/p&gt;	
+   &lt;a href="#"&gt;Read more&lt;/a&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
 &lt;/code&gt;
 </pre>
 
