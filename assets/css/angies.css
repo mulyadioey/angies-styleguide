@@ -1331,13 +1331,13 @@ a.more {
   margin-bottom: 30px;
   border: 1px solid #d7d3c6;
   padding: 5px 10px;
-  width: 125px;
-  height: 30px;
-  line-height: 32px;
+  width: 95px;
+  height: 20px;
+  line-height: 22px;
   color: #7b7b7b;
   background-color: #f6f6f2;
   position: relative;
-  left: 138px;
+  left: 153px;
 }
 .coupon-info:before,
 .coupon-info:after {
@@ -1348,11 +1348,15 @@ a.more {
 .coupon-info:after {
   clear: both;
 }
+.coupon-info a:hover {
+  color: #7b7b7b;
+  text-decoration: none;
+}
 .coupon-info p {
   text-transform: uppercase;
 }
 .coupon-area {
-  width: 450px;
+  width: 470px;
   background-color: #ffffff;
   border: 1px solid #d7d3c6;
   -webkit-border-radius: 6px;
@@ -1416,6 +1420,7 @@ a.more {
   font-weight: 600;
 }
 .coupon-area .coupon-body .dropdown .dropdown-menu .coup-txt {
+  margin-right: 20px;
   width: 350px;
   height: 45px;
   display: table;

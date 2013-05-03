@@ -584,7 +584,7 @@ page_open('Modules - Angie&rsquo;s List');
 			<p>For use in search results to indicate if a Service Provider has coupons available. Clicking on the button triggers a popup showing a sample of available coupons.  All Coupons at the bottom link to the Coupons tab on the Service Provider Profile page. On mobile, the coupons modal will not display. </p>
 			<div class="bs-docs-example">
 				<div class="coupon-info">
-					<i class="icn icn-coup pull-left"></i><p>3 coupons</p>
+					<a href="#!" class="coupon-count grey"><i class="icn icn-coup"></i> 2 coupons</a>
 				</div>
 				<div class="coupon-area">
 					<div class="arrow-coup"></div>
@@ -600,7 +600,7 @@ page_open('Modules - Angie&rsquo;s List');
 										<p>$100 off on all painting jobs over $1,000</p>
 									</div>
 									<div class="pull-right cta">
-										<div><button type="button" class="btn btn-inverse btn-mini">print</button></div>
+										<div><button type="button" class="btn btn-dark">print</button></div>
 									</div>
 								</div>
 							</li>
@@ -611,7 +611,7 @@ page_open('Modules - Angie&rsquo;s List');
 										<p>5% off for Angie&rsquo;s List members. Up to $1000 maximum discount.</p>
 									</div>
 									<div class="pull-right cta">
-										<div><button type="button" class="btn btn-inverse btn-mini">print</button></div>
+										<div><button type="button" class="btn btn-dark">print</button></div>
 									</div>
 								</div>
 							</li>
@@ -622,7 +622,7 @@ page_open('Modules - Angie&rsquo;s List');
 										<p>$250 Visa or American Express Gift card Upon Completion of Remodeling Contract of $10,000 or more.</p>
 									</div>
 									<div class="pull-right cta">
-										<div><button type="button" class="btn btn-inverse btn-mini">print</button></div>
+										<div><button type="button" class="btn btn-dark">print</button></div>
 									</div>
 								</div>
 							</li>
@@ -636,7 +636,56 @@ page_open('Modules - Angie&rsquo;s List');
 			</div>
 <pre class="prettyprint linenums">
 &lt;code&gt;
-  Insert code sample
+&lt;div class="coupon-info"&gt;
+    &lt;a href="#!" class="coupon-count grey"&gt;&lt;i class="icn icn-coup"&gt;&lt;/i&gt; 2 coupons&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="coupon-area"&gt;
+    &lt;div class="arrow-coup">&lt;/div&gt;
+    &lt;div class="coupon-header"&gt;
+        &lt;h4&gt;3 Coupons&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="coupon-body"&gt;
+    &lt;div class="dropdown clearfix"&gt;
+    &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
+        &lt;li&gt;
+        &lt;div class="clearfix"&gt;
+           &lt;div class="pull-left coup-txt"&gt;
+                &lt;p&lt;$100 off on all painting jobs over $1,000&lt;/p&gt;
+           &lt;/div&gt;
+           &lt;div class="pull-right cta"&gt;
+               &lt;div&gt;&lt;button type="button" class="btn btn-dark"&gt;print&lt;/button&gt;&lt;/div&gt;
+           &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="divider">&lt;/li&gt;
+        &lt;li&gt;
+        &lt;div class="clearfix"&gt;
+        &lt;div class="pull-left coup-txt"&gt;
+            &lt;p&gt;5% off for Angie&rsquo;s List members. Up to $1000 maximum discount.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="pull-right cta"&gt;
+            &lt;div&gt;&lt;button type="button" class="btn btn-dark"&gt;print&lt;/button&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/li&gt;
+       &lt;li class="divider">&lt;/li&gt;
+       &lt;li&gt;
+       &lt;div class="clearfix"&gt;
+           &lt;div class="pull-left coup-txt"&gt;
+               &lt;p&gt;$250 Visa or American Express Gift card Upon Completion of Remodeling Contract of $10,000 or more.&lt;/p&gt;
+           &lt;/div&gt;
+           &lt;div class="pull-right cta"&gt;
+               &lt;div&gt;&lt;button type="button" class="btn btn-dark"&gt;print&lt;/button&gt;&lt;/div&gt;
+           &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="coupon-footer clearfix"&gt;
+       &lt;a class="more pull-right">All coupons&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;/code&gt;
 </pre>
 
