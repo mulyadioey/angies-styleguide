@@ -161,6 +161,7 @@ page_open();
           <div class="page-header">
             <h1>3. User Focus</h1>
           </div>
+		  <h3>Recently Viewed</h3>
           <div class="bs-docs-example">
           	<div class="recently-viewed">
 									
@@ -217,6 +218,11 @@ page_open();
 							
 					</div>
           </div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
           <h2>Recent Searches</h2>
           <img src="./assets/img/recent-searches.png" />
           <h2>Write a Review</h2>
