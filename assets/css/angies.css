@@ -1588,3 +1588,24 @@ ul.list-search .category-heading {
   height: 30px;
   list-style: none;
 }
+/**Buttons - Basics **/
+.btn-link.secondary,
+.btn-link.provider,
+.btn-link.headline,
+.btn-link.footer-link {
+  text-transform: none;
+}
+.btn-link.secondary {
+  color: #7b7b7b;
+}
+.btn-link.provider {
+  color: #000000;
+}
+.btn-link.headline {
+  color: #404040;
+  font-size: 18px;
+}
+.btn-link.footer-link {
+  background-color: #48a842;
+  color: #fff;
+}

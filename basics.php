@@ -603,7 +603,7 @@ page_open();
             <h1>4. Buttons</h1>
           </div>
 
-          <h2>Default buttons</h2>
+          <h3>Standard buttons</h3>
           <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
           <table class="table table-bordered table-striped">
             <thead>
@@ -640,14 +640,34 @@ page_open();
                 <td>...</td>
               </tr>
               <tr>
-                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><button type="button" class="btn btn-link">Primary link</button></td>
                 <td><code>btn btn-link</code></td>
-                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+                <td>For primary text links. (Read more, etc.)</td>
+              </tr>
+			  <tr>
+                <td><button type="button" class="btn btn-link secondary">Secondary link</button></td>
+                <td><code>btn btn-link secondary</code></td>
+				<td>For secondary text links. (See all photos)</td>
+              </tr>
+			  <tr>
+                <td><button type="button" class="btn btn-link provider">Provider link</button></td>
+                <td><code>btn btn-link provider</code></td>
+				<td>Links to categories and providers in modules</td>
+              </tr>
+			  <tr>
+                <td><button type="button" class="btn btn-link headline">Headline</button></td>
+                <td><code>btn btn-link headline</code></td>
+				<td>Links to Deals and Tips in modules</td>
+              </tr>
+			  <tr>
+                <td style="background-color:#48a842;"><button type="button" class="btn btn-link footer-link">Footer Link</button></td>
+                <td><code>btn btn-link footer</code></td>
+				<td>Footer links</td>
               </tr>
             </tbody>
           </table>
           
-          <h2>Button sizes</h2>
+          <h3>Button sizes</h3>
           <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
           <div class="bs-docs-example">
             <p>
