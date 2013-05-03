@@ -290,7 +290,7 @@ page_open();
           </div>
 		  
 		  <h3>Custom Angie&rsquo;s List Icons:</h3>
-		  <table class="table table-bordered table-striped">
+		  <table class="table table-bordered table-striped list-icon">
             <thead>
               <tr>
                 <th>Icon</th>
