@@ -933,12 +933,12 @@ page_open('Basics - Angie&rsquo;s List');
 				<div class="logged-in mobile">						
 					<a href="#"><span class="mobile-icon profile-icon"></span><span class="text">My Account <b class="caret"></b></span></a>
 					<a href="#"><span class="notification inactive">0</span><span class="text">Messages <b class="caret"></b></span></a>
-					<a href="#"><span class="mobile-icon cart-icon"><span class="text">Cart <b class="caret"></b></span></a>							
+					<a href="#"><span class="mobile-icon cart-icon"><span class="text">Cart <b class="caret"></b></span></span></a>							
 				</div>
 				<div class="logged-in mobile">						
 					<a href="#"><span class="mobile-icon profile-icon"></span></a>
 					<a href="#!"><span class="notification">3</span></a>
-					<a href="#!"><span class="mobile-icon cart-icon"></a>							
+					<a href="#!"><span class="mobile-icon cart-icon"></span></a>							
 				</div>				
 			</div>
 		</section>
