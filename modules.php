@@ -125,12 +125,18 @@ page_open();
           	</div>
           </div>
           <h3>Single Line Text Promo</h3>
+		  <p>This promo is used on the My Angie&rsquo;s page between the search bar and the main content. There should be 20px of padding above and below.</p>
           <div class="bs-docs-example" style="width: 750px;">
           	<div class="row-promo-single">
           		<i class="icn icn-cash"></i><p><strong>Pledge allegiance to great service!</strong> Continue your membership for 2+ years and <em>save 15%</em>
           		<button type="button" class="btn btn-primary btn-secondary">Save Now</button></p>
           	</div>
           </div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
           <h3>Small Promo</h3>
           <p>The headline should function as the CTA, followed by the small arrow icon.</p>
           <div class="bs-docs-example">
@@ -142,6 +148,11 @@ page_open();
           		</div>
           	</div>
           </div>
+<pre class="prettyprint linenums">
+&lt;code&gt;
+  Insert code sample
+&lt;/code&gt;
+</pre>
         </section>
 
         <!-- User Focus
