@@ -327,7 +327,7 @@ page_open('Modules - Angie&rsquo;s List');
 					<article class="activity-item">
 						<div class="cta-column pull-right">
 							<p class="hour">3 hours ago</p>
-							<button type="button" class="btn btn-secondary">Read</button>
+							<button type="button" class="btn btn-secondary ml-20">Read</button>
 						</div>
 							
 						<div>
@@ -343,7 +343,41 @@ page_open('Modules - Angie&rsquo;s List');
 			</div>
 <pre class="prettyprint linenums">
 &lt;code&gt;
-  Insert code sample
+&lt;div class="neighborhood-activity"&gt;
+&lt;article class="activity-item"&gt;
+  &lt;div class="cta-column pull-right mt-15"&gt;
+    &lt;div class="price-tag"&gt;
+      &lt;div class="tag left">&lt;/div&gt;
+      &lt;div class="tag mid">&lt;span>$99&lt;/span>&lt;/div&gt;
+      &lt;div class="tag right">&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;img class="pull-left mr-10" src="./assets/img/user-05-medium.png" /&gt;
+    &lt;div class="copy"&gt;
+      &lt;p class="name">John F. &lt;span&gt;& 11 others bought&lt;/span&gt;&lt;/p&gt;
+      &lt;h3&gt;$99 for $200 of Plumbing Services &lt;/h3&gt;
+      &lt;p class="comp-name"&gt;from Ace Plumbing & Rooter&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+&lt;article class="activity-item"&gt;
+  &lt;div class="cta-column pull-right"&gt;
+    &lt;p class="hour">3 hours ago&lt;/p&gt;
+    &lt;button type="button" class="btn btn-secondary ml-20">Read&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;img class="pull-left mr-10" src="./assets/img/user-05-medium.png" /&gt;
+    &lt;div class="copy"&gt;
+      &lt;p class="name"&gt;Jennifer P. &lt;span&gt;reviewed&lt;/span&gt;&lt;/p&gt;
+      &lt;h3>Rayco Painting &lt;span class="grade inline a"&gt;A&lt;/span&gt;&lt;/h3&gt;
+      &lt;p class="comp-name">They did an amazing job painting the whole interior of my house. I got est...”&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+&lt;/div&gt;
 &lt;/code&gt;
 </pre>
 
