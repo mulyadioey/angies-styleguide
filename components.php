@@ -1,7 +1,7 @@
 <?php
 require('inc/templates.php');
 
-page_open();
+page_open('Component - Angie&rsquo;s List');
 ?>
 
 <!-- Subhead

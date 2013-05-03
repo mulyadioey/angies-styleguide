@@ -1,5 +1,5 @@
 <?php
-function page_open() {
+function page_open($title= '') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,7 @@ function page_open() {
 	</script>
 	
 	<meta charset="utf-8">
-	<title>Components · Angie&rsquo;s List</title>
+	<title><?php echo $title; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
