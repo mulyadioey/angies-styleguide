@@ -663,13 +663,18 @@ span.grade.inline.f {
   background-image: none;
   color: #7b7b7b;
 }
+.btn-group .btn:active,
+.btn-group.open .btn:active {
+  color: #7b7b7b;
+}
 .dropdown-menu > li {
   padding: 0 1px;
 }
 .dropdown-menu > li > a {
   color: #aaaaaa;
 }
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
   color: #7b7b7b;
   background-color: #fee892;
   background-image: -moz-linear-gradient(top, #fee892, #fee892);
@@ -679,6 +684,9 @@ span.grade.inline.f {
   background-image: linear-gradient(to bottom, #fee892, #fee892);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffee892', endColorstr='#fffee892', GradientType=0);
+}
+.dropdown-menu > li > a:focus {
+  outline: none;
 }
 .btn-group > .btn > .caret {
   margin-left: 30px;

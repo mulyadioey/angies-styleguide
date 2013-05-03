@@ -500,6 +500,10 @@ span.grade {
 			background-image: none;
 			color: @btnTextColor;			
 		}	
+		
+		&:active {
+			color: @darkGray;
+		}
 	}
 }
 
@@ -521,11 +525,16 @@ span.grade {
 			color: @mediumGray;	
 		}
 		
-		> a:hover {
+		> a:hover,
+		> a:focus {
 			color: @darkGray;
 			// Simpler to call `.vertical` than to clean up the gradient
 			//   for different browser styles.			
 			#gradient > .vertical(@linkColorHover, @linkColorHover);
+		}
+		
+		> a:focus {
+			outline: none;
 		}
 	}	
 }
