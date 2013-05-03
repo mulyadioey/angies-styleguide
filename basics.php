@@ -781,21 +781,23 @@ page_open();
 
 			<h3>Inline Help Text</h3>
 			<form class="bs-docs-example form-inline">
-				<input type="text"> <span class="help-inline">Some help text</span>
+				<input type="text"> <span class="help-inline mr-40">Some help text</span><span class="info-inline">Proxima Nova Light, 14pt, #7b7b7b</span>
 			</form>
           <hr class="bs-docs-separator">
 		  
 		  <h3>Block Help Text</h3>
 		  <form class="bs-docs-example">
             <input type="text">
-            <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>			
+            <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+			<p class="info-inline">Proxima Nova Light, 14pt, #7b7b7b</p>
           </form>
 		  <hr class="bs-docs-separator">
 		  
 		  <h3>Input Focus</h3>
 		  <p>A subtle glow is added when an input is activated.</p>
 		  <form class="bs-docs-example form-inline">
-            <input class="input-xlarge focused" id="focusedInput" type="text" placeholder="Click to focus...">
+            <input class="input-xlarge focused" id="focusedInput" type="text" placeholder="Click to focus..."> <br /><br />
+			<p class="info-inline">box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.18); <br />border:solid 1px #dddddd; <br />border-radius: 6px;</p>
           </form>
 		  
 		  <hr class="bs-docs-separator">
@@ -805,7 +807,8 @@ page_open();
 		  <form class="bs-docs-example form-inline">
 			<div class="control-group error">
 				<div class="controls">
-					<input type="email" value="name@email"> <span class="help-inline">Oops! That&rsquo;s not a valid email.</span>
+					<input type="email" value="name@email"> <span class="help-inline">Oops! That&rsquo;s not a valid email.</span> <br /><br />
+					<p class="info-inline">box-shadow: 0px 0px 6px rgba(226, 67, 30, 0.50); <br />border:solid 1px #e2431e; <br />border-radius: 6px;</p>
 				</div>
 			</div>
           </form>		  
@@ -814,7 +817,8 @@ page_open();
 		  <h3>Disabled Input</h3>
 		  <p>When disabled, the color of the input field changes to #f8f6ef.</p>
 		  <form class="form-inline">
-            <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
+            <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled=""> <br /><br />
+			<p class="info-inline">When disabled, the color of the input field changes to #f8f6ef.</p>
           </form>
 		  
 		  <hr class="bs-docs-separator">
