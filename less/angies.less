@@ -5,6 +5,28 @@
 @import "angies-components.less";
 
 
+// ------------------------------------------------
+//
+// FOUT
+//
+// ------------------------------------------------
+.wf-loading {
+
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, span, a {
+		.opacity(90);
+		visibility: hidden;
+	}
+}
+
+.wf-active { 
+
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, span, a {
+		.opacity(100);
+		visibility: visible;
+	}
+}
+
+
 /* General */
 .mb-0 { margin-bottom: 0; }
 .mb-5 { margin-bottom: 5; }
@@ -823,7 +845,7 @@ span.grade {
 	}
 	
 	&.icn-chat {
-		.size(34px, 29px);
+		.size(34px, 31px);
 		background-position: -80px -60px;
 	}
 	
@@ -1427,6 +1449,25 @@ ul.list-search {
 		margin-bottom: 5px;
 		font-size: 17px;
 		color: @angiesGreen;
+	}
+}
+
+.alert {
+	padding: 15px 35px 15px 20px;
+	
+	span {
+		font-size: 14px;
+	}
+	
+	h4 {
+		font-family: @sansFontFamily;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	.close {
+		font-size: 30px;
+		line-height: 30px;
 	}
 }
 

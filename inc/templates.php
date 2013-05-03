@@ -4,6 +4,17 @@ function page_open() {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- TypeKit Font -->
+	<script type="text/javascript">
+	  (function() {
+		var config = {
+		  kitId: 'bap4dbx',
+		  scriptTimeout: 3000
+		};
+		var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+	</script>
+	
 	<meta charset="utf-8">
 	<title>Components · Angie&rsquo;s List</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,29 +94,17 @@ function page_close() {
 	<script src="assets/js/bootstrap-typeahead.js"></script>
 	<script src="assets/js/bootstrap-affix.js"></script>
 	
-	<script src="assets/js/holder/holder.js"></script>
 	<script src="assets/js/google-code-prettify/prettify.js"></script>
 	
-	<script src="assets/js/application.js"></script>
-	
-	
-	<!-- TypeKit Font -->
-	<script type="text/javascript">
-	  (function() {
-		var config = {
-		  kitId: 'bap4dbx',
-		  scriptTimeout: 3000
-		};
-		var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	  })();
-	</script>
-	
-	<!-- -->
+	<script src="assets/js/application.js"></script>			
+
 	<script type="text/javascript">
 	$(function () {
 		
 		// Adding `.select` to top nav depending on the current url.
-		var page_name = window.location.pathname.substring(1).split('/')[0];	// e.g. modules.html
+		var url_sec 		= window.location.pathname.split('/'),
+			array_length 	= url_sec.length,
+			page_name 		= url_sec[array_length - 1];	// e.g. modules.php
 	    $('.navbar-fixed-top ul > li > a[href*="' + page_name + '"]').parent().addClass('active');
     });
     </script>
