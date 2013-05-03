@@ -224,7 +224,6 @@ page_open();
 </pre>
 
           <h2>Standard size</h2>
-          <p>The standard Grade icon ...</p>
 <div class="bs-docs-example">
   <div class="clearfix">
 	<span class="grade a">A</span>
@@ -240,7 +239,6 @@ page_open();
 &lt;span class="grade b"&gt;B&lt;/span&gt;
 </pre>
 		<h2>Smallest icon size</h2>
-          <p>The smallest size Grade icon ...</p>
 <div class="bs-docs-example">
   <div class="clearfix">
 	<span class="grade sm a">A</span>
