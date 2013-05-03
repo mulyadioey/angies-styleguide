@@ -538,17 +538,13 @@ page_open('Modules - Angie&rsquo;s List');
 			<h3>Horizontal Deal listing with search result</h3>
 			<p>In the context of search results, horizontal deal listings lose the provider name and shrink to a single line.</p>
 			<div class="bs-docs-example">
-				<div class="mini-layout commerce">
+				<div class="mini-layout commerce result">
 					<div class="row">
 						<div class="span4">
-							<div class="media">
-							  <i class="icn icn-deal"></i>
-							  <div class="media-body">
-								<p class="deal-head lh">Handyman Service for Half a Day</p>
-							  </div>
-							</div>
+							<i class="icn icn-deal pull-left"></i>
+							<p class="deal-head lh pull-left">Handyman Service for Half a Day</p>
 						</div>
-						<div class="pull-right mt-5">
+						<div class="pull-right">
 							<p class="medium-gray mb-0 pull-left">$360 Value</p>
 							<div class="price-tag pull-left">
 								<div class="tag left"></div>
@@ -561,7 +557,22 @@ page_open('Modules - Angie&rsquo;s List');
 			</div>
 <pre class="prettyprint linenums">
 &lt;code&gt;
-  Insert code sample
+&lt;div class="mini-layout commerce result"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="span4"&gt;
+      &lt;i class="icn icn-deal pull-left">&lt;/i&gt;
+      &lt;p class="deal-head lh pull-left">Handyman Service for Half a Day&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="pull-right"&gt;
+      &lt;p class="medium-gray mb-0 pull-left">$360 Value&lt;/p&gt;
+      &lt;div class="price-tag pull-left"&gt;
+        &lt;div class="tag left">&lt;/div&gt;
+        &lt;div class="tag mid">&lt;span>$180&lt;/span>&lt;/div&gt;
+        &lt;div class="tag right">&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;/code&gt;
 </pre>
 

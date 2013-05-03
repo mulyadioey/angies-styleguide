@@ -390,6 +390,9 @@ textarea {
 .mini-layout.commerce p.pull-left {
   margin-right: 10px;
 }
+.mini-layout.commerce.result {
+  height: 25px;
+}
 .mini-layout div.tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1303,7 +1306,7 @@ p.deal-head {
   font-weight: 700;
 }
 p.deal-head.lh {
-  line-height: 35px;
+  line-height: 25px;
 }
 p.art-head {
   color: #7b7b7b;
