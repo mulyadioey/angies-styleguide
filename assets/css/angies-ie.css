@@ -1,0 +1,5 @@
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background-color: #2d5c32;
+}

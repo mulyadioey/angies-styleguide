@@ -34,6 +34,11 @@ function page_open() {
 	  <script src="assets/js/html5shiv.js"></script>
 	<![endif]-->
 	
+	<!-- Le css styles for IE8-->
+	<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="assets/css/angies-ie.css">
+	<![endif]-->
+	
 	<!-- Le fav and touch icons -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
