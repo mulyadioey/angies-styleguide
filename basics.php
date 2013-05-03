@@ -747,11 +747,6 @@ page_open();
               Selecting this option will deselect option one
             </label>
           </form>
-<pre class="prettyprint linenums">
-&lt;code&gt;
-  Insert code sample
-&lt;/code&gt;
-</pre>
 
           <hr class="bs-docs-separator" />
 		  
