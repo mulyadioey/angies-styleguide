@@ -569,6 +569,10 @@ span.grade.inline.f {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+.navbar.basic .nav > li > a:hover,
+.navbar.basic .nav > .active > a:hover {
+  color: #585239;
+}
 .breadcrumb {
   background-color: transparent;
   -webkit-border-radius: 0;
