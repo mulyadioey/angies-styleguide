@@ -94,7 +94,6 @@ function page_close() {
 	<script src="assets/js/bootstrap-typeahead.js"></script>
 	<script src="assets/js/bootstrap-affix.js"></script>
 	
-	<script src="assets/js/holder/holder.js"></script>
 	<script src="assets/js/google-code-prettify/prettify.js"></script>
 	
 	<script src="assets/js/application.js"></script>			
@@ -103,7 +102,9 @@ function page_close() {
 	$(function () {
 		
 		// Adding `.select` to top nav depending on the current url.
-		var page_name = window.location.pathname.substring(1).split('/')[0];	// e.g. modules.html
+		var url_sec 		= window.location.pathname.split('/'),
+			array_length 	= url_sec.length,
+			page_name 		= url_sec[array_length - 1];	// e.g. modules.php
 	    $('.navbar-fixed-top ul > li > a[href*="' + page_name + '"]').parent().addClass('active');
     });
     </script>
