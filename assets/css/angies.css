@@ -519,6 +519,18 @@ span.grade.inline {
 span.grade.inline.a {
   color: #4db346;
 }
+span.grade.inline.b {
+  color: #29a036;
+}
+span.grade.inline.c {
+  color: #7b7b7b;
+}
+span.grade.inline.d {
+  color: #525252;
+}
+span.grade.inline.f {
+  color: #000000;
+}
 .modal {
   border: none;
 }

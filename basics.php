@@ -261,14 +261,26 @@ page_open();
   	<span class="grade inline a">A</span> 1,500 Reviews
   </p>
   <div class="docs-inline-grade-hr"></div>
+  <hr class="w-50" />
   <p class="docs-inline-grade">
   	<span class="grade inline a">A</span> #4db346
   </p>
+  <p class="docs-inline-grade">
+  	<span class="grade inline c">C</span> #7b7b7b
+  </p>
+  <p class="docs-inline-grade">
+  	<span class="grade inline d">D</span> #525252
+  </p>
+  <p class="docs-inline-grade">
+  	<span class="grade inline f">F</span> #000000
   </p>
 </div>
 <pre class="prettyprint">
 &lt;span class="grade inline a"&gt;A&lt;/span&gt;
 &lt;span class="grade inline b"&gt;B&lt;/span&gt;
+&lt;span class="grade inline c"&gt;B&lt;/span&gt;
+&lt;span class="grade inline d"&gt;B&lt;/span&gt;
+&lt;span class="grade inline f"&gt;B&lt;/span&gt;
 </pre>          
         </section>       
                 
