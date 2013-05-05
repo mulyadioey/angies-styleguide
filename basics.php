@@ -818,7 +818,6 @@ page_open('Basics - Angie&rsquo;s List');
 		  <hr class="bs-docs-separator">
 		  
 		  <h3>Disabled Input</h3>
-		  <p>When disabled, the color of the input field changes to #f8f6ef.</p>
 		  <form class="form-inline">
             <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled=""> <br /><br />
 			<p class="info-inline">When disabled, the color of the input field changes to #f8f6ef.</p>
