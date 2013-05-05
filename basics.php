@@ -266,6 +266,9 @@ page_open('Basics - Angie&rsquo;s List');
   	<span class="grade inline a">A</span> #4db346
   </p>
   <p class="docs-inline-grade">
+  	<span class="grade inline b">B</span> #29a036
+  </p>
+  <p class="docs-inline-grade">
   	<span class="grade inline c">C</span> #7b7b7b
   </p>
   <p class="docs-inline-grade">

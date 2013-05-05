@@ -866,6 +866,7 @@ span.grade.inline {
 	margin-right: 0;
 }
 p.docs-inline-grade {
+	margin: 0;
 	line-height: 1.4em;
 }
 
