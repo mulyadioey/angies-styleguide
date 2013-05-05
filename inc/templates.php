@@ -1,5 +1,5 @@
 <?php
-function page_open($title= '') {
+function page_open($title = '') {
 ?>
 <!DOCTYPE html>
 <html lang="en">

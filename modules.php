@@ -133,9 +133,10 @@ page_open('Modules - Angie&rsquo;s List');
           	</div>
           </div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-  Insert code sample
-&lt;/code&gt;
+&lt;div class=&quot;row-promo-single&quot;&gt;
+  &lt;i class=&quot;icn icn-cash&quot;&gt;&lt;/i&gt;&lt;p&gt;&lt;strong&gt;Pledge allegiance to great service!&lt;/strong&gt; Continue your membership for 2+ years and &lt;em&gt;save 15%&lt;/em&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-secondary&quot;&gt;Save Now&lt;/button&gt;&lt;/p&gt;
+&lt;/div&gt;
 </pre>
           <h3>Small Promo</h3>
           <p>The headline should function as the CTA, followed by the small arrow icon.</p>
@@ -149,9 +150,13 @@ page_open('Modules - Angie&rsquo;s List');
           	</div>
           </div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-  Insert code sample
-&lt;/code&gt;
+&lt;div class=&quot;row-promo-small&quot;&gt;
+  &lt;i class=&quot;icn icn-cash&quot;&gt;&lt;/i&gt;
+  &lt;div&gt;
+    &lt;a href=&quot;#&quot;&gt;Pledge allegiance to great service! &#9654;&lt;/a&gt;
+    &lt;p&gt;Continue your membership for 2+ years and &lt;em&gt;save 15%&lt;/em&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre>
         </section>
 
@@ -219,9 +224,14 @@ page_open('Modules - Angie&rsquo;s List');
 					</div>
           </div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-  Insert code sample
-&lt;/code&gt;
+&lt;div class=&quot;recently-viewed&quot;&gt;		
+  &lt;article&gt;	
+    &lt;img src=&quot;./assets/img/user-01.png&quot; /&gt;
+    &lt;h6&gt;&lt;a href='#!'&gt;Mulhall Construction&lt;/a&gt;&lt;/h6&gt;
+    &lt;p class=&quot;left&quot;&gt;&lt;span class=&quot;grade inline a&quot;&gt;A&lt;/span&gt; &lt;a href=&quot;#!&quot; class=&quot;muted&quot;&gt;264 Reviews&lt;/a&gt;&lt;/p&gt;&lt;p class=&quot;right&quot;&gt;45m&lt;/p&gt;
+  &lt;/article&gt;
+  ...
+&lt;/div&gt;
 </pre>
           <h2>Recent Searches</h2>
           <img src="./assets/img/recent-searches.png" />
