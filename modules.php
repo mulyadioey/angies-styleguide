@@ -264,20 +264,18 @@ page_open('Modules - Angie&rsquo;s List');
 				</div>
 			</div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
 &lt;div class="mini-layout review-block"&gt;
   &lt;article&gt;
-   &lt;p class="date"&gt;3/12/2013&lt;/p&gt;
-   &lt;div class="heading"&gt;
-    &lt;span class="grade a">A&lt;/span&gt;
-    &lt;h4>Rayco Painting&lt;/h4&gt;
-    &lt;p class="grey"&gt;&lt;span class="grade inline a">A&lt;/span&gt; 73 Reviews&lt;/p&gt;
-   &lt;/div&gt;
-   &lt;p class="overall"&gt;&lt;span class="title"&gt;I got a free quote for interior painting...&lt;/span&gt;&lt;br /&gt;The guy that came out was very nice and he got the quote turned around very quickly and I'm seeing that with a lot of painters in the area. My house...&lt;/p&gt;	
-   &lt;a href="#"&gt;Read more&lt;/a&gt;
+    &lt;p class="date"&gt;3/12/2013&lt;/p&gt;
+    &lt;div class="heading"&gt;
+      &lt;span class="grade a">A&lt;/span&gt;
+      &lt;h4>Rayco Painting&lt;/h4&gt;
+      &lt;p class="grey"&gt;&lt;span class="grade inline a">A&lt;/span&gt; 73 Reviews&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class="overall"&gt;&lt;span class="title"&gt;I got a free quote for interior painting...&lt;/span&gt;&lt;br /&gt;The guy that came out was very nice and he got the quote turned around very quickly and I'm seeing that with a lot of painters in the area. My house...&lt;/p&gt;	
+    &lt;a href="#"&gt;Read more&lt;/a&gt;
   &lt;/article&gt;
 &lt;/div&gt;
-&lt;/code&gt;
 </pre>
 
 			<h3>Neighbor Reviews</h3>
@@ -295,7 +293,7 @@ page_open('Modules - Angie&rsquo;s List');
 				</div>
 			</article>
 			
-			<h3>Neighbor Activity</h3>
+			<h3>Neighborhood Activity</h3>
 			<div class="bs-docs-example">
 				<div class="neighborhood-activity">
 					<article class="activity-item">
@@ -305,8 +303,7 @@ page_open('Modules - Angie&rsquo;s List');
 								<div class="tag mid"><span>$99</span></div>
 								<div class="tag right"></div>
 							</div>
-						</div>
-							
+						</div>							
 						<div>
 							<img class="pull-left mr-10" src="./assets/img/user-05-medium.png" />
 							<div class="copy">
@@ -320,75 +317,70 @@ page_open('Modules - Angie&rsquo;s List');
 						<div class="cta-column pull-right mt-15">
 							<div class="price-tag">
 								<div class="tag left"></div>
-								<div class="tag mid"><span>$99</span></div>
+								<div class="tag mid"><span>$515</span></div>
 								<div class="tag right"></div>
 							</div>
-						</div>
-							
+						</div>							
 						<div>
 							<img class="pull-left mr-10" src="./assets/img/user-05-medium.png" />
 							<div class="copy">
-								<p class="name">John F. <span>& 11 others bought</span></p>
-								<h3>$99 for $200 of Plumbing Services </h3>
-								<p class="comp-name">from Ace Plumbing & Rooter</p>
+								<p class="name">Jennifer C. <span>& 9 others bought</span></p>
+								<h3>$150 for A Whole House Color Consultation</h3>
+								<p class="comp-name">from Color Craft Painting</p>
 							</div>
 						</div>
 					</article>
 					<article class="activity-item">
-						<div class="cta-column pull-right">
-							<p class="hour">3 hours ago</p>
-							<button type="button" class="btn btn-secondary ml-20">Read</button>
-						</div>
-							
+						<div class="cta-column pull-right read-cta-block">
+							<p>3 hours ago</p>
+							<button type="button" class="btn btn-secondary">Read</button>
+						</div>							
 						<div>
 							<img class="pull-left mr-10" src="./assets/img/user-05-medium.png" />
 							<div class="copy">
 								<p class="name">Jennifer P. <span>reviewed</span></p>
 								<h3>Rayco Painting <span class="grade inline a">A</span></h3>
-								<p class="comp-name">They did an amazing job painting the whole interior of my house. I got est...”</p>
+								<p class="comp-name">They did an amazing job painting the whole interior of my house. I got est...</p>
 							</div>
 						</div>
 					</article>
 				</div>
 			</div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-&lt;div class="neighborhood-activity"&gt;
-&lt;article class="activity-item"&gt;
-  &lt;div class="cta-column pull-right mt-15"&gt;
-    &lt;div class="price-tag"&gt;
-      &lt;div class="tag left">&lt;/div&gt;
-      &lt;div class="tag mid">&lt;span>$99&lt;/span>&lt;/div&gt;
-      &lt;div class="tag right">&lt;/div&gt;
+&lt;div class=&quot;neighborhood-activity&quot;&gt;
+  &lt;article class=&quot;activity-item&quot;&gt;
+    &lt;div class=&quot;cta-column pull-right mt-15&quot;&gt;
+      &lt;div class=&quot;price-tag&quot;&gt;
+        &lt;div class=&quot;tag left&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;tag mid&quot;&gt;&lt;span&gt;$99&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;tag right&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;							
+    &lt;div&gt;
+      &lt;img class=&quot;pull-left mr-10&quot; src=&quot;./assets/img/user-05-medium.png&quot; /&gt;
+      &lt;div class=&quot;copy&quot;&gt;
+        &lt;p class=&quot;name&quot;&gt;John F. &lt;span&gt;&amp; 11 others bought&lt;/span&gt;&lt;/p&gt;
+        &lt;h3&gt;$99 for $200 of Plumbing Services &lt;/h3&gt;
+        &lt;p class=&quot;comp-name&quot;&gt;from Ace Plumbing &amp; Rooter&lt;/p&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div&gt;
-    &lt;img class="pull-left mr-10" src="./assets/img/user-05-medium.png" /&gt;
-    &lt;div class="copy"&gt;
-      &lt;p class="name">John F. &lt;span&gt;& 11 others bought&lt;/span&gt;&lt;/p&gt;
-      &lt;h3&gt;$99 for $200 of Plumbing Services &lt;/h3&gt;
-      &lt;p class="comp-name"&gt;from Ace Plumbing & Rooter&lt;/p&gt;
+  &lt;/article&gt;
+  ...
+  &lt;article class=&quot;activity-item&quot;&gt;
+    &lt;div class=&quot;cta-column pull-right read-cta-block&quot;&gt;
+      &lt;p&gt;3 hours ago&lt;/p&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Read&lt;/button&gt;
+    &lt;/div&gt;                          
+    &lt;div&gt;
+      &lt;img class=&quot;pull-left mr-10&quot; src=&quot;./assets/img/user-05-medium.png&quot; /&gt;
+      &lt;div class=&quot;copy&quot;&gt;
+        &lt;p class=&quot;name&quot;&gt;Jennifer P. &lt;span&gt;reviewed&lt;/span&gt;&lt;/p&gt;
+        &lt;h3&gt;Rayco Painting &lt;span class=&quot;grade inline a&quot;&gt;A&lt;/span&gt;&lt;/h3&gt;
+        &lt;p class=&quot;comp-name&quot;&gt;They did an amazing job painting the whole interior of my house. I got est...&lt;/p&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/article&gt;
-&lt;article class="activity-item"&gt;
-  &lt;div class="cta-column pull-right"&gt;
-    &lt;p class="hour">3 hours ago&lt;/p&gt;
-    &lt;button type="button" class="btn btn-secondary ml-20">Read&lt;/button&gt;
-  &lt;/div&gt;
-
-  &lt;div&gt;
-    &lt;img class="pull-left mr-10" src="./assets/img/user-05-medium.png" /&gt;
-    &lt;div class="copy"&gt;
-      &lt;p class="name"&gt;Jennifer P. &lt;span&gt;reviewed&lt;/span&gt;&lt;/p&gt;
-      &lt;h3>Rayco Painting &lt;span class="grade inline a"&gt;A&lt;/span&gt;&lt;/h3&gt;
-      &lt;p class="comp-name">They did an amazing job painting the whole interior of my house. I got est...”&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/article&gt;
+  &lt;/article&gt;
 &lt;/div&gt;
-&lt;/code&gt;
 </pre>
 
 			<h3>Popular providers in your area, specific category</h3>
@@ -645,58 +637,35 @@ page_open('Modules - Angie&rsquo;s List');
 				</div>
 			</div>
 <pre class="prettyprint linenums">
-&lt;code&gt;
-&lt;div class="coupon-info"&gt;
-    &lt;a href="#!" class="coupon-count grey"&gt;&lt;i class="icn icn-coup"&gt;&lt;/i&gt; 2 coupons&lt;/a&gt;
+&lt;div class=&quot;coupon-info&quot;&gt;
+  &lt;a href=&quot;#!&quot; class=&quot;coupon-count grey&quot;&gt;&lt;i class=&quot;icn icn-coup&quot;&gt;&lt;/i&gt; 2 coupons&lt;/a&gt;
 &lt;/div&gt;
-&lt;div class="coupon-area"&gt;
-    &lt;div class="arrow-coup">&lt;/div&gt;
-    &lt;div class="coupon-header"&gt;
-        &lt;h4&gt;3 Coupons&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="coupon-body"&gt;
-    &lt;div class="dropdown clearfix"&gt;
-    &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
-        &lt;li&gt;
-        &lt;div class="clearfix"&gt;
-           &lt;div class="pull-left coup-txt"&gt;
-                &lt;p&lt;$100 off on all painting jobs over $1,000&lt;/p&gt;
+&lt;div class=&quot;coupon-area&quot;&gt;
+  &lt;div class=&quot;arrow-coup&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;coupon-header&quot;&gt;
+    &lt;h4&gt;3 Coupons&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;coupon-body&quot;&gt;
+    &lt;div class=&quot;dropdown clearfix&quot;&gt;
+      &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu&quot;&gt;
+         &lt;li&gt;
+           &lt;div class=&quot;clearfix&quot;&gt;
+             &lt;div class=&quot;pull-left coup-txt&quot;&gt;
+               &lt;p&gt;$100 off on all painting jobs over $1,000&lt;/p&gt;
+             &lt;/div&gt;
+             &lt;div class=&quot;pull-right cta&quot;&gt;
+               &lt;div&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;print&lt;/button&gt;&lt;/div&gt;
+             &lt;/div&gt;
            &lt;/div&gt;
-           &lt;div class="pull-right cta"&gt;
-               &lt;div&gt;&lt;button type="button" class="btn btn-dark"&gt;print&lt;/button&gt;&lt;/div&gt;
-           &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li class="divider">&lt;/li&gt;
-        &lt;li&gt;
-        &lt;div class="clearfix"&gt;
-        &lt;div class="pull-left coup-txt"&gt;
-            &lt;p&gt;5% off for Angie&rsquo;s List members. Up to $1000 maximum discount.&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class="pull-right cta"&gt;
-            &lt;div&gt;&lt;button type="button" class="btn btn-dark"&gt;print&lt;/button&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;/li&gt;
-       &lt;li class="divider">&lt;/li&gt;
-       &lt;li&gt;
-       &lt;div class="clearfix"&gt;
-           &lt;div class="pull-left coup-txt"&gt;
-               &lt;p&gt;$250 Visa or American Express Gift card Upon Completion of Remodeling Contract of $10,000 or more.&lt;/p&gt;
-           &lt;/div&gt;
-           &lt;div class="pull-right cta"&gt;
-               &lt;div&gt;&lt;button type="button" class="btn btn-dark"&gt;print&lt;/button&gt;&lt;/div&gt;
-           &lt;/div&gt;
-       &lt;/div&gt;
-       &lt;/li&gt;
-     &lt;/ul&gt;
-   &lt;/div&gt;
-   &lt;/div&gt;
-   &lt;div class="coupon-footer clearfix"&gt;
-       &lt;a class="more pull-right">All coupons&lt;/a&gt;
-    &lt;/div&gt;
+         &lt;/li&gt;
+         &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+         ...
+      &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- /.coupon-body --&gt;
+  &lt;div class=&quot;coupon-footer clearfix&quot;&gt;
+    &lt;a class=&quot;more pull-right&quot;&gt;All coupons&lt;/a&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;/code&gt;
 </pre>
 
 			<h3>Coupon carousel</h3>

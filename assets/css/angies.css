@@ -1527,9 +1527,13 @@ p.date {
   font-weight: 400;
 }
 .neighborhood-activity p.comp-name {
+  color: #aaaaaa;
   font-size: 14px;
 }
-.neighborhood-activity p.hour {
+.neighborhood-activity .read-cta-block {
+  text-align: right;
+}
+.neighborhood-activity .read-cta-block p {
   margin-bottom: 15px;
 }
 ul.list-search {
